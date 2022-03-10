@@ -17,7 +17,7 @@
 
     --white: #FFFFFF;
 
-    
+
     --margin-bottom: 31px;
 }
 
@@ -148,4 +148,93 @@ button {
 
 .logo p {
     margin-bottom: 0;
+}
+
+
+/* about-us */
+.about-us {
+    width: 100vw;
+    display: flex;
+    height: 620px;
+    background-color: var(--white);
+}
+
+
+.about-us-text {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+
+.about-us-text h4 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+
+.about-us-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: .1em;
+    color: var(--purple);
+}
+
+
+.about-us-text h2 {
+    font-size: 35px;
+    line-height: 37px;
+    letter-spacing: .1em;
+    color: var(--purple);
+    font-weight: 700;
+}
+
+
+.about-us button {
+    background-color: var(--lime-green);
+}
+
+
+.about-us-img {
+    position: relative;
+}
+
+
+.about-us-image {
+    width: 491px;
+    position: absolute;
+    height: 336px;
+    top: 110px;
+    left: 80px;
+    background-color: red;    
+    background-size: cover;
+    background-position: center;
+    border-radius: 500px;
+    background-image: url('https://images.unsplash.com/photo-1543269865-cbf427effbad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+}   
+
+
+.image-overlay {
+    background-color: var(--dark-blue);
+    width: 149px;
+    height: 124px;
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+
+.image-overlay h5 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .14em;
+    line-height: 30px;
+    color: var(--white);
 }
