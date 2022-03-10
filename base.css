@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --dark-color: #011A27;
+    --purple: #2E2A53;
+    --dark-blue: #063852;
+    --lime-green: #E6DF44;
+
+    --white: #FFFFFF;
+
+}
