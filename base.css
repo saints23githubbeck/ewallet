@@ -261,15 +261,19 @@ button {
 }
 
 
-.offer h2 {
+.section-header {
     font-size: 35px;
     line-height: 37px;
     font-weight: 700;
     letter-spacing: .1em;
+    /* text-align: center;
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto; */
 }
 
 
-.offer p {
+.section-subheader {
     font-size: 20px;
     font-weight: 400;
     line-height: 36.8px;
@@ -318,9 +322,56 @@ button {
 }
 
 
-.fa-regular {
-    color: var(--lime-green);
+/* switching */
+.switching {
+    width: 100vw;
+    height: 880px;
+    text-align: center;
+    color: var(--purple);
+    padding-top: 32px;
+    background-color: var(--white);
 }
+
+.switching .section-header {
+    max-width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+.switch-card-holder {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 200px;
+    min-width: 100vw;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+
+.tile {
+    width: 322px;
+    height: 249px;
+    text-align: start;
+    box-shadow: 0px 0px 10px var(--dark-blue);
+}
+
+
+
+.tile:nth-child(n+4) {
+    margin-top: 80px;
+}
+
+
+.tile h2 {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: -.0.05em;
+}
+
+
+
 /* media queries */
 @media only screen and (max-width: 1125px ) {
     
