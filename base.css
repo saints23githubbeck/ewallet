@@ -249,10 +249,15 @@ button {
 
 .offer {
     height: 800px;
-    width: 100vw;
+    min-width: 100vw;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(89.69deg, #063852 -6.09%, rgba(6, 56, 82, 0.89) 67.58%);
+    color: var(--white);
+    padding-top: 25px;
+    padding-bottom: 22px;
 }
 
 
@@ -260,7 +265,6 @@ button {
     font-size: 35px;
     line-height: 37px;
     font-weight: 700;
-    text-align: center;
     letter-spacing: .1em;
 }
 
@@ -273,12 +277,50 @@ button {
 }
 
 
+.card-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 .card {
     width: 300px;
     height: 249px;
+    border-radius: 0;
     background-color: var(--dark-blue);
+    border: 1.04027px solid rgba(255, 255, 255, .5);
+    text-align: center;
+    padding-top: 84px;
 }
 
+
+.card:nth-child(n+4) {
+    margin-top: 80px;
+}
+
+
+.card h2 {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 32.66px;
+    letter-spacing: .14em;
+}
+
+
+.card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: .06em;
+    max-width: 70%;
+    text-align: center;
+    margin: 11px auto;
+}
+
+
+.fa-regular {
+    color: var(--lime-green);
+}
 /* media queries */
 @media only screen and (max-width: 1125px ) {
     
