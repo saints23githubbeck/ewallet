@@ -140,17 +140,16 @@ button {
 .logo {
     font-weight: 600;
     font-size: 24px;
-    border: 1px solid #000000;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 15px;
 }
 
 
 
 .logo p {
-    margin-bottom: 0;
+    border: 1px solid #000000;
+    padding: 5px 15px;
 }
 
 
@@ -193,6 +192,7 @@ button {
     height: 2px;
     width: 44px;
     background: var(--lime-green);
+    margin-right: 17px;
 }
 
 
@@ -290,11 +290,12 @@ button {
 }
 
 
-.section-subheader {
+.switching .section-subheader {
     font-size: 20px;
     font-weight: 400;
     line-height: 36.8px;
     letter-spacing: .11em;
+    padding-bottom: 41px;
 }
 
 
@@ -371,8 +372,9 @@ button {
     height: 249px;
     text-align: start;
     box-shadow: 0px 0px 10px var(--dark-blue);
+    position: relative;
+    padding: 10px;
 }
-
 
 
 .tile:nth-child(n+4) {
@@ -384,9 +386,26 @@ button {
     font-size: 23px;
     font-weight: 500;
     line-height: 132%;
-    letter-spacing: -.0.05em;
+    letter-spacing: -0.05em;
+    margin-top: 3rem;
 }
 
+
+/* .tile .image {
+    width: 70px;
+    height: 50px;
+    background-image: url('images/credit.svg');
+    background-size: cover;
+    background-position: center;
+} */
+
+.tile img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 70px;
+    height: 50px;
+}
 
 
 /* media queries */
