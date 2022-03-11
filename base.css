@@ -179,6 +179,23 @@ button {
 }
 
 
+.before {
+    position: relative;
+    margin-left: 3rem;
+}
+
+
+.before::after{
+    content: '';
+    position: absolute;
+    left: -54px;
+    top: 11px;
+    height: 2px;
+    width: 44px;
+    background: var(--lime-green);
+}
+
+
 .about-us-text p {
     font-weight: 400;
     font-size: 16px;
