@@ -36,6 +36,9 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--white);
+    /* background-image: url('/images/Background-1.jpg'); */
+    background-position: center;
+    background-size: contain;
 }
 
 
@@ -210,7 +213,7 @@ button {
     height: 336px;
     top: 110px;
     left: 80px;
-    background-color: red;    
+    /* background-color: red;     */
     background-size: cover;
     background-position: center;
     border-radius: 500px;
@@ -228,6 +231,7 @@ button {
     display: flex;
     justify-content: end;
     flex-direction: column;
+    padding: 55px 4px 9px 4px;
 }
 
 
@@ -237,4 +241,45 @@ button {
     letter-spacing: .14em;
     line-height: 30px;
     color: var(--white);
+}
+
+
+
+/* offer section */
+
+.offer {
+    height: 800px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.offer h2 {
+    font-size: 35px;
+    line-height: 37px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+
+.offer p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36.8px;
+    letter-spacing: .11em;
+}
+
+
+.card {
+    width: 300px;
+    height: 249px;
+    background-color: var(--dark-blue);
+}
+
+/* media queries */
+@media only screen and (max-width: 1125px ) {
+    
 }
