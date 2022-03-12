@@ -422,7 +422,9 @@ button {
 
 .service {
     height: 648.5px;
-    width: 100vw;
+    min-width: 100vw;
+    color: var(--white);
+    padding: 0 0;
 }
 
 
@@ -437,11 +439,44 @@ button {
 
 .service-text {
     flex: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 110px;
 }
 
 .service-image {    
     flex: 1;
 }
+
+
+.info-tray {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 25px;
+    width: 100%;
+}
+
+
+.service-text h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 37px;
+    max-width: 70%;
+    letter-spacing: .225em;
+}
+
+
+.service-text p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 31.8px;
+    max-width: 70%;
+    padding-top: 22px;
+    letter-spacing: .1em;
+}
+
 
 /* media queries */
 @media only screen and (max-width: 1125px ) {
