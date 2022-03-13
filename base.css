@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Open+Sans:ital,wght@0,700;1,400&family=Poppins:wght@300;400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&family=Shrikhand&display=swap');
+
 
 * {
     padding: 0;
@@ -14,6 +16,7 @@
     --purple: #2E2A53;
     --dark-blue: #063852;
     --lime-green: #E6DF44;
+    --alternative-primary: #093B55; 
 
     --white: #FFFFFF;
 
@@ -361,11 +364,12 @@ button {
 /* switching */
 .switching {
     width: 100vw;
-    height: 880px;
+    height: auto;
     text-align: center;
     color: var(--purple);
     padding-top: 32px;
     background-color: var(--white);
+    padding-bottom: 106px;
 }
 
 .switching .section-header {
@@ -458,7 +462,7 @@ button {
     font-size: 35px;
     font-weight: 700;
     line-height: 37px;
-    max-width: 70%;
+    max-width: 60%;
     letter-spacing: .225em;
 }
 
@@ -467,7 +471,7 @@ button {
     font-size: 25px;
     font-weight: 400;
     line-height: 31.8px;
-    max-width: 70%;
+    max-width: 80%;
     padding-top: 22px;
     letter-spacing: .1em;
 }
@@ -501,6 +505,11 @@ button {
 }
 
 
+.info h3 span {
+    margin-left: 15px;
+}
+
+
 .info p {
     font-weight: 500;
     font-size: 16px;
@@ -516,12 +525,142 @@ button {
     position: absolute;
     right: 145px;
     top: 92px;
-    background-color: red;
     z-index: 12;
 }
 
 
+/* footer */
+
+.footer {
+    height: 760px;
+    width: 100vw;
+    background-color: var(--alternative-primary);
+    margin-top: 67px;
+    padding: 25px 156px 0 156px;
+
+}
+
+
+.started {
+    width: 1124px;
+    height: 215px;
+    background-color: var(--lime-green);
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+}
+
+
+.started .text {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+}
+
+
+.started .text p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    letter-spacing: .105em;
+    line-height: 37px;
+    color: var(--white);
+}
+
+
+.button-holder {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.button-holder button {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+
+.links {
+    margin-left: 0;
+    margin-right: 0;
+    color: var(--white);
+    margin-top: 25px;
+}
+
+
+.left-pane h3 {
+    font-family: 'Shrikhand', cursive;
+    font-style: italic;
+    font-size: 22.5763px;
+    line-height: 33px;
+}
+
+
+.left-pane span {
+    color: var(--lime-green);
+    font-family: 'Shirkhand';
+    font-size: 22.5763px;
+    line-height: 33px;
+}
+
+
+.left-pane p {
+   width: 309px;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 22px;
+   letter-spacing: .02em;
+   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+
+.right-pane {
+    display: flex;
+}
+
+
+.right-pane .one {
+    flex: 1;
+}
+
+
+.right-pane .two {
+    flex: 1;
+}
+
+
+.right-pane .three {
+    flex: 1;
+}
+
+
+
 /* media queries */
-@media only screen and (max-width: 1125px ) {
-    
+@media only screen and (max-width: 1388px ) {
+   .content h4 {
+       color: red;
+   }
+
+   .about-us-text p {
+       font-size: 15px;
+       letter-spacing: .08em;
+   }
+
+   .about-us-image {
+       height: 320px;
+       width: 450px;
+   }
+
+
+   .switching {
+       height: auto;
+   }
+
+   .footer {
+       padding: 25px 109px 0 109px;
+   }
 }
