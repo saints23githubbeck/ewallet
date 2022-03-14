@@ -771,6 +771,38 @@ button {
         font-size: 14px;
         letter-spacing: .05em;
     }
+
+
+    .right-pane li {
+        font-size: 16px;
+    }
+
+
+    .right-pane h2 {
+        font-size: 17px;
+    }
+
+
+    .contact {
+        padding-left: 14px;
+    }
+
+
+    .contact p {
+        font-size: 17px;
+        margin-left: 15px;
+    }
+
+
+    .left-pane p {
+        font-size: 17px;
+    }
+
+
+    .footer .before {
+        width: 36px;
+    }
+    
 }
 
 
@@ -806,5 +838,79 @@ button {
 
     .started .text p {
         font-size: 32px;
+    }
+
+
+    .offer {
+        height: auto;
+    }
+
+
+    body > section.offer.container > div > div > div > div:nth-child(n + 1) {
+        margin-top: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 1043px ) {
+    .tile:nth-child(n+1) {
+        margin-top: 60px;
+    }
+
+
+    .switch-card-holder {
+        padding:0 150px;
+    }
+
+
+    body > section.switching > div > div > div:nth-child(3) {
+        margin-top: 60px;
+    }
+}
+
+
+@media only screen and (max-width: 988px ) {
+    .about-us {
+        min-width: 100vw;
+        padding: 0 25px;
+    }
+
+
+    .about-us-image {
+        left: 50px;
+    }
+
+
+    #later::after {
+        right: 360px;
+    }
+}
+
+
+@media only screen and (max-width: 979px ) {
+    .about-us-image {
+        width: 360px;
+        height: 266px;
+    }
+
+    .hex-background {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .world {
+        width: 360px;
+        height: 360px;
+    }
+
+
+    .info h3 {
+        font-size: 20px;
+    }
+
+
+    .world img {
+        width: 100%;
+        height: 100%;
     }
 }
