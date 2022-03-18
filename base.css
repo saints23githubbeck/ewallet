@@ -1379,7 +1379,21 @@ button {
 #navbarNavAltMarkup > div > a {
     color: var(--purple);
     font-size: 20px;
+}
 
+
+body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > h3 {
+    font-family: 'Shrikhand', sans-serif;
+    font-size: 30.8368px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--purple);
+}
+
+
+
+body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > h3 span {
+    color: var(--lime-green);
 }
 
 .nav-link {
@@ -1397,6 +1411,46 @@ button {
 
 .login-tray .row {
     width: 100%;
+}
+
+
+.text-tray {
+    display: flex;
+}
+
+
+.text-tray .one {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(33, 78, 101, .76);
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+    position: relative;
+}
+
+.text-tray .two {
+    height: 100%;
+    width: 433px;
+    background-color: rgba(239, 221, 57, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
+}
+
+
+.text-tray h3 {
+    position: absolute;
+    bottom: 152px;
+    left: 107px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 136%;
+    letter-spacing: .165em;
+    color: var(--white);
+    z-index: 100;
+    max-width: 50%;
+    text-align: start;
 }
 
 
