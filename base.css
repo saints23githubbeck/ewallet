@@ -1371,17 +1371,21 @@ button {
 }
 
 
-nav {
+.header {
     background-color: var(--white);
-    color: var(--purple);
 }
 
+
+#navbarNavAltMarkup > div > a {
+    color: var(--purple);
+    font-size: 20px;
+
+}
 
 .nav-link {
     font-size: 20px;
     font-weight: 600;
     line-height: 37px;
-    color: var(--purple);
     text-transform: uppercase;
 }
 
@@ -1396,29 +1400,36 @@ nav {
 }
 
 
-.text-tray {
-}
-
-
 .form-tray {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 
 #container {
-    width: 446px;
+    width: 80%;
     height: 364px;
     background: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, .25); */
+}
+
+
+.form-tray h4 {
+    font-size: 45px;
+    line-height: 68p;
+    font-weight: 500;
+    position: absolute;
+    top: 70px;
+    right: 200px;
 }
 
 
 .form-tray input {
     width: 90%;
     margin: 15px auto;
-    height: 50px;
+    height: 60px;
     border: 1px solid #000000;
 }
 
@@ -1442,7 +1453,7 @@ nav {
 .toggle-tray {
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 40px;
 }
 
 
@@ -1460,8 +1471,7 @@ nav {
 }
 
 
-
-/* toggle button css */
+/* toggle button styling */
 
 .switch {
     position: relative;
