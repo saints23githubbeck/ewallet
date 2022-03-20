@@ -1355,14 +1355,15 @@ button {
 /* loginpage */
 
 .login-page {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     background-color: #FFFFFFB2;
     color: var(--purple);
 }
 
 
-.login-tray {
+.login-tray,
+.forgot-password {
     display: flex;
     height: 93vh;
     min-width: 100%;
@@ -1373,6 +1374,10 @@ button {
 
 .header {
     background-color: var(--white);
+}
+
+.navbar {
+    padding: 1rem 2rem;
 }
 
 
@@ -1391,7 +1396,6 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
-
 body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > h3 span {
     color: var(--lime-green);
 }
@@ -1401,6 +1405,17 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     font-weight: 600;
     line-height: 37px;
     text-transform: uppercase;
+    margin-right: 56px;
+}
+
+
+.login-link {
+    background-color: var(--lime-green);
+    /* padding: 5px 6px; */
+}
+
+#navbarNavAltMarkup > div > a.nav-item.nav-link.login-link {
+    padding: 5px 6px;
 }
 
 
@@ -1409,7 +1424,8 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
-.login-tray .row {
+.login-tray .row,
+.forgot-password .row {
     width: 100%;
 }
 
@@ -1431,6 +1447,8 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     height: 100%;
     width: 433px;
     background-color: rgba(239, 221, 57, .5);
+    mix-blend-mode: soft-light;
+    opacity: .5;
     position: absolute;
     top: 0;
     left: 0;
@@ -1441,8 +1459,8 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 .text-tray h3 {
     position: absolute;
-    bottom: 152px;
-    left: 107px;
+    bottom: 100px;
+    left: 80px;
     font-size: 48px;
     font-weight: 600;
     line-height: 136%;
@@ -1462,20 +1480,12 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
-#container {
-    width: 80%;
-    height: 364px;
-    background: var(--white);
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, .25); */
-}
-
-
 .form-tray h4 {
-    font-size: 45px;
-    line-height: 68p;
+    font-size: 35px;
+    line-height: 68px;
     font-weight: 500;
     position: absolute;
-    top: 70px;
+    top: 0;
     right: 200px;
 }
 
@@ -1488,6 +1498,12 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
+.form-tray a {
+    text-align: start;
+    color: var(--purple);
+    text-decoration: none;
+}
+
 .form-tray .btn {
     outline: none;
     border-radius: 20px;
@@ -1496,6 +1512,13 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     width: 60%;
     margin: 0 auto;
     font-weight: 500;
+}
+
+
+#container {
+    width: 80%;
+    height: 364px;
+    background: var(--white);
 }
 
 
@@ -1588,4 +1611,110 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
   }
 
 
+  /* forgot password */
+.forgot-password .btn {
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+
+.forgot-password {
+    text-align: center;
+}
+
+
+.forgot-password #container {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    height: auto;
+}
+
+
+.forgot-password #container h3 {
+    font-size: 45px;
+    line-height: 68px;
+    font-weight: 500;
+    margin-bottom: 73px;
+}
+
+
+
+
+/* login media queries  */
+
+@media  all and(min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media  all and(min-width: 768px) and (max-width: 1024px) {
+
+}
+
+@media  all and(min-width: 480px) and (max-width: 768px) {
+  
+    body > section > div.container.login-tray > div > div.text-tray.col-md-6 > h3 {
+        bottom: 0px;
+        font-size: 33px;
+    }
+
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 {
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (max-width: 768px){
+   
+    body > section > div.container.login-tray > div > div.text-tray.col-md-6 > h3 {
+        bottom: 0px;
+        font-size: 33px;
+    }
+
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 {
+        margin-top: 1rem;
+    }
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    body > section > div.container.login-tray > div > div.text-tray.col-md-6 > h3 {
+        font-size: 30px;
+    }
+
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 > h4 {
+        margin-left: 2rem;
+        font-size: 2em;
+    }
+}
+
+
+@media only screen and (max-width: 555px) {
+    body > section > div.container.login-tray > div > div.text-tray.col-md-6 > h3{
+        font-size: 1.5em;
+    }
+
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 > h4 {
+        font-size: 22px;
+    }
+}
+
+
+@media  only screen and (max-width: 480px){
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 > h4 {
+        font-size: 23px;
+        min-width: 90%;
+    }
+
+    body > section > div.container.login-tray > div > div.form-tray.col-md-6 > div:nth-child(1) > h4 {
+        font-size: 20px;
+        text-align: center;
+    }    
+
+    .wallet-logo-text h3 {
+        font-size: 22px;
+    }
+
+    #container > form > div > div {
+        padding: 0 3px;
+    }
+}
 
