@@ -284,24 +284,10 @@ button {
 
 /* offer section */
 
-/* .ig {
-    position: relative;
-    min-height: 100%;
-    min-width: 100%;
-} */
-
-
 .ig svg path {
     width: 100vw;
     height: 100vh;
 }
-
-/* .layerup {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-} */
 
 
 .offer {
