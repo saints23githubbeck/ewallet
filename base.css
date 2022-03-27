@@ -1718,8 +1718,9 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 
 .side-navbar {
-    width: 337px;
+    /* width: 337px; */
     background-color: var(--alternative-primary);
+    flex: 1;
 }
 
 
@@ -1753,6 +1754,63 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 .tray-links h3 {
     text-transform: capitalize;
     font-size: 14px;
+    letter-spacing: .035em;    
+}
+
+
+.fa-solid {
+    height: 20px;
+    color: antiquewhite;
+}
+
+
+.content-dash {
+    /* width: calc(100%-337px); */
+    flex: 4;
+}
+
+
+.dash-nav {
+    min-width: 100%;
+    min-height: 91px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.dash-nav h2 {
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: var(--purple);
+    margin-left: 99px;
+}
+
+
+.dash-nav .profile {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-pic {
+    width: 59px;
+    height: 59px;
+}
+
+
+.profile-pic img {
+    border-radius: 50px;
+    height: 100%;
+}
+
+.profile h4 {
+    font-weight: 500;
+    font-size: 14px;
     letter-spacing: .035em;
-    
+    color: var(--purple);
+    margin-left: 12px;
 }
