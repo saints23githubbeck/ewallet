@@ -1705,3 +1705,54 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     }
 }
 
+
+
+
+/* admin-dashboard */
+
+.admin-dash {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+
+.side-navbar {
+    width: 337px;
+    background-color: var(--alternative-primary);
+}
+
+
+.tray {
+    padding: 25px 37px;
+    width: 100%;
+}
+
+
+.tray .wallet-logo-text h3 {
+    font-family: 'Shrikhand', sans-serif;
+    color: var(--lime-green);
+    font-size: 30.8368px;
+    line-height: 45px;
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.tray .wallet-logo-text h3 span {
+    color: var(--white);
+    font-weight: 500;   
+}
+
+
+.tray-links {
+    color: var(--white);
+}
+
+
+.tray-links h3 {
+    text-transform: capitalize;
+    font-size: 14px;
+    letter-spacing: .035em;
+    
+}
