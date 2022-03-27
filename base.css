@@ -1721,6 +1721,10 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     /* width: 337px; */
     background-color: var(--alternative-primary);
     flex: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
 }
 
 
@@ -1758,15 +1762,29 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
-.fa-solid {
-    height: 20px;
-    color: antiquewhite;
+.dashboard-links li {
+    list-style: none;
+}
+
+
+.dashboard-links a {
+    color: var(--white);
+    text-decoration: none;
+    transform: all .3s ease;
+}
+
+
+.dashboard-links a:hover {
+    background-color: rgba(196, 196, 196, .4);
+    border-radius: 20px;
+    padding: .2em .4em;
 }
 
 
 .content-dash {
     /* width: calc(100%-337px); */
     flex: 4;
+    margin-left: 290px;
 }
 
 
@@ -1778,6 +1796,7 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 111px;
 }
 
 
@@ -1813,4 +1832,105 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     letter-spacing: .035em;
     color: var(--purple);
     margin-left: 12px;
+    margin-right: 80px;
+}
+
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+
+.top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 69px;
+}
+
+
+.info-tile {
+    height: 141px;
+    width: 267px;
+    border-radius: 20px;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-right: 16px;
+    justify-content: center;
+}
+
+
+.info-tile h3 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: .035em;
+    color: var(--white);
+}
+
+
+.info-tile p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .065em;
+    color: var(--white);
+}
+
+
+.info-tile a {
+    background-color: var(--white);
+    padding: .2em .3em;
+    color: #000000;
+}
+
+
+.info-tile a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+
+.total-user {
+    background-color: #2460a7;
+}
+
+.total-agent {
+    background-color: #f72c10;
+}
+
+.total-merchant {
+    background-color: #ec760a;
+}
+
+
+.pending-ticket {
+    background-color: #b7cad8;
+}
+
+
+.transaction-report {
+    width: 92%;
+    height: 311px;
+    box-shadow: 0px 4px 4px rgba(0,0, 0, .25);
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid rgba(102, 102, 102, .7);
+    margin-top: 35px;
+}
+
+
+.income-tray {
+    width: 100%;
+}
+
+
+.income-graph {
+    width: 474px;
+    height: 299px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 }
