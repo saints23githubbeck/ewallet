@@ -1624,10 +1624,7 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
-
-
 /* login media queries  */
-
 @media  all and(min-width: 1024px) and (max-width: 1280px) {
 
 }
@@ -1707,230 +1704,54 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 
 
-
-/* admin-dashboard */
-
+/* admin-dash */
 .admin-dash {
     width: 100vw;
-    height: 100vh;
     display: flex;
 }
 
 
-.side-navbar {
-    /* width: 337px; */
-    background-color: var(--alternative-primary);
+.sidebar {
     flex: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: var(--alternative-primary);
     height: 100vh;
+    display: flex;
+    justify-content: center;
 }
 
 
-.tray {
-    padding: 25px 37px;
-    width: 100%;
-}
-
-
-.tray .wallet-logo-text h3 {
-    font-family: 'Shrikhand', sans-serif;
-    color: var(--lime-green);
-    font-size: 30.8368px;
-    line-height: 45px;
-    font-style: italic;
-    font-weight: 400;
-}
-
-
-.tray .wallet-logo-text h3 span {
-    color: var(--white);
-    font-weight: 500;   
-}
-
-
-.tray-links {
-    color: var(--white);
-}
-
-
-.tray-links h3 {
-    text-transform: capitalize;
-    font-size: 14px;
-    letter-spacing: .035em;    
-}
-
-
-.dashboard-links li {
-    list-style: none;
-}
-
-
-.dashboard-links a {
-    color: var(--white);
-    text-decoration: none;
-    transform: all .3s ease;
-}
-
-
-.dashboard-links a:hover {
-    background-color: rgba(196, 196, 196, .4);
-    border-radius: 20px;
-    padding: .2em .4em;
-}
-
-
-.content-dash {
-    /* width: calc(100%-337px); */
+.main {
     flex: 4;
-    margin-left: 290px;
+    padding: 0;
 }
 
 
-.dash-nav {
+.main .row {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
+.main .row nav {
+    display: flex;
+    justify-content: center;
     min-width: 100%;
-    min-height: 91px;
-    background-color: var(--white);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding-right: 111px;
-}
-
-
-.dash-nav h2 {
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 54px;
-    color: var(--purple);
-    margin-left: 99px;
-}
-
-
-.dash-nav .profile {
-    display: flex;
-    align-items: center;
-}
-
-
-.profile-pic {
-    width: 59px;
-    height: 59px;
-}
-
-
-.profile-pic img {
-    border-radius: 50px;
-    height: 100%;
-}
-
-.profile h4 {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: .035em;
-    color: var(--purple);
-    margin-left: 12px;
-    margin-right: 80px;
-}
-
-
-.dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 1rem;
-}
-
-
-.top-bar {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 69px;
-}
-
-
-.info-tile {
-    height: 141px;
-    width: 267px;
-    border-radius: 20px;
-    align-items: end;
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    padding-right: 16px;
-    justify-content: center;
-}
-
-
-.info-tile h3 {
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: .035em;
-    color: var(--white);
-}
-
-
-.info-tile p {
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: .065em;
-    color: var(--white);
-}
-
-
-.info-tile a {
-    background-color: var(--white);
-    padding: .2em .3em;
-    color: #000000;
-}
-
-
-.info-tile a:hover {
-    text-decoration: none;
-    color: black;
-}
-
-
-.total-user {
-    background-color: #2460a7;
-}
-
-.total-agent {
-    background-color: #f72c10;
-}
-
-.total-merchant {
-    background-color: #ec760a;
-}
-
-
-.pending-ticket {
-    background-color: #b7cad8;
-}
-
-
-.transaction-report {
-    width: 92%;
-    height: 311px;
-    box-shadow: 0px 4px 4px rgba(0,0, 0, .25);
-    border-radius: 20px;
-    margin: 0 auto;
-    border: 1px solid rgba(102, 102, 102, .7);
-    margin-top: 35px;
-}
-
-
-.income-tray {
-    width: 100%;
-}
-
-
-.income-graph {
-    width: 474px;
-    height: 299px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
 }
+
+
+.profile-details {
+    display: flex;
+}
+
+.page-name,
+.name-tray,
+.dropdown-case {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
