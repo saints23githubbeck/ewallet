@@ -1883,7 +1883,8 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 }
 
 
-.info-tile a {
+.info-tile a,
+.currency-tile a {
     padding: .2em .3em;
     color: black;
     background-color: var(--white);
@@ -1911,6 +1912,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     background-color: #b7cad8;
 }
 
+
 .transaction-report {
     margin-top: 45px;
     width: 100%;
@@ -1926,6 +1928,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     display: flex;
     margin-top: 38px;
 }
+
 
 .income-graph {
     width: 474px;
@@ -1982,4 +1985,63 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     background-color: var(--white);
     color: black;
     box-shadow: 0px 4px 4px rgba(0,0, 0, .25);
+}
+
+
+.currency {
+    width: 100%;
+    margin-top: 45px;
+    margin-bottom: 110px;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+
+.currency-tile {
+    width: 349px;
+    height: 141px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--white);
+    padding-right: 36px;
+}
+
+
+.currency-tile h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.currency-tile p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.currency-tile svg {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1;
+    color: white;
+    mix-blend-mode: soft-light;
+}
+
+
+.left {
+    background-color: #2e2a53;
+}
+
+
+.middle {
+    background-color: #1e9f9f;
+}
+
+
+.right {
+    background-color: #2e2a53;
 }
