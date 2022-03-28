@@ -1706,23 +1706,24 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 /* admin-dash */
 .admin-dash {
-    width: 100vw;
+    min-width: 100vw;
     display: flex;
 }
 
 
 .sidebar {
-    flex: 1;
+    /* flex: 1; */
+    width: 337px;
     background-color: var(--alternative-primary);
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: auto;    
+    padding: 25px 50px;
 }
 
 
 .main {
-    flex: 4;
     padding: 0;
+    min-width: calc(100vw - 337px);
+    /* margin: 0; */
 }
 
 
@@ -1739,6 +1740,9 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     min-width: 100%;
     justify-content: space-between;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 0 80px;
+    height: 91px;
+    color: var(--purple);
 }
 
 
@@ -1746,8 +1750,10 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     display: flex;
 }
 
+
 .page-name,
 .name-tray,
+.admin-pic,
 .dropdown-case {
     display: flex;
     justify-content: center;
@@ -1755,3 +1761,225 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 }
 
 
+.admin-pic img {
+    border-radius: 50px;
+    height: 59px;
+    width: 59px;
+}
+
+
+.name-tray {
+    margin-left: 12px;
+    margin-right: 80px;
+}
+
+
+.dropdown-case {
+    margin-right: 2rem;
+}
+
+
+body > section > div.main.container > div > nav > div.profile-details > div.dropdown-case > div > div {
+    left: -60px;
+}
+
+
+.wallet-logo-text h3 {
+    font-family: 'Shrikhand', sans-serif;
+    color: var(--white);
+    line-height: 45px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+.e-wallet-logo h3 span {
+    color: var(--lime-green);
+}
+
+
+.tray-links {
+    color: var(--white);
+    margin-top: 60px;
+}
+
+
+.tray-links h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.dashboard-links li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+.dashboard-links li a {
+    text-decoration: none;
+    color: var(--white);
+    transition: .3s ease all;
+}
+
+
+.dashboard-links li a:hover {
+    background-color: rgba(196, 196, 196, .4);
+    border-radius: 20px;
+    padding: .2em .5em;
+}
+
+
+.dropdown-menu {
+    /* background-color: var(--alternative-primary); */
+}
+
+
+.dropdown-item {
+    border: none;
+}
+
+
+#navbarDropdown {
+    text-transform: capitalize;
+}
+
+#navbarDropdown:hover {
+    background-color: var(--alternative-primary);
+} 
+
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 0 60px;
+}
+
+
+.info-tile {
+    width: 267px;
+    height: 141px;
+    border-radius: 20px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 15px;
+    color: var(--white);
+}
+
+
+.info-tile h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.info-tile p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.info-tile a {
+    padding: .2em .3em;
+    color: black;
+    background-color: var(--white);
+}
+
+
+.info-tile a:hover {
+    text-decoration: none;
+}
+
+
+.total-user {
+    background-color: #2460a7;
+}
+
+.total-agent {
+    background-color:#f72c10 ;
+}
+
+.total-merchant {
+    background-color: #ec760a;
+}
+
+.pending-ticket {
+    background-color: #b7cad8;
+}
+
+.transaction-report {
+    margin-top: 45px;
+    width: 100%;
+    margin: 45px 60px 0 60px;
+    height: 311px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(102, 102, 102, .7);
+}
+
+
+.income-tray {
+    display: flex;
+    margin-top: 38px;
+}
+
+.income-graph {
+    width: 474px;
+    height: 299px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    border-radius: 20px;
+}
+
+
+.income-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.income-tile {
+    height: 141px;
+    width: 260px;
+    border-radius: 20px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+
+.income-tile h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.income-tile p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.total-money {
+    background-color: #f72c10;   
+}
+
+
+.total-withdrawals {
+    background-color: #ec760a;
+}
+
+
+.pending-withdrawals,
+.pending-money {
+    margin-top: 17px;
+    background-color: var(--white);
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0,0, 0, .25);
+}
