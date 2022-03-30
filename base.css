@@ -2830,6 +2830,59 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 
 
+/* merchant dashboard stylings */
+/* .merchant-dash {
+
+} */
+
+.wallet {
+    width: 100%;
+    margin: 54px 0;
+   
+}
+
+
+.wallet .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.wallet-card {
+    height: 169px;
+    background-color: #71caf8;
+    position: relative;
+}
+
+
+.wallet-card #svg-bg {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+}
+
+
+
+.wallet-card #svg-wallet {
+    position: relative;
+    top: 33px;
+    left: 27px;
+}
+
+
+.wallet-card p {
+    margin-top: 50px;
+    margin-left: 27px;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+
 
 
 
