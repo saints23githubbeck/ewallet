@@ -718,7 +718,6 @@ button {
 }
 
 
-
 /* media queries */
 
 @media only screen and (max-width: 1388px ) {  
@@ -1398,7 +1397,6 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 .login-link {
     background-color: var(--lime-green);
-    /* padding: 5px 6px; */
 }
 
 #navbarNavAltMarkup > div > a.nav-item.nav-link.login-link {
@@ -1429,6 +1427,7 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     clip-path: polygon(0 0, 60% 0, 100% 100%, 0% 100%);
     position: relative;
 }
+
 
 .text-tray .two {
     height: 100%;
@@ -1491,6 +1490,7 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     text-decoration: none;
 }
 
+
 .form-tray .btn {
     outline: none;
     border-radius: 20px;
@@ -1544,12 +1544,14 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     height: 34px;
   }
   
+
   .switch input { 
     opacity: 0;
     width: 0;
     height: 0;
   }
   
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -1645,6 +1647,7 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     }
 }
 
+
 @media only screen and (max-width: 768px){
    
     body > section > div.container.login-tray > div > div.text-tray.col-md-6 > h3 {
@@ -1712,7 +1715,6 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
 
 
 .sidebar {
-    /* flex: 1; */
     width: 337px;
     background-color: var(--alternative-primary);
     height: auto;    
@@ -1850,6 +1852,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     text-transform: capitalize;
 }
 
+
 #navbarDropdown:hover {
     background-color: var(--alternative-primary);
 } 
@@ -1882,6 +1885,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     font-weight: 500;
 }
 
+
 .info-tile p {
     font-size: 14px;
     font-weight: 400;
@@ -1905,13 +1909,16 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     background-color: #2460a7;
 }
 
+
 .total-agent {
     background-color:#f72c10 ;
 }
 
+
 .total-merchant {
     background-color: #ec760a;
 }
+
 
 .pending-ticket {
     background-color: #b7cad8;
@@ -2059,9 +2066,6 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 /* mobile media query */
 @media screen and (max-width: 480px) {
-    .admin-dash {
-
-    }
 
     .sidebar {
        width: 180px; 
@@ -2670,7 +2674,6 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     .main {
         margin: 0;
         min-width: calc(100vw - 320px);
-
     }
     
 
@@ -2713,9 +2716,9 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     .info-tile {
         width: 280px;
         height: 100px;
-        margin-bottom: 10px;
+        margin-top: 15px;
     }
-
+    
 
     .info-tile h3 {
         font-size: 14px;
