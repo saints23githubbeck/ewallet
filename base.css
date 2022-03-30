@@ -2413,6 +2413,416 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 }
 
 
+/* small screens and laptops */
+
+@media screen and (max-width: 1028px) {
+    .admin-dash {
+        min-width: 100vw;
+    }
+
+    .sidebar {
+       width: 250px; 
+       padding: 10px 20px;
+    }
+
+
+    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
+        width: 30px;
+        height: auto;
+    }
+
+
+    .wallet-logo-text h3 {
+        font-size: .9rem;
+        margin-left: 5px;
+    }
+
+
+    body > section > div.main.container > div > nav > div.page-name > h2 {
+        font-size: 10px;
+    }
+
+
+    .tray-links h3 {
+        font-size: .8rem;
+    }
+
+
+    .dashboard-links li a {
+        font-size: .7rem;
+    }
+
+
+    .main {
+        margin: 0;
+        min-width: calc(100vw - 250px);
+
+    }
+    
+
+    .main .row nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: 60px;
+    }
+
+
+    body > section > div.main.container > div > nav > div.page-name > h2 {
+        font-size: 20px;
+    }
+
+
+    .admin-pic img {
+        width: 40px;
+        height: auto;
+    }
+
+
+    .name-tray {
+        margin-right: 30px;
+    }
+
+
+    .name-tray a {
+        font-size: small;
+    }
+
+
+    .top-bar {
+        padding: 0 50px;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+
+    .info-tile {
+        width: 280px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+
+    .info-tile h3 {
+        font-size: 14px;
+    }
+
+
+    .info-tile p {
+        font-size: 12px;
+        margin-bottom: .3rem;
+    }
+
+
+    .info-tile a {
+        padding: .1em .2em;
+        font-size: 12px;
+    }
+
+
+    .transaction-report {
+        margin: 10px auto;
+        width: 80%;
+        height: 250px;
+    }
+
+
+    .income-tray {
+        margin-top: 1rem;
+        width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .income-tray .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .income-graph {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .income-tiles {
+        margin-top: 10px;
+        padding: 0 5px;
+    }
+
+
+    .income-tile {
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+
+    .income-tile h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .income-tile p {
+        font-size: 12px;
+    }
+
+
+    .currency {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 40px;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+
+    .currency-tile {
+        height: 100px;
+        margin-bottom: 10px;
+        width: 200px;
+    }
+
+
+    .currency-tile svg {
+        width: 30px;
+        height: auto;
+    }
+
+
+    .currency-tile h2 {
+        font-size: 20px;
+    }
+
+
+    .currency-tile p {
+        font-size: 13px;
+        margin-bottom: .3rem;
+    }
+
+
+    .currency-tile a {
+        padding: .1em .2em;
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* desktops and large screens */
+
+@media screen and (max-width: 1200px) {
+    .admin-dash {
+        min-width: 100vw;
+    }
+
+    .sidebar {
+       width: 320px; 
+       padding: 10px 20px;
+    }
+
+
+    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
+        width: 30px;
+        height: auto;
+    }
+
+
+    .wallet-logo-text h3 {
+        font-size: .9rem;
+        margin-left: 5px;
+    }
+
+
+    body > section > div.main.container > div > nav > div.page-name > h2 {
+        font-size: 10px;
+    }
+
+
+    .tray-links h3 {
+        font-size: .8rem;
+    }
+
+
+    .dashboard-links li a {
+        font-size: .7rem;
+    }
+
+
+    .main {
+        margin: 0;
+        min-width: calc(100vw - 320px);
+
+    }
+    
+
+    .main .row nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px;
+        height: 60px;
+    }
+
+
+    body > section > div.main.container > div > nav > div.page-name > h2 {
+        font-size: 20px;
+    }
+
+
+    .admin-pic img {
+        width: 40px;
+        height: auto;
+    }
+
+
+    .name-tray {
+        margin-right: 30px;
+    }
+
+
+    .name-tray a {
+        font-size: small;
+    }
+
+
+    .top-bar {
+        padding: 0 50px;
+        margin-top: 10px;
+        justify-content: space-around;
+    }
+
+
+    .info-tile {
+        width: 280px;
+        height: 100px;
+        margin-bottom: 10px;
+    }
+
+
+    .info-tile h3 {
+        font-size: 14px;
+    }
+
+
+    .info-tile p {
+        font-size: 12px;
+        margin-bottom: .3rem;
+    }
+
+
+    .info-tile a {
+        padding: .1em .2em;
+        font-size: 12px;
+    }
+
+
+    .transaction-report {
+        margin: 10px auto;
+        width: 80%;
+        height: 250px;
+    }
+
+
+    .income-tray {
+        margin-top: 1rem;
+        width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+
+    .income-tray .row {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .income-graph {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+
+    .income-tiles {
+        margin-top: 10px;
+        padding: 0 5px;
+    }
+
+
+    .income-tile {
+        margin-bottom: 10px;
+        width: 150px;
+    }
+
+
+    .income-tile h2 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+
+    .income-tile p {
+        font-size: 12px;
+    }
+
+
+    .currency {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 40px;
+        margin-top: 20px;
+        justify-content: space-between;
+    }
+
+
+    .currency-tile {
+        height: 100px;
+        margin-bottom: 10px;
+        width: 280px;
+    }
+
+
+    .currency-tile svg {
+        width: 30px;
+        height: auto;
+    }
+
+
+    .currency-tile h2 {
+        font-size: 20px;
+    }
+
+
+    .currency-tile p {
+        font-size: 13px;
+        margin-bottom: .3rem;
+    }
+
+
+    .currency-tile a {
+        padding: .1em .2em;
+        font-size: 12px;
+    }
+}
 
 
 
