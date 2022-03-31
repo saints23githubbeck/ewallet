@@ -3018,6 +3018,33 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 }
 
 
+.transaction-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.transaction-icon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 44px;
+    border-radius: 50%;
+    background-color: rgba(60, 250, 29, 0.35);;
+
+}
+
+
+.transaction-icon svg {
+    /* background-color: rgba(60, 250, 29, 0.35);; */
+
+}
+
+
 .additional-text,
 .balance-container,
 .text-container {
