@@ -1825,6 +1825,11 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 }
 
 
+.dashboard-links li svg {
+    margin-right: 5px;
+}
+
+
 .dashboard-links li a:hover {
     background-color: rgba(196, 196, 196, .4);
     border-radius: 20px;
@@ -2831,22 +2836,31 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 
 /* merchant dashboard stylings */
-/* .merchant-dash {
+.merchant-dash .main {
+    max-width: calc(100vw - 337px);
+    background-color: #e5e5e5;
+}
 
-} */
 
-.wallet {
+.merchant-dash nav,
+.monthly-report-graph,
+.total-money-tile {
+    background-color: var(--white);
+}
+
+
+
+.wallet .container {
     width: 100%;
-    margin: 54px 0;
-   
+    margin: 54px 0;   
 }
 
 
 .wallet .row {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -2860,11 +2874,10 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 .wallet-card #svg-bg {
     position: absolute;
-    bottom: -10px;
+    bottom: 0;
     left: 0;
     width: 100%;
 }
-
 
 
 .wallet-card #svg-wallet {
@@ -2879,6 +2892,150 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     margin-left: 27px;
     font-size: 25px;
     font-weight: 300;
+}
+
+
+.report .container {
+    margin: 30px 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+body > section > div.main.container > div > div.report.container.mt-5 > div > div.graph.col-md-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.monthly-report-graph {
+    width: 100%;
+    height: 463px;
+    border: 1px solid rgba(102, 102, 102, 0.7);
+    box-shadow: 0px 4px 4px rgba(0,  0, 0, .25);
+}
+
+
+.report-tiles {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+
+.report-top-tile,
+.report-bottom-tile {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.tile-container {
+    display: flex;
+}
+
+
+.report-bottom-tile {
+    margin-top: 30px;
+}
+
+
+.insight-tile {
+    width: 288px;
+    height: 210px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    margin-right: 20px;
+    padding: 5px 20px;
+}
+
+
+.insight-tile h3 {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.income-tile p {
+    font-size: 15px;
+}
+
+
+.total-money-tile {
+    margin-right: 20px;
+    padding: 5px 20px;
+    width: 288px;
+    height: 141px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
+}
+
+
+.total-money-tile p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.total-money-tile h3 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.latest-transaction {
+    width: 100%;
+    height: 326px;
+    margin: 20px 60px;
+    border: 1px solid rgba(102, 102, 102, .7);
+}
+
+
+.latest-transaction-container {
+    border: 1px solid #666666;
+    margin: 0px 40px;
+
+}
+
+
+.transaction-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    border: 1px solid rgba(102, 102, 102, .7);
+
+}
+
+
+.transaction-row .text-container h3 {
+    font-size: 18px;
+    color: rgba(0,  0, 0, .8);
+    font-weight: 500;
+}
+
+
+.transaction-row .text-container p {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+.additional-text,
+.balance-container,
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.text-container {
+    align-items: start;
+}
+
+
+.balance-container h3 {
+    font-size: 18px;
+    font-weight: 600;
 }
 
 
