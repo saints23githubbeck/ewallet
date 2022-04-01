@@ -3249,11 +3249,53 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
     font-size: 36px;
     font-weight: 400;
     color: var(--alternative-primary);
+    margin-top: 65px;
 }
 
 
 #validationCustomUsername {
     border-radius: 0;
+}
+
+
+.form-wrapper {
+    border: 1px solid  #E6DF44;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.form-header {
+    background-color: #E6DF44;
+    border-radius: 10px 10px 0 0;
+    padding: 29px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.form-header h3 {
+    font-size: 25px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0;
+
+}
+
+
+.form-content {
+    margin: 0 15px;
+    padding: 30px 0;
+}
+
+
+.update-btn button {
+    width: 100%;
+    background-color: #E6DF44;
+    height: 37px;
+    border: none;
+    outline: none;
+    margin-top: 37px;
 }
 
 
