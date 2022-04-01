@@ -3039,11 +3039,6 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 }
 
 
-.transaction-icon svg {
-    /* background-color: rgba(60, 250, 29, 0.35);; */
-
-}
-
 
 .additional-text,
 .balance-container,
@@ -3065,6 +3060,186 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
     font-weight: 600;
 }
 
+
+/* merchant-dash media queries */
+/* mobile devices */
+
+@media screen and (max-width: 480px ) {
+    .merchant-dash .sidebar {
+        width: 180px;
+    }
+
+
+    .merchant-dash .main {
+        width: calc(100vw - 180px);
+    }
+
+
+    .page-name h2 {
+        font-size: 12px;
+    }
+
+
+    .merchant-dash .main .row {
+        width: calc(100vw - 180px);
+        background-color: #e5e5e5;
+    } 
+   
+
+    body > section > div.main.container > div > div.wallet.container.mt-4 {
+        padding-left: 0;
+    }
+
+
+    .wallet-card {
+        margin: 10px;
+    }
+
+
+    body > section > div.main.container > div > div.report.container.mt-5 {
+        padding-left: 0;
+    }
+
+
+    .report-tiles {
+        margin-top: 15px;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 {
+        margin: 10px 0;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div {
+        margin: 0;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div > div > div.transaction-icon > div {
+        margin-left: 2px;
+    }
+
+
+    .latest-transaction-top h3 {
+        font-size: 18px;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom {
+        height: auto;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div {
+        height: auto;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div > div .text-container h3 {
+        font-size: 12px;
+    }
+
+
+    .additional-text p {
+        font-size: 12px;
+    }
+
+
+    .balance-container h3 {
+        font-size: 14px;
+    }
+}
+
+
+/* small screens and laptops */
+@media screen and (max-width: 768px ) {
+    .merchant-dash .sidebar {
+        width: 180px;
+    }
+
+
+    .merchant-dash .main {
+        width: calc(100vw - 180px);
+        
+    }
+
+
+    .page-name h2 {
+        font-size: 12px;
+    }
+
+
+    .merchant-dash .main .row {
+        width: calc(100vw - 180px);
+        background-color: #e5e5e5;
+    } 
+   
+
+    body > section > div.main.container > div > div.wallet.container.mt-4 {
+        padding-left: 0;
+    }
+
+
+    .wallet-card {
+        margin: 10px;
+    }
+
+
+    body > section > div.main.container > div > div.report.container.mt-5 {
+        padding-left: 0;
+    }
+
+
+    .report-tiles {
+        margin-top: 15px;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 {
+        margin: 10px 0;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div {
+        margin: 0;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div > div > div.transaction-icon > div {
+        margin-left: 2px;
+    }
+
+
+    .latest-transaction-top h3 {
+        font-size: 18px;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom {
+        height: auto;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div {
+        height: auto;
+    }
+
+
+    body > section > div.main.container > div > div.latest-transaction.my-5 > div.latest-transaction-bottom > div > div .text-container h3 {
+        font-size: 12px;
+    }
+
+
+    .additional-text p {
+        font-size: 12px;
+    }
+
+
+    .balance-container h3 {
+        font-size: 14px;
+    }
+}
 
 
 
