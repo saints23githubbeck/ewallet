@@ -3244,5 +3244,22 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 
 
 
+/* transaction charges */
+.content-header h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--alternative-primary);
+}
+
+
+#validationCustomUsername {
+    border-radius: 0;
+}
+
+
+
+
+
+
 
 
