@@ -3258,9 +3258,15 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 }
 
 
+.transaction-forms {
+    margin-left: 0;
+}
+
+
 .form-wrapper {
     border: 1px solid  #E6DF44;
     border-radius: 10px 10px 0 0;
+    background-color: var(--white);
 }
 
 
@@ -3270,7 +3276,8 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
     padding: 29px 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
+    padding-left: 10px;
 }
 
 
@@ -3279,12 +3286,12 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
     color: black;
     font-weight: 400;
     margin-bottom: 0;
-
+    box-shadow: none;
 }
 
 
 .form-content {
-    margin: 0 15px;
+    margin: 0 20px;
     padding: 30px 0;
 }
 
@@ -3297,6 +3304,29 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
     outline: none;
     margin-top: 37px;
 }
+
+
+.invoice-section .row {
+    width: 100%;
+}
+
+
+body > section > div.main.container > div > div.invoice-section.container.mt-3 > div {
+    width: 100%;
+    margin: 0 20px;
+}
+
+
+.invoice-section {
+    margin-top: 25px;
+}
+
+
+.money-exchange {
+    margin-top: 25px;
+}
+
+
 
 
 
