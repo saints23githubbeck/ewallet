@@ -3331,6 +3331,87 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
+@media screen and (max-width: 480px ) {
+    .sidebar {
+        width: 160px;
+        padding: 10px;
+    }
+
+
+    body > section > div.main.container > div > div.content.container > div.content-header > h3 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+
+    body > section > div.main.container > div > div.content.container {
+        padding: 0 5px;
+    }
+
+
+    body > section > div.main.container > div > div.content.container > div.transaction-forms.container {
+        padding: 0;
+    }
+
+
+    body > section > div.main.container > div > div.content.container > div.transaction-forms.container > div > div.left-form.col-md-6,
+    body > section > div.main.container > div > div.content.container > div.transaction-forms.container > div > div.right-form.col-md-6 {
+        padding: 0;
+    }
+
+
+    .transaction-section .right-form {
+        margin-top: 25px;
+    }
+
+
+    .form-header {
+        padding: 15px 10px;
+    }
+
+
+    .form-header h3 {
+        font-size: 16px;
+    }
+
+
+    .transaction-section .main {
+        width: calc(100vw - 160px);
+    }
+
+
+    body > section > div.main.container > div > div.invoice-section.container.mt-3,
+    body > section > div.main.container > div > div.invoice-section.container.mt-3 > div > div.invoice-section.col-md-6 {
+        padding: 0;
+    }
+
+
+    body > section > div.main.container > div > div.invoice-section.container.mt-3 {
+        padding: 0 5px;
+    }
+
+
+    body > section > div.main.container > div > div.invoice-section.container.mt-3 > div > div.money-exchange.col-md-6 {
+        padding: 0;
+    }
+
+
+    .invoice-section,
+    .payment-section ,
+    .money-mov-section {
+        padding: 0 5px;
+    }
+
+
+    .transaction-section .col-md-6 {
+        padding: 0;
+    }
+
+
+    .
+}
+
+
 
 
 
