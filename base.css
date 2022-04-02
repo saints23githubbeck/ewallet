@@ -3406,13 +3406,38 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
     .transaction-section .col-md-6 {
         padding: 0;
     }
-
-
-    .
+    
 }
 
 
 
+/* manage-currency section styling */
+
+.top a {
+    background-color: #E6DF44;
+    padding: .2em .3em;
+    border-radius: 5px;
+}
+
+
+.header-controls .right-pane {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.search-container button {
+    outline: none;
+    border: none;
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer
+}
 
 
 
