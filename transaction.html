@@ -456,10 +456,10 @@
                               <div class="form-content">
                                   <form action="">
                                       <div>
-                                          <label for="validationCustomUsername">Percentage Charge *</label>
+                                          <label for="validationCustomUsername">Maximum Amount *</label>
                                           <div class="input-group">
                                             
-                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="1" aria-describedby="inputGroupPrepend" required>
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="1000" aria-describedby="inputGroupPrepend" required>
                                             <div class="input-group-prepend">
                                               <span class="input-group-text" id="inputGroupPrepend">%</span>
                                             </div>
@@ -467,7 +467,18 @@
                                       </div>
   
                                       <div>
-                                          <label for="validationCustomUsername">Fixed Charged</label>
+                                          <label for="validationCustomUsername">Minimum Amount</label>
+                                          <div class="input-group">
+                                            
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="50" aria-describedby="inputGroupPrepend" required>
+                                            <div class="input-group-prepend">
+                                              <span class="input-group-text" id="inputGroupPrepend">NGN</span>
+                                            </div>
+                                          </div>
+                                      </div>
+  
+                                      <div>
+                                          <label for="validationCustomUsername">Agent Commision (fixed)*</label>
                                           <div class="input-group">
                                             
                                             <input type="text" class="form-control" id="validationCustomUsername" placeholder="2" aria-describedby="inputGroupPrepend" required>
@@ -478,10 +489,10 @@
                                       </div>
   
                                       <div>
-                                          <label for="validationCustomUsername">Minimum Amount *</label>
+                                          <label for="validationCustomUsername">Agent Commision (%)</label>
                                           <div class="input-group">
                                             
-                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="10" aria-describedby="inputGroupPrepend" required>
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="2" aria-describedby="inputGroupPrepend" required>
                                             <div class="input-group-prepend">
                                               <span class="input-group-text" id="inputGroupPrepend">NGN</span>
                                             </div>
@@ -489,10 +500,10 @@
                                       </div>
   
                                       <div>
-                                          <label for="validationCustomUsername">Maximum Amount *</label>
+                                          <label for="validationCustomUsername">Daily Money In Limit *</label>
                                           <div class="input-group">
                                             
-                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="1000" aria-describedby="inputGroupPrepend" required>
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="5000" aria-describedby="inputGroupPrepend" required>
                                             <div class="input-group-prepend">
                                               <span class="input-group-text" id="inputGroupPrepend">NGN</span>
                                             </div>
@@ -500,21 +511,10 @@
                                       </div>
   
                                       <div>
-                                          <label for="validationCustomUsername">Daily Transfer Limit *</label>
+                                          <label for="validationCustomUsername">Monthly Money In Limit*</label>
                                           <div class="input-group">
                                             
-                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="1" aria-describedby="inputGroupPrepend" required>
-                                            <div class="input-group-prepend">
-                                              <span class="input-group-text" id="inputGroupPrepend">NGN</span>
-                                            </div>
-                                          </div>
-                                      </div>
-  
-                                      <div>
-                                          <label for="validationCustomUsername">Maximum Charge Cap *</label>
-                                          <div class="input-group">
-                                            
-                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="10" aria-describedby="inputGroupPrepend" required>
+                                            <input type="text" class="form-control" id="validationCustomUsername" placeholder="20000" aria-describedby="inputGroupPrepend" required>
                                             <div class="input-group-prepend">
                                               <span class="input-group-text" id="inputGroupPrepend">NGN</span>
                                             </div>
@@ -529,6 +529,108 @@
                           </div>
                       </div>
                   </div>
+
+              </div>
+
+
+              <div class="payment-section container mt-3">
+                <div class="row">
+                  <div class="invoice-section col-md-6">
+                    <div class="form-wrapper">
+                      <div class="form-header">
+                          <h3>Api Payment Charges</h3>
+                      </div>
+                      <div class="form-content">
+                          <form action="">
+                              <div>
+                                  <label for="validationCustomUsername">Percentage Charge *</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="1" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">%</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <label for="validationCustomUsername">Fixed Charges</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="2" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">NGN</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <label for="validationCustomUsername">Maximum Charge Cap *</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="1" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">NGN</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div class="update-btn">
+                                  <button>update</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  </div>
+
+                  <div class="money-exchange col-md-6">
+                    <div class="form-wrapper">
+                      <div class="form-header">
+                          <h3>Make Payment Charges</h3>
+                      </div>
+                      <div class="form-content">
+                          <form action="">
+                              <div>
+                                  <label for="validationCustomUsername">User Percentage Charge *</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="1" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">%</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <label for="validationCustomUsername">Merchant Percent Charge</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="2" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">%</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div>
+                                  <label for="validationCustomUsername">Merchant Fixed Charge *</label>
+                                  <div class="input-group">
+                                    
+                                    <input type="text" class="form-control" id="validationCustomUsername" placeholder="10" aria-describedby="inputGroupPrepend" required>
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="inputGroupPrepend">NGN</span>
+                                    </div>
+                                  </div>
+                              </div>
+
+                              <div class="update-btn">
+                                  <button>update</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div>
+                  </div>
+                </div>
 
               </div>
 

@@ -3265,7 +3265,7 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 
 .form-wrapper {
     border: 1px solid  #E6DF44;
-    border-radius: 10px 10px 0 0;
+    border-radius: 10px;
     background-color: var(--white);
 }
 
@@ -3313,7 +3313,6 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 
 body > section > div.main.container > div > div.invoice-section.container.mt-3 > div {
     width: 100%;
-    margin: 0 20px;
 }
 
 
@@ -3326,6 +3325,10 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
     margin-top: 25px;
 }
 
+
+.payment-section {
+    margin-bottom: 120px;
+}
 
 
 
