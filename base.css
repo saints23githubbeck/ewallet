@@ -3417,6 +3417,13 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
     background-color: #E6DF44;
     padding: .2em .3em;
     border-radius: 5px;
+    color: black;
+}
+
+
+.top a:hover,
+.top a:active {
+    text-decoration: none;
 }
 
 
@@ -3426,18 +3433,54 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
+
 .search-container button {
     outline: none;
     border: none;
-    float: right;
-    padding: 6px 10px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer
+    margin-left: 0;
+    height: 100%;
+    width: auto;
+    background-color: #E6DF44;
 }
+
+
+.header-controls .left-pane {
+    display: flex;
+    align-items: center;
+}
+
+
+.header-controls .right-pane {
+    display: flex;
+    justify-content: end;
+}
+
+
+.manage-content {
+    margin-top: 90px;
+}
+
+
+.table thead th {
+    background-color: var(--lime-green);
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+tbody {
+    background-color: rgba(196, 196, 196, .3);
+}
+
+
+.status .active {
+    background-color: rgba(60, 250, 29, .35);
+    border-radius: 20px;
+    padding: .2em .3em;
+}
+
+
+
 
 
 
