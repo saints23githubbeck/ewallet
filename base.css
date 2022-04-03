@@ -3433,7 +3433,6 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
-
 .search-container button {
     outline: none;
     border: none;
@@ -3478,6 +3477,23 @@ body > section > div.main.container > div > div.manage-content.container > table
 }
 
 
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > th {
+    font-size: 15px;
+    font-weight: 600;
+    padding-left: 5rem;
+}
+
+
+body > section > div.main.container > div > div.manage-content.container > table > thead > tr > th:nth-child(1) {
+    padding-left: 5rem;
+}
+
+
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > th small {
+    color: grey;
+}
+
+
 table .fiat {
     color: #1e9f9f;
     font-weight: 600;
@@ -3513,14 +3529,12 @@ tbody td .svg-holder {
 }
 
 
-
 body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > .active > small  {
     background-color: rgba(60, 250, 29, .35);
     border-radius: 20px;
     padding: .4em .6em;  
     color: rgba(102, 102, 102, .7);
 }
-
 
 
 body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > td.inactive small {
