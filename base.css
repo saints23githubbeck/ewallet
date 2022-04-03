@@ -3513,11 +3513,22 @@ tbody td .svg-holder {
 }
 
 
- /* tbody td small {   
-    background-color: red;
-    color: grey;
-} */
 
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > .active > small  {
+    background-color: rgba(60, 250, 29, .35);
+    border-radius: 20px;
+    padding: .4em .6em;  
+    color: rgba(102, 102, 102, .7);
+}
+
+
+
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > td.inactive small {
+    background-color: rgba(239, 152, 152, .35);
+    border-radius: 20px;
+    padding: .4em .6em;  
+    color: rgba(102, 102, 102, .7);
+}
 
 
 
