@@ -3473,11 +3473,53 @@ tbody {
 }
 
 
-.status .active {
-    background-color: rgba(60, 250, 29, .35);
-    border-radius: 20px;
-    padding: .2em .3em;
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > th {
+    font-weight: 400;
 }
+
+
+table .fiat {
+    color: #1e9f9f;
+    font-weight: 600;
+}
+
+
+table .crypto {
+    color: #ec760a;
+    font-weight: 600;
+}
+
+
+table .fiat small,
+table .crypto small {
+    color: grey;
+}
+
+
+body > section > div.main.container > div > div.manage-content.container > table > tbody > tr > td:nth-child(2) {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+tbody td .svg-holder {
+    background-color: var(--lime-green);
+    width: 41px;
+    height: 33px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+ /* tbody td small {   
+    background-color: red;
+    color: grey;
+} */
+
+
+
 
 
 
