@@ -3433,6 +3433,81 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
+.modal-content {
+    border-radius: 0;
+}
+
+
+.header-controls .right-pane .top {
+    display: flex;
+    justify-content: end;
+}
+
+
+#exampleModalCenter > div > div {
+    width: 500px;
+}
+
+
+.currency-api .modal-header {
+    background-color: var(--alternative-primary);
+    color: var(--white);
+    border-radius: 0;
+}
+
+
+.currency-api .modal input {
+    width: 100%;
+}
+
+
+.lime-green-tag span {
+    color: var(--lime-green);
+}
+
+
+.pink-tag span {
+    color:  rgba(239, 152, 152, .35);
+}
+
+
+.green-tag span {
+    color:  #1CA110;
+}
+
+
+.currency-api .modal hr {
+    color: grey;
+}
+
+
+.currency-api .modal-footer button {
+    outline: none;
+    border: none;
+    width: 134px;
+    height: 47px;
+    color: var(--white);
+    font-size: 24px;
+} 
+
+
+.currency-api .modal-footer .close {
+    background-color: #34d426;
+    font-weight: normal;
+}
+
+
+.currency-api .modal-footer .update {
+    background-color: #2F2E41;
+}
+
+
+.header-controls .search-container {
+    display: flex;
+    justify-content: end;
+}
+
+
 .search-container button {
     outline: none;
     border: none;

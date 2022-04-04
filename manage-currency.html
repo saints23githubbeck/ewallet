@@ -84,7 +84,7 @@
     
                         <div class="right-pane col-md-6">
                             <div class="top">
-                                <div>
+                                <div class="mx-4 currency-api">
                                         <!-- Button trigger modal -->
                                         
                                         <a href="#" class="currency-api-key" data-toggle="modal" data-target="#exampleModalCenter"> 
@@ -98,17 +98,25 @@
                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
+                                                    <h5 class="modal-title" id="currency-api-modal">Currency Api Key</h5>
                                                 </div>
                                                 <div class="modal-body">
-                                                    api key
+                                                    <label class='lime-green-tag' for="#"><span>Fiat Currency Rate Api Key </span> {For the api key visit <span>currency</span>}</label>
+                                                    <input type="text">
+
+                                                    <p class="pink-tag">set up job for update fiat price rate: <span>http//dhjnskkkmaksk.jhb.com</span></p>
+
+                                                    <hr>
+
+                                                    <label for="#" class="green-tag"><span>Crypto Currency Rate Api Key</span> {for the api key visit <span>Trustwallet</span>}</label>
+                                                    <input type="text">
+
+                                                    <p class="pink-tag">Set up cron job for update crypto rate : <span>http://jdksjncancnacjbanac.com</span></p>
+                                                    <hr>
                                                 </div>
                                                 <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="update">update</button>
                                                 </div>
                                             </div>
                                             </div>
@@ -144,7 +152,6 @@
                             </div>
     
                             <div class="bottom mt-3">
-                                
                                 <div class="search-container">
                                     <form action="">
                                       <input type="text" placeholder="Search.." name="search">
