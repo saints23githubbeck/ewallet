@@ -95,7 +95,7 @@
                                     
                                         <!-- Modal -->
                                         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title" id="currency-api-modal">Currency Api Key</h5>
@@ -123,26 +123,70 @@
                                         </div>
                                 </div>
 
-                                <div>
+                                <div class="add-api">
+
+                                    <!-- Button trigger modal -->
                                         
-                                    <a href="#" class="add-currency" data-toggle="modal" data-target="#exampleModalCenter1">+ add currency</a>
+                                    <a href="#" class="add-currency" data-toggle="modal" data-target="#add-currency">+ add currency</a>
 
                                         <!-- Modal -->
-                                        <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                        <div class="modal fade" id="add-currency" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered" role="document">
                                             <div class="modal-content">
-                                                <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                                </div>
+                                               
                                                 <div class="modal-body">
-                                                    add currency
+                                                    <div class="input-group">
+                                                        <label  for="#">Currency Name</label>
+                                                        <input type="text" id="currency" placeholder="e.g: Nigeria Naira">
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <label  for="#">Currency Name</label>
+                                                        <input type="text" id="currency" placeholder="e.g: Nigeria Naira">
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <label for="#">Currency Code</label>
+                                                        <input type="text" id="currency_code" placeholder="e.g: NGN">
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <label for="#">Currency Code</label>
+                                                        <input type="text" id="currency_code" placeholder="e.g: NGN">
+                                                    </div>
+
+                                                    <div class="input-group">
+                                                        <label for="#">Currency Rate</label>
+                                                        <input type="text" id="currency_code" placeholder="e.g: NGN">
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <label for="currency-type">currency-type</label>
+                                                        <select class="form-control" id="currency-type">
+                                                          <option selected>--Select Type--</option>
+                                                          <option  value="">USD</option>
+                                                          <option  value="">NGN</option>
+                                                          <option  value="">DOGE</option>
+                                                          <option  value="">BTL</option>
+                                                          <option  value="">TRX</option>
+                                                        </select>
+                                                    </div>
+
+                                                    <div class="currency-status">
+                                                        <div class="default-bar">
+                                                            <p>Default Currency</p>
+                                                            <div class="bar"><div class="inner-bar"></div></div>
+                                                        </div>
+
+                                                        <div class="status-bar">
+                                                            <p>Status</p>
+                                                            <div class="bar"><div class="inner-bar"></div></div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
+                                                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="submit">submit</button>
                                                 </div>
                                             </div>
                                             </div>
