@@ -3707,6 +3707,30 @@ body > section > div.main.container > div > div.manage-content.container > table
 
 
 
+/* profit-log styling */
+
+.profit-log .orange-tag span {
+    color: #ec760a;
+}
+
+
+.profit-log .yellow-tag span {
+    color: var(--lime-green);
+}
+
+
+.profit-log .profit-tag span {
+    color: #1E9F9F;
+}
+
+
+body > section > div.main.container > div > div.profit-log.container > table > tbody > tr > th {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+
+
 
 
 
