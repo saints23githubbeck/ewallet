@@ -1362,6 +1362,7 @@ button {
     background-color: var(--white);
 }
 
+
 .navbar {
     padding: 1rem 2rem;
 }
@@ -1386,18 +1387,19 @@ body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-tex
     color: var(--lime-green);
 }
 
+
 .nav-link {
     font-size: 20px;
     font-weight: 600;
-    line-height: 37px;
     text-transform: uppercase;
-    margin-right: 56px;
+    padding: 0 1rem;
 }
 
 
 .login-link {
     background-color: var(--lime-green);
 }
+
 
 #navbarNavAltMarkup > div > a.nav-item.nav-link.login-link {
     padding: 5px 6px;
@@ -1839,6 +1841,17 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 .tray-links .dropdown-menu {
     background-color: var(--alternative-primary);
+    border: none;
+}
+
+
+.lower .nav-item .nav-link {
+    font-size: 1rem;
+}
+
+
+.lower .nav-item .nav-link-hover {
+    text-decoration: none;
 }
 
 
@@ -2109,6 +2122,11 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
     .dashboard-links li a {
         font-size: .7rem;
+    }
+
+
+    .dropdown-menu {
+        border: none;
     }
     
 
@@ -3444,11 +3462,15 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
-
 .currency-api .modal-header {
     background-color: var(--alternative-primary);
     color: var(--white);
     border-radius: 0;
+}
+
+
+.currency-api-key svg {
+    padding-top: 5px;
 }
 
 
@@ -3584,7 +3606,6 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
     border-radius: 10px;
     background: rgba(28, 162, 16, .9);
 }
-
 
 
 .inner-bar {
