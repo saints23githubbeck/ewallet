@@ -3451,6 +3451,30 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
+.header-controls .top a {
+    width: 177px;
+    height: 34px;
+    background-color: #1993d5;
+    border-radius: 5px;
+    color: var(--white);
+    text-align: center;
+}
+
+
+#profit-log-search {
+    border-radius:.25rem  0 0 .25rem;
+}
+
+
+body > section > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-6 > div.bottom.mt-3 > div.search-container > div > button {
+    border-radius: 0 .25rem .25rem 0;
+
+}
+
+.header-controls .top .search-container button {
+    border-radius: 0 .25rem .25rem 0;
+}
+
 .modal-content {
     border-radius: 0;
 }
