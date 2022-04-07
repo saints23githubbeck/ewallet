@@ -3621,6 +3621,11 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
+.table {
+    margin-bottom: 0;
+}
+
+
 .table thead th {
     background-color: var(--lime-green);
     font-weight: 600;
@@ -3706,7 +3711,6 @@ body > section > div.main.container > div > div.manage-content.container > table
 }
 
 
-
 /* profit-log styling */
 
 .profit-log .orange-tag span {
@@ -3729,7 +3733,65 @@ body > section > div.main.container > div > div.profit-log.container > table > t
     font-size: 15px;
 }
 
+.form-footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgba(196, 196, 196, .3);
+    margin-bottom: 4rem;
+    display: flex;
+    border-top: 1px solid rgba(102, 102, 102, .7);
+}
 
+
+.footer-text, 
+.footer-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.footer-text p {
+    color: var(--purple);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+
+.footer-text p span {
+    color: red;
+}
+
+
+.paginator {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    transition: all ease .4s;
+}
+
+
+.paginator:hover {
+    background-color: var(--lime-green);
+    border: none;
+}
+
+
+.paginator p,
+.footer-pagination {
+    margin-bottom: 0;
+}
+
+
+body > section > div.main.container > div > div.profit-log.container > div > table > tbody > tr > th {
+    font-weight: normal;
+}
 
 
 
