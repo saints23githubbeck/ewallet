@@ -198,11 +198,11 @@
 
                 <div class="header-controls container mt-4">
                     <div class="row">
-                        <div class="left-pane col-md-6">
+                        <div class="left-pane col-md-4">
                             <h2>Profit Log</h2>
                         </div>
     
-                        <div class="right-pane col-md-6">
+                        <div class="right-pane col-md-8">
                             <div class="top">
                                <a href="#">Export CSV</a>
                             </div>
@@ -212,6 +212,17 @@
 
                                 </div>
                                 <div class="search-container">
+                                    <div class="form-group">
+                                        <select class="form-control" id="select-currency">
+                                          <option default >select-currency</option>
+                                          <option>USD</option>
+                                          <option>TRX</option>
+                                          <option>NGN</option>
+                                          <option>USDT</option>
+                                          <option>DOGE</option>
+                                        </select>
+                                    </div>
+
                                     <div class="input-group">
                                         <div class="form-outline">
                                           <input type="search" id="profit-log-search" class="form-control" />
@@ -227,7 +238,7 @@
                 </div>        
                 
                 
-                <div class="profit-log container">
+                <div class="profit-log container mt-5">
                    <div class="form-container">
                     <table class="table">
                         <thead>

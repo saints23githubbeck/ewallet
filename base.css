@@ -3461,19 +3461,42 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 }
 
 
-#profit-log-search {
-    border-radius:.25rem  0 0 .25rem;
+body > section > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-8 > div.bottom.mt-3 {
+    display: flex;
+    justify-content: end;
 }
 
 
-body > section > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-6 > div.bottom.mt-3 > div.search-container > div > button {
+body > section > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-8 > div.bottom.mt-3 > div.search-container > div.input-group {
+    justify-content: end;
+}
+
+
+#select-currency {
+    margin-right: 25px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+
+
+#profit-log-search {
+    border-radius: 5px  0 0 5px;
+    width: 250px;
+}
+
+
+body > section > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-8 > div.bottom.mt-3 > div.search-container > div.input-group > button {
+    height: 38px;
     border-radius: 0 .25rem .25rem 0;
 
 }
+
 
 .header-controls .top .search-container button {
     border-radius: 0 .25rem .25rem 0;
 }
+
 
 .modal-content {
     border-radius: 0;
