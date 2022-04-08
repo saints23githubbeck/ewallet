@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
     <script src="https://kit.fontawesome.com/5be60f6b86.js" crossorigin="anonymous"></script>
-    <title>agent dashboard</title>
+    <title>only profit</title>
 </head>
 <body> 
     <div class="sidebar" id="sidebar" data-visible="false">
@@ -59,7 +59,11 @@
 
                 <div class="lower">
                 <li class="nav-item dropdown w-100">
-                    <a href="profit_log.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">PROFIT LOGS</a>
+                    <a href="profit_log.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2707 3.07617L9.98331 0.205078C9.8322 0.0732422 9.62737 0 9.41246 0H9.20763V3.75H13.5058V3.57129C13.5058 3.38672 13.4218 3.20801 13.2707 3.07617ZM8.13309 3.98438V0H1.41723C0.970627 0 0.611328 0.313477 0.611328 0.703125V14.2969C0.611328 14.6865 0.970627 15 1.41723 15H12.6999C13.1465 15 13.5058 14.6865 13.5058 14.2969V4.6875H8.93899C8.49575 4.6875 8.13309 4.37109 8.13309 3.98438ZM2.7604 2.10938C2.7604 1.97988 2.88062 1.875 3.02904 1.875H5.71538C5.8638 1.875 5.98401 1.97988 5.98401 2.10938V2.57812C5.98401 2.70762 5.8638 2.8125 5.71538 2.8125H3.02904C2.88062 2.8125 2.7604 2.70762 2.7604 2.57812V2.10938ZM2.7604 4.45312V3.98438C2.7604 3.85488 2.88062 3.75 3.02904 3.75H5.71538C5.8638 3.75 5.98401 3.85488 5.98401 3.98438V4.45312C5.98401 4.58262 5.8638 4.6875 5.71538 4.6875H3.02904C2.88062 4.6875 2.7604 4.58262 2.7604 4.45312ZM7.59582 12.184V12.8906C7.59582 13.0201 7.47561 13.125 7.32719 13.125H6.78992C6.6415 13.125 6.52128 13.0201 6.52128 12.8906V12.179C6.14217 12.162 5.77347 12.0466 5.4679 11.8465C5.33694 11.7606 5.33023 11.5896 5.44876 11.4908L5.84332 11.1624C5.93633 11.0851 6.07468 11.0815 6.18348 11.141C6.31343 11.2119 6.46084 11.25 6.61396 11.25H7.55788C7.77614 11.25 7.95411 11.0766 7.95411 10.8636C7.95411 10.6893 7.83289 10.5357 7.65962 10.4906L6.14855 10.0951C5.52431 9.93164 5.08812 9.40898 5.08812 8.82393C5.08812 8.10557 5.7278 7.52197 6.52095 7.50352V6.79688C6.52095 6.66738 6.64116 6.5625 6.78958 6.5625H7.32685C7.47527 6.5625 7.59548 6.66738 7.59548 6.79688V7.5085C7.9746 7.52549 8.3433 7.64063 8.64887 7.84102C8.77983 7.92686 8.78654 8.09795 8.66801 8.19668L8.27345 8.5251C8.18044 8.60244 8.04209 8.60596 7.93329 8.54648C7.80334 8.47529 7.65593 8.4375 7.50281 8.4375H6.55889C6.34063 8.4375 6.16266 8.61094 6.16266 8.82393C6.16266 8.99824 6.28388 9.15176 6.45715 9.19688L7.96821 9.59238C8.59245 9.75586 9.02865 10.2785 9.02865 10.8636C9.02865 11.5822 8.38896 12.1655 7.59582 12.184Z" fill="white"/>
+                        </svg>
+                        PROFIT LOGS</a>
                     <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
                         <li><a href="#" class="dropdown-item">profit 01</a></li>
                         <li><a href="#" class="dropdown-item">profit 02</a></li>
@@ -162,241 +166,227 @@
         </div>
     </div>
 
-<div class="main container agent-dash">
-    <button class="mobile-nav-toggle"><span aria-expanded="false" class="sr-only" aria-controls="sidebar">menu</span></button>
+    <div class="main container">
+        <button class="mobile-nav-toggle"><span aria-expanded="false" class="sr-only" aria-controls="sidebar">menu</span></button>
 
-    <div class="row">
-        <nav>
-            <div class="page-name">
-                <h2>Agent Dashboard</h2>
-            </div>
-            <div class="profile-details">
-                <div class="admin-pic">
-                    <img src="https://images.unsplash.com/photo-1520451644838-906a72aa7c86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=550&q=80" alt="admin profile pic">
+        <div class="row">
+            <nav>
+                <div class="page-name">
                 </div>
-                <div class="name-tray">
-                    <a href="#">Admin</a>
+                <div class="profile-details">
+                    <div class="admin-pic">
+                        <img src="https://images.unsplash.com/photo-1520451644838-906a72aa7c86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=550&q=80" alt="admin profile pic">
+                    </div>
+                    <div class="name-tray">
+                        <a href="#">Admin</a>
+                    </div>
+                    <div class="dropdown-case">
+                        <div class="dropdown">
+                            <li class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              
+                            </li>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li class="dropdown-item" >Profile</li>
+                              <li class="dropdown-item" >Password</li>
+                              <li class="dropdown-item" >logout</li>
+                            </div>
+                          </div>
+                    </div>
                 </div>
-                <div class="dropdown-case">
-                    <div class="dropdown">
-                        <li class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          
-                        </li>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                          <li class="dropdown-item" >Profile</li>
-                          <li class="dropdown-item" >Password</li>
-                          <li class="dropdown-item" >logout</li>
+            </nav>
+
+            <div class="header-controls container mt-4">
+                <div class="row">
+                    <div class="left-pane col-md-4">
+                        <h2>only Profit</h2>
+                    </div>
+
+                    <div class="right-pane col-md-8">
+                        <div class="top">
+                           <a href="#">Export CSV</a>
+                        </div>
+
+                        <div class="bottom mt-3">
+                            <div class="dropdown-search">
+
+                            </div>
+                            <div class="search-container">
+                                <div class="form-group">
+                                    <select class="form-control" id="select-currency">
+                                      <option default >select-currency</option>
+                                      <option>USD</option>
+                                      <option>TRX</option>
+                                      <option>NGN</option>
+                                      <option>USDT</option>
+                                      <option>DOGE</option>
+                                    </select>
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="form-outline">
+                                      <input type="search" id="only-profit-search" class="form-control" />
+                                    </div>
+                                    <button type="button" class="btn btn-primary">
+                                      <i class="fas fa-search"></i>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>        
+            
+            
+            <div class="profit-log container mt-5">
+               <div class="form-container">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Trx</th>
+                        <th scope="col">User/User Type </th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Currency</th>
+                        <th scope="col">Operation Type/Remark</th>
+                        <th scope="col">Time & Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">EATCMDEHTRN8</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 7.00</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks ago</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">HJJKJHBNML0</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 2.60</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks ago</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">BJKKJHHHGGH5</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 2.60</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks ago</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">GFHJJKHGV5</th>
+                        <td class="yellow-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 7.00</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks ago</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CMDHJDSKWJ9</th>
+                        <td class="orange-tag">USER <br> <span>Mycompany</span></td>
+                        <td>TRX 19.3509867</td>
+                        <td>TRX</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">DKDFJNDFNDN6</th>
+                        <td class="orange-tag">USER <br> <span>Username</span></td>
+                        <td>$ 2.60</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">CKDJFJHJHJX1</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 2.60</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">NMMDSJKDFKK4</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>USDT 19.0868865</td>
+                        <td>USD</td>
+                        <td class="profit-tag">Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">WJDKLDSLDIFH7</th>
+                        <td class="orange-tag">USER <br> <span>JoeSoap</span></td>
+                        <td>TRX 19.3509867</td>
+                        <td>TRX</td>
+                        <td class="orange-tag">Money Out <br><span>Commision</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">EATCMDEHTRN8</th>
+                        <td class="orange-tag">USER <br> <span>Jmcvine</span></td>
+                        <td>$ 7.00</td>
+                        <td>USD</td>
+                        <td>Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">WJDKLDSLDIFH7</th>
+                        <td class="orange-tag">USER <br> <span>JoeSoap</span></td>
+                        <td>TRX 19.35098867</td>
+                        <td>TRX</td>
+                        <td class="orange-tag">Exchange Money <br><span>Commision</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">SJWNMDKDIFFF8</th>
+                        <td class="orange-tag">USER <br> <span>JoeSoap</span></td>
+                        <td>$ 2.60</td>
+                        <td>USD</td>
+                        <td>Exchange Money <br><span>Profit</span></td>
+                        <td>2021-12-29 11:40pm <br><span>2 weeks a</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="form-footer container">
+                      <div class="row">
+                        <div class="footer-text col-md-3">
+                            <p>Total Profit: 542.00 USD <span>*</span></p>
+                        </div>
+                        <div class="footer-pagination col-md-9">
+                            <div class="paginator">
+                                <p>1</p>
+                            </div>
+                            <div class="paginator">
+                                <p>2</p>
+                            </div>
+                            <div class="paginator">
+                                <p>3</p>
+                            </div>
+                            <div class="paginator">
+                                <p>4</p>
+                            </div>
+                            <div class="paginator">
+                                <p>5</p>
+                            </div>
+                            <div class="paginator">
+                                <p>6</p>
+                            </div>
+                            <div class="paginator">
+                                <p>7</p>
+                            </div>
+                            <div class="paginator">
+
+                            </div>
                         </div>
                       </div>
-                </div>
-            </div>
-        </nav>
-
-        <div class="wallet container mt-4">
-            <div class="row">
-                <div class="wallet-card col-md-3">
-                    <svg id='svg-bg' viewBox="0 0 363 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g style="mix-blend-mode:soft-light">
-                        <path d="M0 42L69.6513 30.5L179.975 68.5L270.471 42L363 0V116H0V42Z" fill="#1E9F9F"/>
-                        </g>
-                    </svg>
-
-                    <svg id='svg-wallet' width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.40625 7.42857H36.932C38.8558 7.42857 40 8.62925 40 9.64286V26.7857C40 27.7993 38.8558 29 36.932 29H5.125C2.67157 29 1 27.3691 1 25.7143V4.28571C1 2.63086 2.67157 1 5.125 1H34.5938C36.3257 1 37.4204 2.13358 37.4373 3.18951C37.4336 3.19344 37.4283 3.19859 37.4208 3.20486C37.3779 3.24073 37.2877 3.28571 37.1562 3.28571H6.40625C5.32103 3.28571 4.125 4.05285 4.125 5.35714C4.125 6.66144 5.32103 7.42857 6.40625 7.42857ZM37.4445 3.18014C37.4446 3.18014 37.4443 3.18093 37.4431 3.18249C37.4439 3.18092 37.4444 3.18015 37.4445 3.18014ZM29.75 18.2143C29.75 20.1099 31.5202 21.3571 33.3125 21.3571C35.1048 21.3571 36.875 20.1099 36.875 18.2143C36.875 16.3187 35.1048 15.0714 33.3125 15.0714C31.5202 15.0714 29.75 16.3187 29.75 18.2143Z" stroke="black" stroke-opacity="0.8" stroke-width="2"/>
-                    </svg>   
-                    <p>31,200,000 USD</p>                        
-                </div>
-
-                <div class="wallet-card col-md-3">
-                    <svg id='svg-bg' viewBox="0 0 363 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g style="mix-blend-mode:soft-light">
-                        <path d="M0 42L69.6513 30.5L179.975 68.5L270.471 42L363 0V116H0V42Z" fill="#1E9F9F"/>
-                        </g>
-                    </svg>
-
-                    <svg id='svg-wallet' width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.40625 7.42857H36.932C38.8558 7.42857 40 8.62925 40 9.64286V26.7857C40 27.7993 38.8558 29 36.932 29H5.125C2.67157 29 1 27.3691 1 25.7143V4.28571C1 2.63086 2.67157 1 5.125 1H34.5938C36.3257 1 37.4204 2.13358 37.4373 3.18951C37.4336 3.19344 37.4283 3.19859 37.4208 3.20486C37.3779 3.24073 37.2877 3.28571 37.1562 3.28571H6.40625C5.32103 3.28571 4.125 4.05285 4.125 5.35714C4.125 6.66144 5.32103 7.42857 6.40625 7.42857ZM37.4445 3.18014C37.4446 3.18014 37.4443 3.18093 37.4431 3.18249C37.4439 3.18092 37.4444 3.18015 37.4445 3.18014ZM29.75 18.2143C29.75 20.1099 31.5202 21.3571 33.3125 21.3571C35.1048 21.3571 36.875 20.1099 36.875 18.2143C36.875 16.3187 35.1048 15.0714 33.3125 15.0714C31.5202 15.0714 29.75 16.3187 29.75 18.2143Z" stroke="black" stroke-opacity="0.8" stroke-width="2"/>
-                    </svg>   
-                    <p>31,200,000 USD</p>
-
-                </div>
-
-                <div class="wallet-card col-md-3">
-                    <svg id='svg-bg' viewBox="0 0 363 116" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g style="mix-blend-mode:soft-light">
-                        <path d="M0 42L69.6513 30.5L179.975 68.5L270.471 42L363 0V116H0V42Z" fill="#1E9F9F"/>
-                        </g>
-                    </svg>
-
-                    <svg id='svg-wallet' width="41" height="30" viewBox="0 0 41 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.40625 7.42857H36.932C38.8558 7.42857 40 8.62925 40 9.64286V26.7857C40 27.7993 38.8558 29 36.932 29H5.125C2.67157 29 1 27.3691 1 25.7143V4.28571C1 2.63086 2.67157 1 5.125 1H34.5938C36.3257 1 37.4204 2.13358 37.4373 3.18951C37.4336 3.19344 37.4283 3.19859 37.4208 3.20486C37.3779 3.24073 37.2877 3.28571 37.1562 3.28571H6.40625C5.32103 3.28571 4.125 4.05285 4.125 5.35714C4.125 6.66144 5.32103 7.42857 6.40625 7.42857ZM37.4445 3.18014C37.4446 3.18014 37.4443 3.18093 37.4431 3.18249C37.4439 3.18092 37.4444 3.18015 37.4445 3.18014ZM29.75 18.2143C29.75 20.1099 31.5202 21.3571 33.3125 21.3571C35.1048 21.3571 36.875 20.1099 36.875 18.2143C36.875 16.3187 35.1048 15.0714 33.3125 15.0714C31.5202 15.0714 29.75 16.3187 29.75 18.2143Z" stroke="black" stroke-opacity="0.8" stroke-width="2"/>
-                    </svg>   
-                    <p>32,100,000 USD</p>
-                </div>
-            </div>                    
-        </div>
-
-
-        <div class="report container mt-5">
-            <div class="row">
-                <div class="graph col-md-6">
-                    <div class="monthly-report-graph">
-
-                    </div>
-                </div>
-
-                <div class="report-tiles col-md-6">
-                    <div class="report-top-tile">
-                        <div>
-                            <p>Insight</p>
-                        </div>
-                        <div class="tile-container">
-                            <div class="insight-tile">
-                                <h3>Total Money Received</h3>
-                                <p>( last 7 days)</p>
-
-                                $0.00USD
-                                <p>Total Received</p>
-                            </div>
-
-                            <div class="insight-tile">
-                                <h3>Total Money Out</h3>
-                                <p>( last 7 days)</p>
-
-                                $0.00USD
-                                <p>Total Received</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="report-bottom-tile">
-                       <div>
-                           <p>Add Money & Withdraw</p>
-                       </div>
-                       <div class="tile-container">
-                        <div class="total-money-tile">
-                            <p>Total Money</p>
-                            <h3>$ 4,654.60 USD</h3>
-                        </div>
-                        <div class="total-money-tile">
-                            <p>Total Withdraw</p>
-                            <h3>$ 21,654.60 USD</h3>
-                        </div>
-                       </div>
-                    </div>                      
-                   
-                </div>
+                  </div>
+               </div>
             </div>
         </div>
-
-        <div class="latest-transaction my-5">
-            <div class="latest-transaction-top">
-                <h3>Latest Transaction</h3>
-            </div>
-            <div class="latest-transaction-bottom">
-                <div class="latest-transaction-container">
-                    <div class="transaction-row">
-                        <div class="transaction-icon">
-                            <div>
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.124 15.9923C19.6721 15.9238 20.0608 15.424 19.9923 14.876L18.876 5.94546C18.8075 5.39744 18.3077 5.00872 17.7597 5.07722C17.2116 5.14572 16.8229 5.64551 16.8914 6.19353L17.8837 14.1318L9.94547 15.124C9.39745 15.1925 9.00872 15.6923 9.07722 16.2403C9.14572 16.7884 9.64551 17.1771 10.1935 17.1086L19.124 15.9923ZM0.386059 1.78935L18.3861 15.7894L19.6139 14.2106L1.61394 0.210648L0.386059 1.78935Z" fill="#3CFA1D"/>
-                                </svg>
-                           </div>                                         
-                        </div>
-
-                        <div class="text-container">
-                            <h3>Add Money</h3>
-                            <p>Jan 03 2021 @ 3:21pm</p>
-                        </div>
-
-                        <div class="additional-text">
-                            <p>Add money succesful</p>
-                        </div>
-
-                        <div class="balance-container">
-                            <h3>200.00 NGN</h3>
-                        </div>
-                        
-                    </div>
-
-                    <div class="transaction-row">
-                        <div class="transaction-icon">
-                            <div>
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.124 15.9923C19.6721 15.9238 20.0608 15.424 19.9923 14.876L18.876 5.94546C18.8075 5.39744 18.3077 5.00872 17.7597 5.07722C17.2116 5.14572 16.8229 5.64551 16.8914 6.19353L17.8837 14.1318L9.94547 15.124C9.39745 15.1925 9.00872 15.6923 9.07722 16.2403C9.14572 16.7884 9.64551 17.1771 10.1935 17.1086L19.124 15.9923ZM0.386059 1.78935L18.3861 15.7894L19.6139 14.2106L1.61394 0.210648L0.386059 1.78935Z" fill="#3CFA1D"/>
-                                </svg>
-                           </div>                                         
-                        </div>
-
-                        <div class="text-container">
-                            <h3>Add Money</h3>
-                            <p>Jan 03 2021 @ 3:21pm</p>
-                        </div>
-
-                        <div class="additional-text">
-                            <p>Add money succesful</p>
-                        </div>
-
-                        <div class="balance-container">
-                            <h3>200.00 NGN</h3>
-                        </div>
-                        
-                    </div>
-
-                    <div class="transaction-row">
-                        <div class="transaction-icon">
-                            <div>
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.124 15.9923C19.6721 15.9238 20.0608 15.424 19.9923 14.876L18.876 5.94546C18.8075 5.39744 18.3077 5.00872 17.7597 5.07722C17.2116 5.14572 16.8229 5.64551 16.8914 6.19353L17.8837 14.1318L9.94547 15.124C9.39745 15.1925 9.00872 15.6923 9.07722 16.2403C9.14572 16.7884 9.64551 17.1771 10.1935 17.1086L19.124 15.9923ZM0.386059 1.78935L18.3861 15.7894L19.6139 14.2106L1.61394 0.210648L0.386059 1.78935Z" fill="#3CFA1D"/>
-                                </svg>
-                           </div>                                            
-                        </div>
-
-                        <div class="text-container">
-                            <h3>Add Money</h3>
-                            <p>Jan 03 2021 @ 3:21pm</p>
-                        </div>
-
-                        <div class="additional-text">
-                            <p>Add money succesful</p>
-                        </div>
-
-                        <div class="balance-container">
-                            <h3>200.00 NGN</h3>
-                        </div>
-                        
-                    </div>
-
-                    <div class="transaction-row">
-                        <div class="transaction-icon">
-                           <div>
-                                <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19.124 15.9923C19.6721 15.9238 20.0608 15.424 19.9923 14.876L18.876 5.94546C18.8075 5.39744 18.3077 5.00872 17.7597 5.07722C17.2116 5.14572 16.8229 5.64551 16.8914 6.19353L17.8837 14.1318L9.94547 15.124C9.39745 15.1925 9.00872 15.6923 9.07722 16.2403C9.14572 16.7884 9.64551 17.1771 10.1935 17.1086L19.124 15.9923ZM0.386059 1.78935L18.3861 15.7894L19.6139 14.2106L1.61394 0.210648L0.386059 1.78935Z" fill="#3CFA1D"/>
-                                </svg>
-                           </div>                                                                             
-                        </div>
-
-                        <div class="text-container">
-                            <h3>Add Money</h3>
-                            <p>Jan 03 2021 @ 3:21pm</p>
-                        </div>
-
-                        <div class="additional-text">
-                            <p>Add money succesful</p>
-                        </div>
-
-                        <div class="balance-container">
-                            <h3>200.00 NGN</h3>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>              
-
     </div>
-</div>
-
+ 
 <script src="index.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

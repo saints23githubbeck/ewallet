@@ -1818,6 +1818,27 @@ body .row {
         left: 20px;
     }
 
+
+    /* agent dashboard media queries */
+    body > div.main.container.agent-dash {
+        min-width: 100vw;
+    }
+
+
+    body > div.main.container.agent-dash > button:focus {
+        outline: none;
+    }
+
+
+
+
+    /* only profit styling */
+
+    body > div.main.container {
+        min-width: 100vw;
+    }
+
+
 }
 
 
@@ -1896,6 +1917,10 @@ body .row {
 body > section > div.main.container > div > nav > div.profile-details > div.dropdown-case > div > div {
     left: -60px;
 }
+
+
+
+/* updated agent dashboard */
 
 
 .wallet-logo-text h3 {
@@ -3928,6 +3953,24 @@ body > section > div.main.container > div > div.profit-log.container > div > tab
 }
 
 
+
+/* only profit styling */
+
+body > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-8 > div.bottom.mt-3 {
+    justify-content: end;
+    display: flex;
+}
+
+
+#only-profit-search {
+    border-radius: 5px 0 0 5px;
+}
+
+
+body > div.main.container > div > div.header-controls.container.mt-4 > div > div.right-pane.col-md-8 > div.bottom.mt-3 > div.search-container > div.input-group > button {
+    height: 38px;
+    border-radius: 0 5px 5px 0;
+}
 
 
 
