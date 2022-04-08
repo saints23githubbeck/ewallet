@@ -1721,10 +1721,11 @@ body {
 .sidebar {
     display: flex;
     width: 330px;
-    height: auto;
+    height: max-content;
     transform: translateX(0);
     transition: all ease;
     flex-direction: column;
+    transition: all ease .3s;
 }
 
 
@@ -1737,18 +1738,12 @@ body {
 
 
 .mobile-nav-toggle {
-    display: none;
-    position: absolute;
-    border: none;
+    display: none;  
+}
+
+
+body > div.main-content > button:focus {
     outline: none;
-    width: 2rem;
-    height: 2rem;
-    left: 20px;
-    top: 25px;
-    z-index: 1000;
-    background-image: url('images/hamburger.svg');
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 
@@ -1794,6 +1789,12 @@ body .row {
     }
 
 
+
+    .e-wallet-logo {
+        margin-top: 13px;
+    }
+
+
     .sidebar[data-visble='true']{
         transform: translateX(-330px);
         z-index: 4000;
@@ -1807,6 +1808,23 @@ body .row {
 
     .mobile-nav-toggle {      
         display: block;
+        position: absolute;
+        border: none;
+        outline: none;
+        width: 20px;
+        height: 20px;
+        left: 250px;
+        top: 25px;
+        z-index: 1000;
+        background-image: url('images/close.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    
+    .mobile-nav-toggle[aria-expanded='true'] {
+        background-image: url('images/hamburger.svg');
+        left: 20px;
     }
 
 }
@@ -1926,6 +1944,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     text-decoration: none;
     color: var(--white);
     transition: .3s ease all;
+    padding: .2em .5em;
 }
 
 
@@ -1936,14 +1955,14 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 .dashboard-links li a:hover {
     background-color: rgba(196, 196, 196, .4);
-    border-radius: 20px;
-    padding: .2em .5em;
+    border-radius: 20px;    
 }
 
 
 .tray-links .dropdown-menu {
     background-color: var(--alternative-primary);
     border: none;
+    padding: 0;
 }
 
 
@@ -2126,7 +2145,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 .currency {
     width: 100%;
     margin-top: 45px;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
     justify-content: space-between;
     padding: 0;
 }
@@ -2187,10 +2206,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 /* mobile media query */
 @media screen and (max-width: 480px) {
 
-    .sidebar {
-       width: 180px; 
-       padding: 10px 20px;
-    }
+  
 
 
     body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
@@ -2207,7 +2223,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 
     .wallet-logo-text {
-        font-size: .5rem;
+        font-size: .8rem;
         margin-left: 5px;
     }
 
@@ -2359,7 +2375,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     }
 
     .sidebar {
-       width: 180px; 
+       /* width: 180px;  */
        padding: 10px 20px;
     }
 
@@ -2550,7 +2566,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     }
 
     .sidebar {
-       width: 250px; 
+       /* width: 250px;  */
        padding: 10px 20px;
     }
 
@@ -2757,7 +2773,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
     }
 
     .sidebar {
-       width: 320px; 
+       /* width: 320px;  */
        padding: 10px 20px;
     }
 
@@ -3186,7 +3202,7 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 
 @media screen and (max-width: 480px ) {
     .merchant-dash .sidebar {
-        width: 180px;
+        /* width: 180px; */
     }
 
 
@@ -3275,7 +3291,7 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 /* small screens and laptops */
 @media screen and (max-width: 768px ) {
     .merchant-dash .sidebar {
-        width: 180px;
+        /* width: 180px; */
     }
 
 
@@ -3453,7 +3469,7 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 
 @media screen and (max-width: 480px ) {
     .sidebar {
-        width: 160px;
+        /* width: 160px; */
         padding: 10px;
     }
 
