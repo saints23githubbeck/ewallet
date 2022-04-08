@@ -1739,10 +1739,16 @@ body {
 .mobile-nav-toggle {
     display: none;
     position: absolute;
-    background: red;
+    border: none;
+    outline: none;
+    width: 2rem;
+    height: 2rem;
     left: 20px;
-    top: 20px;
+    top: 25px;
     z-index: 1000;
+    background-image: url('images/hamburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
