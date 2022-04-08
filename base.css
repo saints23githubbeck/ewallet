@@ -3201,10 +3201,7 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 /* mobile devices */
 
 @media screen and (max-width: 480px ) {
-    .merchant-dash .sidebar {
-        /* width: 180px; */
-    }
-
+    
 
     .merchant-dash .main {
         width: calc(100vw - 180px);
@@ -3290,11 +3287,7 @@ body > section > div.main.container > div > div.report.container.mt-5 > div > di
 
 /* small screens and laptops */
 @media screen and (max-width: 768px ) {
-    .merchant-dash .sidebar {
-        /* width: 180px; */
-    }
-
-
+    
     .merchant-dash .main {
         width: calc(100vw - 180px);
         
