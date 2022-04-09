@@ -1804,7 +1804,7 @@ body .row {
         outline: none;
         width: 20px;
         height: 20px;
-        left: 250px;
+        left: 260px;
         top: 25px;
         z-index: 1000;
         background-image: url('images/close.svg');
@@ -3872,7 +3872,8 @@ body > section > div.main.container > div > div.manage-content.container > table
 
 /* profit-log styling */
 
-.profit-log .orange-tag span {
+.profit-log .orange-tag span,
+.only-commision .orange-tag span {
     color: #ec760a;
 }
 
@@ -3975,6 +3976,46 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
 
 .mobile-nav-toggle:focus {
     outline: none;
+}
+
+
+
+@media screen and (max-width: 984px ) {
+
+
+    .header-controls .row {
+        width: 100vw;
+    }
+
+    .header-controls {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .profit-log, 
+    .only-commision {
+        margin: 20px 10px;
+        min-width: 100vw;
+    }
+
+
+    .form-footer {
+        margin: 0 10px;
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+
+    .form-footer .row {
+        min-width: 100%;
+    }
+
+
+    .footer-pagination {
+        margin: 0 10px;
+        width: 100%;
+    }
+
 }
 
 
