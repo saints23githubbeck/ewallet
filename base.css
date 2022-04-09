@@ -3973,6 +3973,11 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
 }
 
 
+.mobile-nav-toggle:focus {
+    outline: none;
+}
+
+
 
 
 
