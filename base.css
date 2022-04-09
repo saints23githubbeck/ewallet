@@ -4020,6 +4020,31 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
 
 
 
+/* only users styling */
+body > div.main.container > div > div.only-commision.container.mt-5 > div > table > tbody > tr > td:nth-child(5) > span {
+    background-color: var(--lime-green);
+    padding:  0 .4em;
+}
+
+
+body > div.main.container > div > div.only-commision.container.mt-5 > div > table > thead > tr > th:nth-child(1) {
+    padding-left: 5rem;
+}
+
+
+body > div.main.container > div > div.only-commision.container.mt-5 > div > table > tbody > tr > th {
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 5rem;
+}
+
+
+body > div.main.container > div > div.only-commision.container.mt-5 > div > table > tbody > tr > th span {
+    color: #1E9F9F;
+}
+
+
+
 
 
 
