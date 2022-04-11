@@ -4053,6 +4053,23 @@ body > div.main.container > div > div.only-commision.container.mt-5 > div > tabl
 
 
 
+/* banned users styling */
+
+body > div.main.container > div > div.banned-users.container.mt-5 > div > table > tbody > tr > th {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(102, 102, 102, .7);
+}
+
+
+body > div.main.container > div > div.header-controls.container.mt-4 > div > div.left-pane.col-md-4 > h2 {
+    color: #214e65;
+    font-size: 28px;
+}
+
+
+
+
 
 
 
