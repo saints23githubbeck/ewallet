@@ -1841,6 +1841,11 @@ body .row {
     #sidebar {
         height: 100%;
     }
+
+
+    .main .container {
+        min-height: 100vh;
+    }
 }
 
 
@@ -4051,8 +4056,6 @@ body > div.main.container > div > div.only-commision.container.mt-5 > div > tabl
 }
 
 
-
-
 /* banned users styling */
 
 body > div.main.container > div > div.banned-users.container.mt-5 > div > table > tbody > tr > th {
@@ -4066,7 +4069,6 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
     color: #214e65;
     font-size: 28px;
 }
-
 
 
 /* send email to users styling */
@@ -4108,6 +4110,27 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
 .send-email-container input {
     border-radius: 0;
     background-color: rgba(196, 196, 196, .3);
+}
+
+
+/* manage kyc styling */
+
+body > div.main.container > div > div.manage-kyc.container.mt-5 > div > table > tbody > tr > td:nth-child(3) > span {
+    background-color: rgba(28, 161, 16, .35);
+    border-radius: 20px;
+    width: 84px;
+    height: 33px;
+    padding:  .15em .5em;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(46, 42, 83, .7);
+}
+
+
+
+body > div.main.container > div > div.manage-kyc.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: var(--lime-green);
+    padding:  0 .4em;
 }
 
 

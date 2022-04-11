@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
     <script src="https://kit.fontawesome.com/5be60f6b86.js" crossorigin="anonymous"></script>
-    <title>send email to users</title>
+    <title>manage kyc</title>
 </head>
 <body> 
     <div class="sidebar" id="sidebar" data-visible="false">
@@ -78,16 +78,28 @@
                         <li><a href="active-users.html" class="dropdown-item">Active Users</a></li>
                         <li><a href="banned_users.html" class="dropdown-item">Banned Users</a></li>
                         <li><a href="email_unverified.html" class="dropdown-item">Email Unverified</a></li>
-                        <li><a href="email_unverified.html" class="dropdown-item">Email to All</a></li>
+                        <li><a href="#" class="dropdown-item">Email to All</a></li>
                     </ul>
                 </li>
 
                 <li class="nav-item dropdown w-100">
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Manage KYC</a>
+                    <a href="#">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.917 4.68711L15.2369 0.832812C15.0211 0.335156 14.4135 0 13.7262 0H9.03125V4.875H16.9568C16.9436 4.81152 16.9436 4.74805 16.917 4.68711ZM7.96875 0H3.27383C2.58652 0 1.97891 0.335156 1.76309 0.832812L0.0830078 4.68711C0.0564453 4.74805 0.0564453 4.81152 0.0431641 4.875H7.96875V0ZM0 5.6875V11.7812C0 12.4541 0.713867 13 1.59375 13H15.4062C16.2861 13 17 12.4541 17 11.7812V5.6875H0Z" fill="white"/>
+                        </svg>
+                        Manage KYC Form
+                    </a>
+                    <a href="#">
+                        <svg width="17" height="13" viewBox="0 0 17 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.917 4.68711L15.2369 0.832812C15.0211 0.335156 14.4135 0 13.7262 0H9.03125V4.875H16.9568C16.9436 4.81152 16.9436 4.74805 16.917 4.68711ZM7.96875 0H3.27383C2.58652 0 1.97891 0.335156 1.76309 0.832812L0.0830078 4.68711C0.0564453 4.74805 0.0564453 4.81152 0.0431641 4.875H7.96875V0ZM0 5.6875V11.7812C0 12.4541 0.713867 13 1.59375 13H15.4062C16.2861 13 17 12.4541 17 11.7812V5.6875H0Z" fill="white"/>
+                        </svg>
+                        Manage KYC Info                            
+                    </a>
                     <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                        <li><a href="#" class="dropdown-item">Manage KYC 01</a></li>
-                        <li><a href="#" class="dropdown-item">Manage KYC 02</a></li>
-                        <li><a href="#" class="dropdown-item">Manage KYC 03</a></li>
+                        <li><a href="#" class="dropdown-item">User KYC</a></li>
+                        <li><a href="#" class="dropdown-item">Agent KYC</a></li>
+                        <li><a href="#" class="dropdown-item">Merchant KYC</a></li>
                     </ul>
                 </li>
 
@@ -200,42 +212,73 @@
             <div class="header-controls container mt-4">
                 <div class="row">
                     <div class="left-pane col-md-4">
-                        <h2>Send Email to All Users</h2>
+                        <h2>Manage KYC Form</h2>
                     </div>
 
                     <div class="right-pane col-md-8">                        
-                        <div class="bottom mt-3">                           
-                            <div class="search-container">                             
-
-                                <div class="input-group">
-                                    <div class="form-outline">
-                                      <input type="search" id="only-profit-search" class="form-control" placeholder="username or email"/>
-                                    </div>
-                                    <button type="button" class="btn btn-primary">
-                                      <i class="fas fa-search"></i>
-                                    </button>
-                                  </div>
-                            </div>
-                        </div>
+                    
                     </div>
                 </div>                    
             </div>        
             
-            <div class="banned-users container mt-5">
-               <div class="form-container send-email-container">
-                    <form>
-                        <div class="form-group">
-                            <label for="subject">Subject <span>*</span></label>
-                            <input type="email" class="form-control" id="subject">
+            <div class="manage-kyc container mt-5">
+               <div class="form-container">
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">SI</th>
+                        <th scope="col">User-Type</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                      </tr>                  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>User</td>
+                            <td><span>Active</span></td>
+                            <td>
+                                <span>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.875 0H1.125C0.826631 0 0.540483 0.118526 0.329505 0.329505C0.118526 0.540483 0 0.826631 0 1.125L0 8.625C0 8.92337 0.118526 9.20952 0.329505 9.4205C0.540483 9.63147 0.826631 9.75 1.125 9.75H6.75V10.5H2.625C2.52554 10.5 2.43016 10.5395 2.35984 10.6098C2.28951 10.6802 2.25 10.7755 2.25 10.875V11.625C2.25 11.7245 2.28951 11.8198 2.35984 11.8902C2.43016 11.9605 2.52554 12 2.625 12H12.375C12.4745 12 12.5698 11.9605 12.6402 11.8902C12.7105 11.8198 12.75 11.7245 12.75 11.625V10.875C12.75 10.7755 12.7105 10.6802 12.6402 10.6098C12.5698 10.5395 12.4745 10.5 12.375 10.5H8.25V9.75H13.875C14.1734 9.75 14.4595 9.63147 14.6705 9.4205C14.8815 9.20952 15 8.92337 15 8.625V1.125C15 0.826631 14.8815 0.540483 14.6705 0.329505C14.4595 0.118526 14.1734 0 13.875 0V0ZM13.5 8.25H1.5V1.5H13.5V8.25Z" fill="white"/>
+                                    </svg> 
+                                </span>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>AGENT</td>
+                            <td><span>Active</span></td>
+                            <td>
+                                <span>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.875 0H1.125C0.826631 0 0.540483 0.118526 0.329505 0.329505C0.118526 0.540483 0 0.826631 0 1.125L0 8.625C0 8.92337 0.118526 9.20952 0.329505 9.4205C0.540483 9.63147 0.826631 9.75 1.125 9.75H6.75V10.5H2.625C2.52554 10.5 2.43016 10.5395 2.35984 10.6098C2.28951 10.6802 2.25 10.7755 2.25 10.875V11.625C2.25 11.7245 2.28951 11.8198 2.35984 11.8902C2.43016 11.9605 2.52554 12 2.625 12H12.375C12.4745 12 12.5698 11.9605 12.6402 11.8902C12.7105 11.8198 12.75 11.7245 12.75 11.625V10.875C12.75 10.7755 12.7105 10.6802 12.6402 10.6098C12.5698 10.5395 12.4745 10.5 12.375 10.5H8.25V9.75H13.875C14.1734 9.75 14.4595 9.63147 14.6705 9.4205C14.8815 9.20952 15 8.92337 15 8.625V1.125C15 0.826631 14.8815 0.540483 14.6705 0.329505C14.4595 0.118526 14.1734 0 13.875 0V0ZM13.5 8.25H1.5V1.5H13.5V8.25Z" fill="white"/>
+                                    </svg>                           
+                                </span>                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>MERCHANT</td>
+                            <td><span>Active</span></td>
+                            <td>
+                                <span>
+                                    <svg width="15" height="12" viewBox="0 0 15 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.875 0H1.125C0.826631 0 0.540483 0.118526 0.329505 0.329505C0.118526 0.540483 0 0.826631 0 1.125L0 8.625C0 8.92337 0.118526 9.20952 0.329505 9.4205C0.540483 9.63147 0.826631 9.75 1.125 9.75H6.75V10.5H2.625C2.52554 10.5 2.43016 10.5395 2.35984 10.6098C2.28951 10.6802 2.25 10.7755 2.25 10.875V11.625C2.25 11.7245 2.28951 11.8198 2.35984 11.8902C2.43016 11.9605 2.52554 12 2.625 12H12.375C12.4745 12 12.5698 11.9605 12.6402 11.8902C12.7105 11.8198 12.75 11.7245 12.75 11.625V10.875C12.75 10.7755 12.7105 10.6802 12.6402 10.6098C12.5698 10.5395 12.4745 10.5 12.375 10.5H8.25V9.75H13.875C14.1734 9.75 14.4595 9.63147 14.6705 9.4205C14.8815 9.20952 15 8.92337 15 8.625V1.125C15 0.826631 14.8815 0.540483 14.6705 0.329505C14.4595 0.118526 14.1734 0 13.875 0V0ZM13.5 8.25H1.5V1.5H13.5V8.25Z" fill="white"/>
+                                    </svg>
+                                </span>                                 
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                  </table>
+                  <div class="form-footer container-fluid">
+                      <div class="row">                       
+                        <div class="footer-pagination">
+                                                   
                         </div>
-
-                        <div class="form-group">
-                            <label for="email-message">Message <span>*</span></label>
-                            <textarea class="form-control" id="email-message" rows="3"></textarea>
-                        </div>
-
-                        <button>send email</button>
-                    </form>
+                      </div>
+                  </div>
                </div>
             </div>
         </div>
