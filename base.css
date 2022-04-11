@@ -4069,6 +4069,47 @@ body > div.main.container > div > div.header-controls.container.mt-4 > div > div
 
 
 
+/* send email to users styling */
+
+.send-email-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: rgba(196, 196, 196, .3);
+}
+
+
+.send-email-container button {
+    width: 100%;
+    outline: none;
+    background-color: var(--lime-green);
+    height: 49px;
+}
+
+
+.send-email-container label {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.send-email-container label span {
+    color: red;
+}
+
+
+.send-email-container textarea {
+    height: 280px;
+}
+
+
+.send-email-container textarea,
+.send-email-container input {
+    border-radius: 0;
+    background-color: rgba(196, 196, 196, .3);
+}
+
 
 
 

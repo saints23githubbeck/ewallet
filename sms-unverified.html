@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="base.css">
+    <script src="https://kit.fontawesome.com/5be60f6b86.js" crossorigin="anonymous"></script>
+    <title>sms unverified users</title>
+</head>
+<body> 
+    <div class="sidebar" id="sidebar" data-visible="false">
+        <div class="e-wallet-logo">
+            <div>
+                <svg width="50" height="33" viewBox="0 0 50 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="49.0634" height="33" rx="2.81974" fill="#E6DF44"/>
+                    <path d="M3.75296 5.43235C3.86402 4.48534 4.66649 3.77148 5.61999 3.77148H43.4241C44.4623 3.77148 45.3039 4.61311 45.3039 5.65131V6.9772L44.458 6.5284H34.7769H24.4378H14.0048H4.51169L3.57178 6.9772L3.75296 5.43235Z" fill="#2E2A53"/>
+                    <path d="M3.75296 12.4094C3.86402 11.4624 4.66649 10.7485 5.61999 10.7485H43.4241C44.4623 10.7485 45.3039 11.5902 45.3039 12.6284V13.9542L44.458 13.5054H34.7769H24.4378H14.0048H4.51169L3.57178 13.9542L3.75296 12.4094Z" fill="#2E2A53"/>
+                    <path d="M3.75296 19.3864C3.86402 18.4394 4.66649 17.7256 5.61999 17.7256H43.4241C44.4623 17.7256 45.3039 18.5672 45.3039 19.6054V20.9313L44.458 20.4825H34.7769L24.6258 28.4742L14.0048 20.4825H4.51169L3.57178 20.9313L3.75296 19.3864Z" fill="#2E2A53"/>
+                </svg>                          
+            </div>
+            <div class="wallet-logo-text">
+                <h3><span>e</span>WALLET</h3>
+            </div>
+        </div>  
+
+        <div class="tray-links">
+            <h3>dashboard</h3>
+            <div class="dashboard-links">
+                <div>
+                <li><a href="admin-dash.html">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.88522 2.85369L2.35777 6.58256V10.6071C2.35777 10.7113 2.39917 10.8112 2.47285 10.8849C2.54654 10.9586 2.64647 11 2.75067 11L5.50246 10.9929C5.60632 10.9924 5.70575 10.9507 5.77901 10.8771C5.85227 10.8035 5.89339 10.7038 5.89339 10.6V8.24969C5.89339 8.14549 5.93479 8.04555 6.00847 7.97187C6.08215 7.89819 6.18209 7.85679 6.28629 7.85679H7.8579C7.9621 7.85679 8.06204 7.89819 8.13572 7.97187C8.2094 8.04555 8.2508 8.14549 8.2508 8.24969V10.5983C8.25064 10.65 8.26068 10.7012 8.28035 10.749C8.30002 10.7968 8.32894 10.8403 8.36544 10.8769C8.40194 10.9135 8.44531 10.9425 8.49306 10.9624C8.54081 10.9822 8.592 10.9924 8.6437 10.9924L11.3945 11C11.4987 11 11.5986 10.9586 11.6723 10.8849C11.746 10.8112 11.7874 10.7113 11.7874 10.6071V6.57986L7.26093 2.85369C7.20772 2.81079 7.14143 2.7874 7.07308 2.7874C7.00473 2.7874 6.93844 2.81079 6.88522 2.85369ZM14.0368 5.38815L11.9838 3.69597V0.294676C11.9838 0.216523 11.9528 0.141571 11.8975 0.0863086C11.8423 0.0310462 11.7673 0 11.6892 0H10.314C10.2359 0 10.1609 0.0310462 10.1057 0.0863086C10.0504 0.141571 10.0193 0.216523 10.0193 0.294676V2.07771L7.82082 0.268892C7.60983 0.0952734 7.34508 0.000347065 7.07185 0.000347065C6.79861 0.000347065 6.53387 0.0952734 6.32288 0.268892L0.106942 5.38815C0.0771034 5.41281 0.0524164 5.44311 0.0342919 5.47732C0.0161674 5.51152 0.00496056 5.54897 0.00131184 5.58751C-0.00233689 5.62605 0.00164396 5.66493 0.0130269 5.70193C0.0244099 5.73893 0.0429719 5.77332 0.0676523 5.80315L0.693838 6.56439C0.718451 6.59432 0.748726 6.6191 0.782928 6.63731C0.81713 6.65553 0.854589 6.66682 0.89316 6.67054C0.931731 6.67425 0.970656 6.67033 1.00771 6.65898C1.04476 6.64764 1.07921 6.6291 1.10909 6.60442L6.88522 1.84688C6.93844 1.80399 7.00473 1.7806 7.07308 1.7806C7.14143 1.7806 7.20772 1.80399 7.26093 1.84688L13.0373 6.60442C13.0671 6.6291 13.1015 6.64766 13.1385 6.65905C13.1755 6.67043 13.2144 6.67441 13.253 6.67076C13.2915 6.66711 13.3289 6.6559 13.3631 6.63778C13.3974 6.61966 13.4277 6.59497 13.4523 6.56513L14.0785 5.80388C14.1032 5.77389 14.1216 5.73931 14.1329 5.70215C14.1441 5.66499 14.1479 5.62597 14.1441 5.58734C14.1402 5.5487 14.1287 5.51122 14.1103 5.47703C14.0919 5.44285 14.0669 5.41264 14.0368 5.38815Z" fill="white"/>
+                    </svg>Admin Dashboard</a></li>
+                <li><a href="agent_dashboard.html">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.88522 2.85369L2.35777 6.58256V10.6071C2.35777 10.7113 2.39917 10.8112 2.47285 10.8849C2.54654 10.9586 2.64647 11 2.75067 11L5.50246 10.9929C5.60632 10.9924 5.70575 10.9507 5.77901 10.8771C5.85227 10.8035 5.89339 10.7038 5.89339 10.6V8.24969C5.89339 8.14549 5.93479 8.04555 6.00847 7.97187C6.08215 7.89819 6.18209 7.85679 6.28629 7.85679H7.8579C7.9621 7.85679 8.06204 7.89819 8.13572 7.97187C8.2094 8.04555 8.2508 8.14549 8.2508 8.24969V10.5983C8.25064 10.65 8.26068 10.7012 8.28035 10.749C8.30002 10.7968 8.32894 10.8403 8.36544 10.8769C8.40194 10.9135 8.44531 10.9425 8.49306 10.9624C8.54081 10.9822 8.592 10.9924 8.6437 10.9924L11.3945 11C11.4987 11 11.5986 10.9586 11.6723 10.8849C11.746 10.8112 11.7874 10.7113 11.7874 10.6071V6.57986L7.26093 2.85369C7.20772 2.81079 7.14143 2.7874 7.07308 2.7874C7.00473 2.7874 6.93844 2.81079 6.88522 2.85369ZM14.0368 5.38815L11.9838 3.69597V0.294676C11.9838 0.216523 11.9528 0.141571 11.8975 0.0863086C11.8423 0.0310462 11.7673 0 11.6892 0H10.314C10.2359 0 10.1609 0.0310462 10.1057 0.0863086C10.0504 0.141571 10.0193 0.216523 10.0193 0.294676V2.07771L7.82082 0.268892C7.60983 0.0952734 7.34508 0.000347065 7.07185 0.000347065C6.79861 0.000347065 6.53387 0.0952734 6.32288 0.268892L0.106942 5.38815C0.0771034 5.41281 0.0524164 5.44311 0.0342919 5.47732C0.0161674 5.51152 0.00496056 5.54897 0.00131184 5.58751C-0.00233689 5.62605 0.00164396 5.66493 0.0130269 5.70193C0.0244099 5.73893 0.0429719 5.77332 0.0676523 5.80315L0.693838 6.56439C0.718451 6.59432 0.748726 6.6191 0.782928 6.63731C0.81713 6.65553 0.854589 6.66682 0.89316 6.67054C0.931731 6.67425 0.970656 6.67033 1.00771 6.65898C1.04476 6.64764 1.07921 6.6291 1.10909 6.60442L6.88522 1.84688C6.93844 1.80399 7.00473 1.7806 7.07308 1.7806C7.14143 1.7806 7.20772 1.80399 7.26093 1.84688L13.0373 6.60442C13.0671 6.6291 13.1015 6.64766 13.1385 6.65905C13.1755 6.67043 13.2144 6.67441 13.253 6.67076C13.2915 6.66711 13.3289 6.6559 13.3631 6.63778C13.3974 6.61966 13.4277 6.59497 13.4523 6.56513L14.0785 5.80388C14.1032 5.77389 14.1216 5.73931 14.1329 5.70215C14.1441 5.66499 14.1479 5.62597 14.1441 5.58734C14.1402 5.5487 14.1287 5.51122 14.1103 5.47703C14.0919 5.44285 14.0669 5.41264 14.0368 5.38815Z" fill="white"/>
+                    </svg>Agent Dashboard</a></li>
+                <li><a href="merchant_dashboard.html">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.88522 2.85369L2.35777 6.58256V10.6071C2.35777 10.7113 2.39917 10.8112 2.47285 10.8849C2.54654 10.9586 2.64647 11 2.75067 11L5.50246 10.9929C5.60632 10.9924 5.70575 10.9507 5.77901 10.8771C5.85227 10.8035 5.89339 10.7038 5.89339 10.6V8.24969C5.89339 8.14549 5.93479 8.04555 6.00847 7.97187C6.08215 7.89819 6.18209 7.85679 6.28629 7.85679H7.8579C7.9621 7.85679 8.06204 7.89819 8.13572 7.97187C8.2094 8.04555 8.2508 8.14549 8.2508 8.24969V10.5983C8.25064 10.65 8.26068 10.7012 8.28035 10.749C8.30002 10.7968 8.32894 10.8403 8.36544 10.8769C8.40194 10.9135 8.44531 10.9425 8.49306 10.9624C8.54081 10.9822 8.592 10.9924 8.6437 10.9924L11.3945 11C11.4987 11 11.5986 10.9586 11.6723 10.8849C11.746 10.8112 11.7874 10.7113 11.7874 10.6071V6.57986L7.26093 2.85369C7.20772 2.81079 7.14143 2.7874 7.07308 2.7874C7.00473 2.7874 6.93844 2.81079 6.88522 2.85369ZM14.0368 5.38815L11.9838 3.69597V0.294676C11.9838 0.216523 11.9528 0.141571 11.8975 0.0863086C11.8423 0.0310462 11.7673 0 11.6892 0H10.314C10.2359 0 10.1609 0.0310462 10.1057 0.0863086C10.0504 0.141571 10.0193 0.216523 10.0193 0.294676V2.07771L7.82082 0.268892C7.60983 0.0952734 7.34508 0.000347065 7.07185 0.000347065C6.79861 0.000347065 6.53387 0.0952734 6.32288 0.268892L0.106942 5.38815C0.0771034 5.41281 0.0524164 5.44311 0.0342919 5.47732C0.0161674 5.51152 0.00496056 5.54897 0.00131184 5.58751C-0.00233689 5.62605 0.00164396 5.66493 0.0130269 5.70193C0.0244099 5.73893 0.0429719 5.77332 0.0676523 5.80315L0.693838 6.56439C0.718451 6.59432 0.748726 6.6191 0.782928 6.63731C0.81713 6.65553 0.854589 6.66682 0.89316 6.67054C0.931731 6.67425 0.970656 6.67033 1.00771 6.65898C1.04476 6.64764 1.07921 6.6291 1.10909 6.60442L6.88522 1.84688C6.93844 1.80399 7.00473 1.7806 7.07308 1.7806C7.14143 1.7806 7.20772 1.80399 7.26093 1.84688L13.0373 6.60442C13.0671 6.6291 13.1015 6.64766 13.1385 6.65905C13.1755 6.67043 13.2144 6.67441 13.253 6.67076C13.2915 6.66711 13.3289 6.6559 13.3631 6.63778C13.3974 6.61966 13.4277 6.59497 13.4523 6.56513L14.0785 5.80388C14.1032 5.77389 14.1216 5.73931 14.1329 5.70215C14.1441 5.66499 14.1479 5.62597 14.1441 5.58734C14.1402 5.5487 14.1287 5.51122 14.1103 5.47703C14.0919 5.44285 14.0669 5.41264 14.0368 5.38815Z" fill="white"/>
+                    </svg>Merchant Dashboard</a>
+                </li>
+                </div>
+
+                <div class="mt-4">
+                <li><a href="manage-currency.html">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 8.70762V9.625C0 10.3834 2.46354 11 5.5 11C8.53646 11 11 10.3834 11 9.625V8.70762C9.81693 9.33281 7.65417 9.625 5.5 9.625C3.34583 9.625 1.18307 9.33281 0 8.70762ZM9.16667 2.75C12.2031 2.75 14.6667 2.1334 14.6667 1.375C14.6667 0.616602 12.2031 0 9.16667 0C6.13021 0 3.66667 0.616602 3.66667 1.375C3.66667 2.1334 6.13021 2.75 9.16667 2.75ZM0 6.45391V7.5625C0 8.3209 2.46354 8.9375 5.5 8.9375C8.53646 8.9375 11 8.3209 11 7.5625V6.45391C9.81693 7.18437 7.6513 7.5625 5.5 7.5625C3.3487 7.5625 1.18307 7.18437 0 6.45391ZM11.9167 6.69023C13.5581 6.45176 14.6667 6.00918 14.6667 5.5V4.58262C14.0021 4.93496 13.0253 5.17559 11.9167 5.32383V6.69023ZM5.5 3.4375C2.46354 3.4375 0 4.20664 0 5.15625C0 6.10586 2.46354 6.875 5.5 6.875C8.53646 6.875 11 6.10586 11 5.15625C11 4.20664 8.53646 3.4375 5.5 3.4375ZM11.782 4.64707C13.5008 4.41504 14.6667 3.95957 14.6667 3.4375V2.52012C13.6497 3.05938 11.9023 3.34941 10.0633 3.41816C10.9083 3.72539 11.5299 4.13789 11.782 4.64707Z" fill="white"/>
+                    </svg>Manage Currency</a>
+                </li>
+                <li><a href="transaction.html">
+                    <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.88238 3.66387L8.26033 4.02695C8.30713 4.0379 8.349 4.06399 8.37945 4.10118C8.40989 4.13837 8.42719 4.18458 8.42867 4.23262C8.42867 4.34941 8.32482 4.4459 8.19711 4.4459H7.2932C7.1958 4.44562 7.09935 4.42665 7.00908 4.39004C6.87603 4.33418 6.72268 4.34687 6.62061 4.44082L6.13818 4.88516C6.11587 4.90469 6.09661 4.92745 6.08105 4.9527C6.06114 4.98536 6.04788 5.02165 6.04206 5.05947C6.03623 5.09729 6.03794 5.13588 6.0471 5.17303C6.05626 5.21018 6.07268 5.24515 6.09541 5.27593C6.11815 5.3067 6.14675 5.33267 6.17957 5.35234C6.44673 5.51268 6.74586 5.61236 7.0558 5.64434V6.09375C7.0558 6.31719 7.25461 6.5 7.49684 6.5H7.93787C8.18035 6.5 8.37916 6.31719 8.37916 6.09375V5.64687C9.21527 5.55547 9.84775 4.85977 9.73756 4.04727C9.65758 3.46328 9.16729 2.99863 8.55537 2.83613L7.17742 2.47305C7.13062 2.4621 7.08875 2.43601 7.05831 2.39882C7.02787 2.36163 7.01056 2.31542 7.00908 2.26738C7.00908 2.15059 7.11293 2.0541 7.24064 2.0541H8.14455C8.2423 2.05425 8.33911 2.07322 8.42969 2.10996C8.56248 2.16582 8.71609 2.15313 8.81816 2.05918L9.30059 1.61484C9.32216 1.59573 9.34074 1.57347 9.35568 1.54883C9.37577 1.51617 9.38919 1.47985 9.39516 1.44198C9.40113 1.4041 9.39953 1.36542 9.39047 1.32817C9.3814 1.29091 9.36504 1.25582 9.34234 1.22493C9.31963 1.19403 9.29103 1.16794 9.25818 1.14816C8.99093 0.987831 8.69172 0.888152 8.3817 0.856172V0.40625C8.3817 0.182812 8.18314 0 7.94066 0H7.49963C7.25715 0 7.05859 0.182812 7.05859 0.40625V0.853125C6.2235 0.944531 5.58975 1.64023 5.69994 2.45273C5.77967 3.03672 6.27148 3.50137 6.88238 3.66387ZM14.3526 8.33066C14.0529 8.05898 13.5858 8.07676 13.2709 8.33066L10.9248 10.207C10.6368 10.4381 10.2784 10.5635 9.9092 10.5625H6.90625C6.79851 10.5625 6.69517 10.5197 6.61899 10.4435C6.5428 10.3673 6.5 10.264 6.5 10.1562C6.5 10.0485 6.5428 9.94517 6.61899 9.86899C6.69517 9.7928 6.79851 9.75 6.90625 9.75H8.89408C9.29779 9.75 9.67383 9.47324 9.73832 9.07461C9.74627 9.02883 9.75018 8.98244 9.75 8.93598C9.7496 8.72075 9.66382 8.51448 9.51149 8.36244C9.35916 8.21039 9.15272 8.125 8.9375 8.125H4.875C4.18986 8.12518 3.52561 8.36085 2.99355 8.79252L1.81289 9.75H0.40625C0.298506 9.75 0.195175 9.7928 0.118988 9.86899C0.0428012 9.94517 0 10.0485 0 10.1562L0 12.5938C0 12.7015 0.0428012 12.8048 0.118988 12.881C0.195175 12.9572 0.298506 13 0.40625 13H9.46486C9.83395 13.0003 10.1921 12.8749 10.4805 12.6445L14.3203 9.57227C14.4127 9.49839 14.4878 9.40523 14.5404 9.29931C14.5931 9.19339 14.6219 9.07725 14.625 8.95902C14.6281 8.84078 14.6054 8.72329 14.5584 8.61476C14.5113 8.50623 14.4412 8.40927 14.3528 8.33066H14.3526Z" fill="white"/>
+                    </svg>Transaction Charges</a>
+                </li>                  
+                </div>
+
+                <div class="lower">
+                <li class="nav-item dropdown w-100">
+                    <a href="profit_log.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2707 3.07617L9.98331 0.205078C9.8322 0.0732422 9.62737 0 9.41246 0H9.20763V3.75H13.5058V3.57129C13.5058 3.38672 13.4218 3.20801 13.2707 3.07617ZM8.13309 3.98438V0H1.41723C0.970627 0 0.611328 0.313477 0.611328 0.703125V14.2969C0.611328 14.6865 0.970627 15 1.41723 15H12.6999C13.1465 15 13.5058 14.6865 13.5058 14.2969V4.6875H8.93899C8.49575 4.6875 8.13309 4.37109 8.13309 3.98438ZM2.7604 2.10938C2.7604 1.97988 2.88062 1.875 3.02904 1.875H5.71538C5.8638 1.875 5.98401 1.97988 5.98401 2.10938V2.57812C5.98401 2.70762 5.8638 2.8125 5.71538 2.8125H3.02904C2.88062 2.8125 2.7604 2.70762 2.7604 2.57812V2.10938ZM2.7604 4.45312V3.98438C2.7604 3.85488 2.88062 3.75 3.02904 3.75H5.71538C5.8638 3.75 5.98401 3.85488 5.98401 3.98438V4.45312C5.98401 4.58262 5.8638 4.6875 5.71538 4.6875H3.02904C2.88062 4.6875 2.7604 4.58262 2.7604 4.45312ZM7.59582 12.184V12.8906C7.59582 13.0201 7.47561 13.125 7.32719 13.125H6.78992C6.6415 13.125 6.52128 13.0201 6.52128 12.8906V12.179C6.14217 12.162 5.77347 12.0466 5.4679 11.8465C5.33694 11.7606 5.33023 11.5896 5.44876 11.4908L5.84332 11.1624C5.93633 11.0851 6.07468 11.0815 6.18348 11.141C6.31343 11.2119 6.46084 11.25 6.61396 11.25H7.55788C7.77614 11.25 7.95411 11.0766 7.95411 10.8636C7.95411 10.6893 7.83289 10.5357 7.65962 10.4906L6.14855 10.0951C5.52431 9.93164 5.08812 9.40898 5.08812 8.82393C5.08812 8.10557 5.7278 7.52197 6.52095 7.50352V6.79688C6.52095 6.66738 6.64116 6.5625 6.78958 6.5625H7.32685C7.47527 6.5625 7.59548 6.66738 7.59548 6.79688V7.5085C7.9746 7.52549 8.3433 7.64063 8.64887 7.84102C8.77983 7.92686 8.78654 8.09795 8.66801 8.19668L8.27345 8.5251C8.18044 8.60244 8.04209 8.60596 7.93329 8.54648C7.80334 8.47529 7.65593 8.4375 7.50281 8.4375H6.55889C6.34063 8.4375 6.16266 8.61094 6.16266 8.82393C6.16266 8.99824 6.28388 9.15176 6.45715 9.19688L7.96821 9.59238C8.59245 9.75586 9.02865 10.2785 9.02865 10.8636C9.02865 11.5822 8.38896 12.1655 7.59582 12.184Z" fill="white"/>
+                        </svg>
+                        PROFIT LOGS</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="profit_log.html" class="dropdown-item">All Log</a></li>
+                        <li><a href="only_profit.html" class="dropdown-item">Only Profit</a></li>
+                        <li><a href="only_commision.html" class="dropdown-item">Only Commisions</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Manage Account</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="all_users.html" class="dropdown-item">All Users</a></li>
+                        <li><a href="active-users.html" class="dropdown-item">Active Users</a></li>
+                        <li><a href="banned_users.html" class="dropdown-item">Banned Users</a></li>
+                        <li><a href="email_unverified.html" class="dropdown-item">Email Unverified</a></li>
+                        <li><a href="sms-unverified.html" class="dropdown-item">SMS Unverified Users</a></li>
+                        <li><a href="#" class="dropdown-item">Email to All</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Manage KYC</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Manage KYC 01</a></li>
+                        <li><a href="#" class="dropdown-item">Manage KYC 02</a></li>
+                        <li><a href="#" class="dropdown-item">Manage KYC 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Payment and Others</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Payment 01</a></li>
+                        <li><a href="#" class="dropdown-item">Payment 02</a></li>
+                        <li><a href="#" class="dropdown-item">Payment 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Deposit</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Manage Account 01</a></li>
+                        <li><a href="#" class="dropdown-item">Manage Account 02</a></li>
+                        <li><a href="#" class="dropdown-item">Manage Account 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Withdrawals</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Widthdrawals 01</a></li>
+                        <li><a href="#" class="dropdown-item">Widthdrawals 02</a></li>
+                        <li><a href="#" class="dropdown-item">Widthdrawals 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Support Ticket</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Manage Account 01</a></li>
+                        <li><a href="#" class="dropdown-item">Manage Account 02</a></li>
+                        <li><a href="#" class="dropdown-item">Manage Account 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Report</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Report 01</a></li>
+                        <li><a href="#" class="dropdown-item">Report 02</a></li>
+                        <li><a href="#" class="dropdown-item">Report 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Extra Pages</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Extra Pages 01</a></li>
+                        <li><a href="#" class="dropdown-item">Extra Pages 02</a></li>
+                        <li><a href="#" class="dropdown-item">Extra Pages 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Settings</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Settings 01</a></li>
+                        <li><a href="#" class="dropdown-item">Settings 02</a></li>
+                        <li><a href="#" class="dropdown-item">Settings 03</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item dropdown w-100">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Frontend Manager</a>
+                    <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Frontend Manager 01</a></li>
+                        <li><a href="#" class="dropdown-item">Frontend Manager 02</a></li>
+                        <li><a href="#" class="dropdown-item">Frontend Manager 03</a></li>
+                    </ul>
+                </li>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main container">
+        <button class="mobile-nav-toggle"><span aria-expanded="false" class="sr-only" aria-controls="sidebar">menu</span></button>
+
+        <div class="row">
+            <nav>
+                <div class="page-name">
+                </div>
+                <div class="profile-details">
+                    <div class="admin-pic">
+                        <img src="https://images.unsplash.com/photo-1520451644838-906a72aa7c86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=550&q=80" alt="admin profile pic">
+                    </div>
+                    <div class="name-tray">
+                        <a href="#">Admin</a>
+                    </div>
+                    <div class="dropdown-case">
+                        <div class="dropdown">
+                            <li class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              
+                            </li>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                              <li class="dropdown-item" >Profile</li>
+                              <li class="dropdown-item" >Password</li>
+                              <li class="dropdown-item" >logout</li>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="header-controls container mt-4">
+                <div class="row">
+                    <div class="left-pane col-md-4">
+                        <h2>SMS Unverified Users</h2>
+                    </div>
+
+                    <div class="right-pane col-md-8">                        
+                        <div class="bottom mt-3">                           
+                            <div class="search-container">                             
+
+                                <div class="input-group">
+                                    <div class="form-outline">
+                                      <input type="search" id="only-profit-search" class="form-control" placeholder="username or email"/>
+                                    </div>
+                                    <button type="button" class="btn btn-primary">
+                                      <i class="fas fa-search"></i>
+                                    </button>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>        
+            
+            <div class="banned-users container mt-5">
+               <div class="form-container">
+                <table class="table banned-users">
+                    <thead>
+                      <tr>
+                        <th scope="col">User</th>
+                        <th scope="col">Email-Phone</th>
+                        <th scope="col">Country</th>
+                        <th scope="col">Joined At</th>
+                        <th scope="col">Action</th>
+                      </tr>                  
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" colspan="5">No banned users found</th>                                                  
+                        </tr>                        
+                    </tbody>
+                  </table>
+                  <div class="form-footer container-fluid">
+                      <div class="row">                       
+                        <div class="footer-pagination">
+                                                   
+                        </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+    </div>
+ 
+<script src="index.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
