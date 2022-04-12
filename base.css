@@ -4196,6 +4196,14 @@ body > div.main.container > div > div.automatic-gateway.container.mt-5 > div > t
 }
 
 
+.automatic-gateway .search-container {
+    display: flex;
+    align-items: end;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
 .icon-wrapper div {
     height: 38px;
     width: 39px;
