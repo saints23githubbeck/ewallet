@@ -1843,9 +1843,9 @@ body .row {
     }
 
 
-    .main .container {
+    /* .main .container {
         min-height: 100vh;
-    }
+    } */
 }
 
 
@@ -4128,11 +4128,24 @@ body > div.main.container > div > div.manage-kyc.container.mt-5 > div > table > 
 
 
 
-body > div.main.container > div > div.manage-kyc.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+body > div.main.container > div > div.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
     background-color: var(--lime-green);
     padding:  0 .4em;
 }
 
+
+
+.lower .dropdown-menu li {
+    list-style-type: circle;
+    color: white;
+}
+
+
+
+/* user-pending styling */
+body > div.main.container > div > div.container.mt-5 > div > table > tbody > tr > th {
+    font-weight: normal;
+}
 
 
 
