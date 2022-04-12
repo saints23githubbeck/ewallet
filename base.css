@@ -4148,5 +4148,30 @@ body > div.main.container > div > div.container.mt-5 > div > table > tbody > tr 
 }
 
 
+.header-controls.user-pending .right-pane,
+.header-controls.manage-kyc-info .right-pane {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.header-controls.user-pending .right-pane a,
+.header-controls.manage-kyc-info .right-pane a  {
+    width: 307px;
+    height: 65px;
+    background-color: var(--lime-green);
+    border-radius: 5px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    font-size: 26px;
+    font-weight: 400;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 
 
