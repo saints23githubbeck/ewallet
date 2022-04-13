@@ -4183,24 +4183,44 @@ body > div.main.container > div > div.container.mt-5 > div > table > tbody > tr 
 
 /* automatic gateway styling */
 
+.content-wrapper {
+    width: 100%;
+    padding: 2em;
+    background-color: rgba(196, 196, 196, .3);
+}
+
+
 .automatic-gateway .input-group {
     display: flex;
     align-items: flex-end;
 }
 
 
-body > div.main.container > div > div.automatic-gateway.container.mt-5 > div > table > tbody > tr > th {
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > th {
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    font-weight: normal;
 }
 
 
-.automatic-gateway .search-container {
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > th > span {
+    margin-left: 2rem;
+}
+
+
+.automatic-gateway  .content-wrapper .search-container {
     display: flex;
-    align-items: end;
     width: 100%;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: end;
+}
+
+
+.automatic-gateway .search-container input {
+    border-radius: 0;
+    height: 52px;
+    width: 252px;
+    border: 1px solid rgba(102, 102, 102, .7);
 }
 
 
@@ -4232,6 +4252,53 @@ body > div.main.container > div > div.automatic-gateway.container.mt-5 > div > t
     padding: 0 .1em;
     margin-left: 10px;
 }
+
+
+.automatic-gateway .table {
+    color: rgba(46, 42, 83, .8);
+}
+
+
+.automatic-gateway .table tbody {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.table td, .table th {
+    vertical-align: inherit;
+}
+
+
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(4) span  {
+    width: 69px;
+    height: 25px;
+    background-color: rgba(60, 250, 29, .35);
+    border-radius: 10px;
+    padding: .1em .3em;
+    color: rgba(46, 42, 83, .8);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(5) > {
+    display: flex;
+}
+
+
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(5) > span:nth-child(1) {
+    background-color: var(--lime-green);
+    padding: 0 .1em;
+}
+
+
+body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(5) > span:nth-child(2) {
+    background-color: #f72c10;
+    padding: 0 .1em;
+    margin-left: 10px;
+}
+
+
 
 
 
