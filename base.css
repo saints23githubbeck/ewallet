@@ -4216,11 +4216,17 @@ body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > t
 }
 
 
-.automatic-gateway .search-container input {
+.search-container input {
     border-radius: 0;
     height: 52px;
     width: 252px;
     border: 1px solid rgba(102, 102, 102, .7);
+    padding-left: 1rem;
+}
+
+
+.search-container input:active {
+    outline: none;
 }
 
 
@@ -4300,5 +4306,35 @@ body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > t
 
 
 
+/* manual gateways styling */
+
+body > div.main.container > div > div.manual-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(3) > span:nth-child(1) {
+    background-color: var(--lime-green);
+    padding: 0 .1em;
+}
+
+
+body > div.main.container > div > div.manual-gateway.container.mt-2 > div > table > tbody > tr > td:nth-child(3) > span:nth-child(2) {
+    background-color: #f72c10;
+    padding: 0 .1em;
+    margin-left: 10px;
+}
+
+
+body > div.main.container > div > div.manual-gateway.container.mt-2 > div > table > tbody > tr > th {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+
+body > div.main.container > div > div.manual-gateway.container.mt-2 > div > table > tbody > tr > th > span {
+    margin-left: 2rem;
+}
+
+
+.manual-gateway .table tbody {
+    background-color: rgba(255, 255, 255, 0);
+}
 
 
