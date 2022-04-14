@@ -4571,6 +4571,52 @@ body > div.main.container > div > div.new-manual-gateway.container.mt-2 > div > 
 
 
 
+/* pending deposits styling */
+.pending-deposits.container .table {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.pending-deposits.container .table > tbody > tr > th > span {
+    color: var(--lime-green);
+}
+
+
+.pending-deposits.container .table > tbody > tr > th > {
+    color: rgba(102, 102, 102, .7);   
+}
+
+
+body > div.main.container > div > div.pending-deposits.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: transparent;
+    color: #1993d5;
+}
+
+
+body > div.main.container > div > div.pending-deposits.container.mt-5 > div > table > tbody > tr > td:nth-child(5) {
+    color: rgba(46, 42, 83, .7);
+}
+
+
+body > div.main.container > div > div.pending-deposits.container.mt-5 > div > table > tbody > tr > td:nth-child(5) span {
+    color: rgba(46, 42, 83);
+}
+
+
+body > div.main.container > div > div.pending-deposits.container.mt-5 > div > table > tbody > tr > td:nth-child(6) span {
+    background-color: rgba(236, 118, 10, .3);
+    border: 1px solid #ec760a;
+    border-radius: 10px;
+    padding: .1rem .4rem;
+} 
+
+
+body > div.main.container > div > div.pending-deposits.container.mt-5 > div > table > tbody > tr > td:nth-child(7) span {
+    background-color: var(--lime-green);
+    padding:  0 .2rem;
+} 
+
 
 
 
