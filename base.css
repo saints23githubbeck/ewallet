@@ -2823,7 +2823,7 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 
     #sidebar {
-        height: 100%;
+        height: auto;
     }
 
 
