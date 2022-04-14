@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
     <script src="https://kit.fontawesome.com/5be60f6b86.js" crossorigin="anonymous"></script>
-    <title>Manual Gateways</title>
+    <title>New Manual Gateway</title>
 </head>
 <body> 
     <div class="sidebar" id="sidebar" data-visible="false">
@@ -210,34 +210,159 @@
 
             <div class="header-controls container mt-4">
                 <div class="row">
-                    <div class="left-pane">
+                    <div class="left-pane col-md-6">
                         <h2>New Manual Gateway</h2>
                     </div>          
-                    <div class="right-pane">
-                        <a href="#">Go Back</a>
+                    <div class="right-pane col-md-6">
+                        <a href="#">
+                            <svg width="23" height="26" viewBox="0 0 23 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_d_212_682)">
+                                <path d="M4.1394 9.26658L18.5347 0.406898L18.7736 17.7258L4.1394 9.26658Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <filter id="filter0_d_212_682" x="0.138672" y="0.407227" width="22.6348" height="25.3184" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                <feOffset dy="4"/>
+                                <feGaussianBlur stdDeviation="2"/>
+                                <feComposite in2="hardAlpha" operator="out"/>
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_212_682"/>
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_212_682" result="shape"/>
+                                </filter>
+                                </defs>
+                            </svg>
+                                Go Back</a>
                     </div>         
                 </div>                    
             </div>        
             
-            <div class="manual-gateway container mt-2">
+            <div class="new-manual-gateway container mt-2">
                 <div class="content-wrapper">
-                    <div class="top-wrapper">
-                        <div class="profile-container">
-                            <div class="edit-icon">
-                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.51787 2.73135L12.2684 6.48184L4.12433 14.6259L0.780474 14.995C0.332829 15.0445 -0.0453838 14.666 0.00441962 14.2184L0.37648 10.8722L8.51787 2.73135ZM14.588 2.17297L12.827 0.411977C12.2777 -0.137326 11.3868 -0.137326 10.8375 0.411977L9.18084 2.06867L12.9313 5.81916L14.588 4.16246C15.1373 3.61287 15.1373 2.72227 14.588 2.17297Z" fill="white"/>
-                                </svg>
+                    <div class="top-wrapper container">
+                        <div class="row">
+                            <div class="profile-container col-md-2">
+                                <div class="edit-icon">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.51787 2.73135L12.2684 6.48184L4.12433 14.6259L0.780474 14.995C0.332829 15.0445 -0.0453838 14.666 0.00441962 14.2184L0.37648 10.8722L8.51787 2.73135ZM14.588 2.17297L12.827 0.411977C12.2777 -0.137326 11.3868 -0.137326 10.8375 0.411977L9.18084 2.06867L12.9313 5.81916L14.588 4.16246C15.1373 3.61287 15.1373 2.72227 14.588 2.17297Z" fill="white"/>
+                                    </svg>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-tray">
-                            <div class="input-group">
-                                <input type="text" placeholder="Method Name" id="gateway-name-input">
-                            </div>
-                            <div class="input-group">
-                                <input type="text" placeholder="Currency" id="currency-input">
+                            <div class="input-tray col-md-10">
+                                <label for="gateway-name-input"></label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Method Name" id="gateway-name-input">
+                                </div>
+                                <label for="currency-input"></label>
+                                <div class="input-group">
+                                    <input type="text" placeholder="Currency" id="currency-input">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div class="range-charge-section container">
+                        <div class="row">
+                            <div class="left-section col-md-6">
+                                <div class="range-wrapper mt-5">
+                                    <div class="wrapper-header">
+                                        <h5>Range</h5>
+                                    </div>
+                                    <div class="bottom-wrapper">
+                                        <label for="maximum-amount" class="mt-4">Mimimum Amount <span>*</span></label>
+                                        <div class="input-group mb-3 d-flex"> 
+                                            <input type="text" class="form-control" id="maximum-amount" aria-label="minimum amount" placeholder="0">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text"></span>
+                                            </div>
+                                        </div>
+    
+                                        <label for="minimum-amount " class="mt-2">Maximum Amount <span>*</span></label>
+                                        <div class="input-group mb-3">  
+                                            <input type="text" class="form-control" aria-label="minimum amount" placeholder="0">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-section col-md-6">
+                                <div class="charges-wrapper mt-5 range-wrapper">
+                                    <div class="wrapper-header">
+                                        <h5>Charges</h5>
+                                    </div>
+                                    <div class="bottom-wrapper">
+                                        <label for="maximum-amount" class="mt-4">Fixed Charges<span>*</span></label>
+                                        <div class="input-group mb-3 d-flex"> 
+                                            <input type="text" class="form-control" id="maximum-amount" aria-label="minimum amount" placeholder="0">
+                                            <div class="input-group-append">
+                                              <span class="input-group-text"></span>
+                                            </div>
+                                        </div>
+    
+                                        <label for="minimum-amount " class="mt-2">Percent Charges <span>*</span></label>
+                                        <div class="input-group mb-3">  
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">%</span>
+                                            </div>
+                                            <input type="text" class="form-control" aria-label="minimum amount" placeholder="0">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deposit-section mt-5">
+                        <div class="range-wrapper container">
+                            <div class="wrapper-header">
+                                <h5>Deposit Instruction</h5>
+                            </div>
+                            <div class="bottom-wrapper">
+                                <textarea name="deposit-instructions" id="deposit-instructions" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-data container mt-5">
+                        <div class="range-wrapper">
+                            <div class="wrapper-header">
+                                <h5>User Data</h5>
+                                <a class="" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                                    + Add New 
+                                </a>
+                            </div>
+                            <div class="bottom-wrapper">                            
+                                <div class="collapse" id="collapseExample">
+                                    <div class="controls-drawer container-fluid">
+                                        <div class="row">
+                                            <div class="input-group col-md-3">
+                                                <input type="text" id="field-name" placeholder="Field Name">
+                                            </div>
+                                            <div class="input-text col-md-3">
+                                                <select class="form-control" id="input-text">
+                                                    <option>Textarea</option>
+                                                    <option>File</option>                                                
+                                                </select>
+                                            </div>
+                                            <div class="required col-md-3">
+                                                <select class="form-control" id="required">
+                                                    <option>Required</option>
+                                                    <option>Optional</option>                                                
+                                                </select>
+                                            </div>
+                                            <div class="cancel col-md-2">
+                                                <a href="#">
+                                                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M13.4871 14.3804L9.90423 10.441L5.90936 14.0743L4.47958 12.5023L8.47445 8.86894L4.90841 4.94805L6.33251 3.65284L9.89855 7.57372L13.9119 3.92358L15.3417 5.49563L11.3283 9.14578L14.9112 13.0852L13.4871 14.3804Z" fill="white"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="save-method-btn mt-5">Save Method</button>
                 </div>
             </div>
         </div>
