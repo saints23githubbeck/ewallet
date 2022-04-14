@@ -4530,6 +4530,7 @@ body > div.main.container > div > div.manual-gateway.container.mt-2 > div > tabl
     border: 1px solid rgba(102, 102, 102, .7);
     filter: drop-shadow(0px 4px 10px rgba(102, 102, 102, .3));
     border-radius: 0;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -4539,8 +4540,8 @@ body > div.main.container > div > div.manual-gateway.container.mt-2 > div > tabl
 }
 
 
-.bottom-wrapper .cancel a {
-    min-width: 100%;
+.bottom-wrapper .cancel span {
+    width: 100px;
     height: 52px;
     background-color: rgba(247, 44, 16, .77);   
 }
@@ -4551,6 +4552,8 @@ body > div.main.container > div > div.manual-gateway.container.mt-2 > div > tabl
     border-radius: 0;
     outline: none;
     border: 1px solid rgba(102, 102, 102, .7);
+    background-color: rgba(255, 255, 255, 0);
+    padding-left: 1rem;
 }
 
 
