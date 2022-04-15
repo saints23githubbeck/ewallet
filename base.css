@@ -4352,6 +4352,13 @@ body > div.main.container > div > div.manual-gateway.container.mt-2 > div > tabl
 .header-controls .right-pane {
     display: flex;
     justify-content: end;
+    align-items: flex-end;
+    padding-right: 0;
+}
+
+
+.header-controls .left-pane {
+    padding-left: 0;
 }
 
 
@@ -4649,11 +4656,45 @@ body > div.main.container > div > div.pending-deposits.container.mt-5 > div > ta
 
 
 /* widthrawal methods styling */
-.withdrawal-methods.container.mt-2 > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > span {
+.header-controls .row .left-pane h2 {
+    color: #214e65;
+}
+
+
+.withdrawal-methods.header-controls.right-pane {
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    flex-direction: row;
+}
+
+.withdrawal-methods.container.mt-2 > div > table tbody {
+    background-color: rgba(255, 255, 255, 0);
+    font-weight: 600;
+}
+
+
+.withdrawal-methods.container.mt-2 > div > table > tbody > tr > th {
+    display: flex;
+}
+
+
+.withdrawal-methods.container.mt-2 > div > table > tbody > tr > th span {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+
+.withdrawal-methods.container.mt-2 > div > table > tbody > tr > td:nth-child(4) > span {
     background-color: rgba(60, 250, 29, .35);
     border-radius: 10px;
     padding: .1rem .2rem;
+}
 
+
+.withdrawal-methods.container.mt-2 > div > table > tbody > tr > td:nth-child(5) > span {
+    padding: 0 .3rem;
+    background-color: var(--lime-green);
 }
 
 
