@@ -4233,7 +4233,7 @@ body > div.main.container > div > div.automatic-gateway.container.mt-2 > div > t
 .icon-wrapper div {
     height: 38px;
     width: 39px;
-    background-color: red;
+    background-color: #c4c4c4;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .25));
 }
@@ -4318,6 +4318,14 @@ body > div.main.container > div > div.manual-gateway.container.mt-2 > div > tabl
     background-color: #f72c10;
     padding: 0 .1em;
     margin-left: 10px;
+}
+
+
+.search-container .input-group input {
+    outline: none;
+    border: 1px solid rgba(102, 102, 102, .7);
+    padding-left: 1rem;
+    background-color: rgba(255, 255, 255, 0);
 }
 
 
@@ -4635,9 +4643,19 @@ body > div.main.container > div > div.pending-deposits.container.mt-5 > div > ta
 
 .right-pane .search-container .input-group .btn {
     min-height: 52px;
-    border-radius: 0;
-    
+    border-radius: 0;    
 }
+
+
+
+/* widthrawal methods styling */
+.withdrawal-methods.container.mt-2 > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > span {
+    background-color: rgba(60, 250, 29, .35);
+    border-radius: 10px;
+    padding: .1rem .2rem;
+
+}
+
 
 
 
