@@ -4700,6 +4700,40 @@ body > div.main.container > div > div.pending-deposits.container.mt-5 > div > ta
 
 
 
+/* pending log styling */
+.pending-log.container.mt-5 > div > table > tbody {
+    color: rgba(46, 42, 83, .8);
+    font-weight: 600;
+}
 
 
 
+.pending-log.container.mt-5 > div > table > tbody > tr > th {
+    display: flex;
+    align-items: center;
+}
+
+
+.pending-log.container.mt-5 > div > table > tbody > tr > th .icon-wrapper {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+
+body > div.main.container > div > div.pending-log.container.mt-5 > div > table > tbody > tr > td:nth-child(3) > {
+    color: grey;
+}
+
+
+body > div.main.container > div > div.pending-log.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: rgba(236, 118, 10, .3);
+    border: 1px solid #ec760a;
+    border-radius: 10px;
+    padding: .1rem .4rem;
+}
+
+
+body > div.main.container > div > div.pending-log.container.mt-5 > div > table > tbody > tr > td:nth-child(5) > span {
+    padding: 0 .3rem;
+    background-color: var(--lime-green);
+}
