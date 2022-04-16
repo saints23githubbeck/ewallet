@@ -4811,3 +4811,138 @@ body > div.main.container > div > div.rejected-log.container.mt-5 > div > table 
     padding: 0 .3rem;
     background-color: var(--lime-green);
 }
+
+
+
+/* withdrawal log styling */
+
+.withdrawal-controls .left-pane {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+
+.withdrawal-controls .tile-container {
+    padding: 0;
+}
+
+
+.withdrawal-controls .tile-container .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.withdrawal-controls .tile-container .tile-card {
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+}
+
+
+.withdrawal-controls .tile-container .one {
+    background-color: #f72c10;
+}
+
+
+.withdrawal-controls .tile-container .two {
+    background-color: #71caf8;
+}
+
+
+.withdrawal-controls .tile-container .three {
+    background-color: #3cfa1d;
+}
+
+
+.withdrawal-controls .tile-container .tile-card h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: white;
+}
+
+
+.withdrawal-controls .tile-container .tile-card h2 {
+    font-size: 26px;
+    font-weight: 400;
+    text-shadow: none;
+}
+
+
+.withdrawal-log.container.mt-5 > div > table > tbody {
+    color: rgba(46, 42, 83, .8);
+    font-weight: 600;
+}
+
+
+.withdrawal-log.container.mt-5 > div > table > tbody > tr > th {
+    display: flex;
+    align-items: center;
+}
+
+
+.withdrawal-log.container.mt-5 > div > table > tbody > tr > th .icon-wrapper {
+    margin-right: 10px;
+    font-weight: 600;
+}
+
+
+body > div.main.container > div > div.withdrawal-log.container.mt-5 > div > table > tbody > tr > td:nth-child(3) > {
+    color: grey;
+}
+
+
+body > div.main.container > div > div.withdrawal-log.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: rgba(236, 118, 10, .3);
+    border: 1px solid #ec760a;
+    border-radius: 10px;
+    padding: .1rem .4rem;
+}
+
+
+body > div.main.container > div > div.withdrawal-log.container.mt-5 > div > table > tbody > tr > td:nth-child(5) > span {
+    padding: 0 .3rem;
+    background-color: var(--lime-green);
+}
+
+
+/* all ticket template styling */
+
+
+.all-ticket.container.mt-5 > div > table > tbody > tr > th {
+    color: #3d2ecc;
+}
+
+body > div.main.container > div > div.all-ticket.container.mt-5 > div > table > tbody > tr > td:nth-child(3) > span.open {
+    background-color: rgba(60, 250, 29, .35);
+    padding: .1rem .5rem;
+    border-radius: 10px;
+}
+
+
+body > div.main.container > div > div.all-ticket.container.mt-5 > div > table > tbody > tr > td:nth-child(3) > span.closed {
+    background-color: rgba(102, 102, 102, .35);
+    border: 1px solid rgba(87, 85, 84, 0.3);padding: .1rem .5rem;
+    border-radius: 10px;
+
+}
+
+
+body > div.main.container > div > div.all-ticket.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: rgba(236, 118, 10, .3);
+    border: 1px solid #ec760a;
+    border-radius: 10px;
+    padding: .1rem .4rem;
+}
+
+
+body > div.main.container > div > div.all-ticket.container.mt-5 > div > table > tbody > tr > td:nth-child(5) > span {
+    padding: 0 .3rem;
+    background-color: var(--lime-green);
+}
