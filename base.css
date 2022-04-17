@@ -5112,6 +5112,51 @@ body > div.main.container > div > div.login-history.container.mt-5 > div > table
 }
 
 
+/* system module setting styling */
+
+.system-module-setting .wrapper-header {
+    background-color: #3d2ecc;
+    height: 89px;
+}
+
+
+.system-module-setting .right-wrapper .wrapper-header {
+    background-color: #666666;
+}
+
+
+.system-module-setting .right-wrapper.mt-5 .wrapper-header {
+    background-color: green;
+}
+
+
+.system-module-setting .wrapper-header p {
+    font-size: 32px;
+    font-weight: 400;
+    color: white;
+}
+
+
+.system-module-setting .control-body {
+    padding: 1.5rem 2.5rem;
+}
+
+
+.system-module-setting .control-body .control {
+    display: flex;
+    border: 1px solid #666666;
+    align-items: center;
+    height: 80px;
+    padding: 0 1rem;
+    color: rgba(0,0,0, .8);
+}
+
+
+.system-module-setting .control-body .control .control-container .form-check {
+display: flex;
+flex-direction: row;
+}
+
 
 
 
