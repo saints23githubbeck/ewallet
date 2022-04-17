@@ -5021,5 +5021,99 @@ body > div.main.container > div > div.login-history.container.mt-5 > div > table
 }
 
 
+/* general setting template styling */
+.login-history .container {
+    padding: 0;
+}
+
+.login-history .top-drawer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.login-history label {
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+}
+
+
+.login-history .second-drawer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.login-history .second-drawer .outer-container {
+    height: 36px;
+    width: 226px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5rem;
+}
+
+
+.login-history #timezone-slider .inner-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    background-color: var(--alternative-primary);
+}
+
+
+.login-history #force-secure-password,
+.login-history #agree-policy {
+    background-color: #d3384a;
+    color: white;
+}
+
+
+.login-history #force-secure-password .inner-container,
+.login-history #agree-policy .inner-container  {
+    position: absolute;
+    width: 10%;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: black;
+}
+
+
+.login-history #OTP-verfication {
+    background-color: #1CA110;
+    color: white;
+}
+
+
+.login-history #OTP-verification .inner-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 10%;
+    background-color: var(--alternative-primary);
+}
+
+
+.login-history button {
+    width: 100%;
+    color: white;
+    background-color: var(--alternative-primary);
+    height: 73px;
+    outline: none;
+    border: none;
+}
+
+
+
+
+
 
 
