@@ -4985,3 +4985,28 @@ body > div.main.container > div > div.closed-ticket.container.mt-5 > div > table
     padding: 0 .3rem;
     background-color: var(--lime-green);
 }
+
+
+/* transaction log styling */
+.transaction-logs.container.mt-5 > div > table > tbody {
+    background-color: white;
+}
+
+
+.transaction-logs.container.mt-5 > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+body > div.main.container > div > div.transaction-logs.container.mt-5 > div > table > tbody > tr > td:nth-child(4) > span {
+    background-color: transparent;
+}
+
+
+body > div.main.container > div > div.transaction-logs.container.mt-5 > div > table > tbody > tr > td:nth-child(5) {
+    color: #1CA110;
+}
+
+
+
+
