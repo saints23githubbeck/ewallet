@@ -5008,5 +5008,18 @@ body > div.main.container > div > div.transaction-logs.container.mt-5 > div > ta
 }
 
 
+/* login history styling */
+
+
+body > div.main.container > div > div.login-history.container.mt-5 > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+.login-history.container.mt-5 > div > table > tbody > tr > td:nth-child(4) {
+    color: #1993d5;
+}
+
+
 
 

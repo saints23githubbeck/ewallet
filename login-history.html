@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="base.css">
     <script src="https://kit.fontawesome.com/5be60f6b86.js" crossorigin="anonymous"></script>
-    <title>transaction log</title>
+    <title>login history</title>
 </head>
 <body> 
     <div class="sidebar" id="sidebar" data-visible="false">
@@ -165,7 +165,7 @@
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Report</a>
                     <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
                         <li><a href="transaction-logs.html" class="dropdown-item">Transaction Log</a></li>
-                        <li><a href="#" class="dropdown-item">Login History</a></li>
+                        <li><a href="login-history.html" class="dropdown-item">Login History</a></li>
                         <li><a href="#" class="dropdown-item">Email History</a></li>
                     </ul>
                 </li>
@@ -234,7 +234,7 @@
             <div class="header-controls container mt-4">
                 <div class="row">
                     <div class="left-pane col-md-4">
-                        <h2>Transaction Log</h2>
+                        <h2>Login History</h2>
                     </div>
 
                     <div class="right-pane col-md-8">                        
@@ -242,7 +242,7 @@
                             <div class="search-container">                             
                                 <div class="input-group">
                                     <div class="form-outline">
-                                      <input type="search" id="Trx-number/username" class="form-control" placeholder="Trx number/username"/>
+                                      <input type="search" id="search username" class="form-control" placeholder="Trx number/username"/>
                                     </div>
                                     <button type="button" class="btn btn-primary">
                                       <i class="fas fa-search"></i>
@@ -254,92 +254,82 @@
                 </div>                    
             </div>        
             
-            <div class="transaction-logs container mt-5">
+            <div class="login-history container mt-5">
                <div class="form-container">
                 <table class="table">
                     <thead>
                       <tr>
                         <th scope="col">User/Agent/Merchant</th>
                         <th scope="col">User Type</th>
-                        <th scope="col">Trx</th>
-                        <th scope="col">Transacted</th>
-                        <th scope="col">Amount</th>  
-                        <th scope="col">Post Balance</th>                                              
+                        <th scope="col">Login at</th>
+                        <th scope="col">IP</th>
+                        <th scope="col">Location</th>  
                       </tr>                  
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
-                            <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
+                            <td>Agent</td>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>   
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
-                            <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <th scope="row">James Agent <br> <span>@agent</span></th>
+                            <td>Agent</td>
+                            <td>EAS88567898</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
                             <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
+                            <th scope="row">James Agent <br> <span>@agent</span></th>
                             <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
                             <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <td>2200NFT5634252</td>
+                            <td>2a02.01.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>              
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
-                            <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
+                            <td>USER</td>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
                             <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
-                            <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
+                            <td>USER</td>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>  
                         <tr>
-                            <th scope="row">Agent Agent <br> <span>@Agent</span></th>
-                            <td>AGENT</td>
-                            <td>220NF53264624</td>
-                            <td>2022-01-5 05-27 PM <br> <span>1 week ago</span></td>
-                            <td>+100.00 NGN</td>
-                            <td>100.00 NGN</td>
-                        </tr>
+                            <th scope="row">Agent Agent <br> <span>@agent</span></th>
+                            <td>USER</td>
+                            <td>2200NFT5634252</td>
+                            <td>103.104.23.216</td>
+                            <td>Nigeria</td>
+                        </tr>                          
                             
                     </tbody>
                   </table>
