@@ -5191,6 +5191,38 @@ flex-direction: row;
 
 
 
+/* extensions template styling */
+.extensions.container-fluid.mt-5 > div > div > table > tbody {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+.extensions.container-fluid.mt-5 > div > div > table > tbody > tr > th {
+    display: flex;
+}
+
+
+.extensions.container-fluid.mt-5 > div > div > table > tbody > tr > th > span {
+    margin-left: 10px;
+    font-weight: normal;
+}   
+
+
+.extensions.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(2) > span {
+    background-color: rgba(236, 118, 10, .3);
+    border: 1px solid #ec760a;
+    border-radius: 10px;
+    padding: .1rem .4rem;
+}
+
+
+.extensions.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(3) > span {
+    padding: 0 .3rem;
+    background-color: var(--lime-green);
+}
+
+
+
  
 
 
