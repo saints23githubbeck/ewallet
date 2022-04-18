@@ -5304,12 +5304,24 @@ flex-direction: row;
     width: 90%;
     margin: 0 auto;
     background-color: white;
+    color: #2e2a53;
+}
+
+
+.global-email-template.container-fluid.my-5 > div > div > table > tbody > tr > th {
+    font-weight: normal;
 }
 
 
 .global-email-template .email-wrapper {
     width: 90%;
     margin: 0 auto;
+}
+
+
+.global-email-template .email-wrapper label {
+    color: var(--purple);
+    font-weight: 600;
 }
 
 
