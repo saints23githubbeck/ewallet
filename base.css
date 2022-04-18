@@ -5298,6 +5298,44 @@ flex-direction: row;
 
 
 
+/* global email template styling */
+
+.global-email-template .table {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+}
+
+
+.global-email-template .email-wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.global-email-template .email-wrapper input,
+.global-email-template .email-wrapper textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(102, 102, 102, .7);
+}
+
+
+.global-email-template .email-wrapper input {
+    height: 82px;    
+    padding-left: 1rem;
+}
+
+
+.global-email-template .email-wrapper button {
+    outline: none;
+    height: 63px;
+    background-color: var(--lime-green);
+    width: 100%;
+}
+
+
+
 
 
 
