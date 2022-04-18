@@ -5348,6 +5348,39 @@ flex-direction: row;
 
 
 
+/* email template styling */
+
+.email-template.container-fluid.mt-5 > div > div > table > tbody {
+    font-weight: normal;
+    color: rgba(0,  0, 0, .8);
+    background-color: white;
+}
+
+
+.email-template.container-fluid.mt-5 > div > div > table > tbody > tr {
+    height: 80px;
+}
+
+
+.email-template.container-fluid.mt-5 > div > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+.email-template.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(3) span {
+    padding: .1rem .5rem;
+    background-color: rgba(28,161, 16, .35);
+    border-radius: 20px;
+}
+
+
+.email-template.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(4) span {
+    padding: 0 .2rem;
+    background-color: var(--lime-green);
+}
+
+
+
 
 
 
