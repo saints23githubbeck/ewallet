@@ -5428,8 +5428,37 @@ body > div.main.container > div > div.email-configuration.container-fluid.mt-5 >
 
 
 
+/* sms ipa styling */
+
+.sms-ipa .table tbody {
+    background-color: rgba(255, 255, 255, 0.021);
+}
 
 
+.sms-ipa.container-fluid.mt-5 > div > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+.sms-ipa .global-template label span {
+    color: red;
+}
+
+
+.sms-ipa .global-template .input-group input {
+    border: 1px solid #666666;
+    border-radius: 5px;
+    height: 59px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+
+.sms-ipa .global-template button {
+    width: 100%;
+    background-color: var(--lime-green);
+    outline: none;
+}
 
 
 
