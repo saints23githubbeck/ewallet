@@ -5537,6 +5537,29 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 
 
 
+/* sms template styling */
+
+.sms-template.container-fluid.mt-5 > div > div > table > tbody {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.sms-template.container-fluid.mt-5 > div > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+.sms-template.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(2) > span {
+    padding: .1rem .5rem;
+    border-radius: 20px;
+    background-color: rgba(28,161, 16, .35);
+}
+
+
+.sms-template.container-fluid.mt-5 > div > div > table > tbody > tr > td:nth-child(3) > span {
+    background-color: var(--lime-green);
+    padding: 0 .2rem;
+}
+
 
 
 
