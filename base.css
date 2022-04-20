@@ -1725,6 +1725,7 @@ body {
     transition: all ease;
     flex-direction: column;
     transition: all ease .3s;
+    height: 100%;
 }
 
 
@@ -5704,6 +5705,7 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
     border-radius: 10px;
     height: 70px;
     background-color: rgba(255, 255, 255, 0);
+    padding-left: 1rem;
 }
 
 
@@ -5752,12 +5754,69 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 }
 
 
-body > div.main.container > div > div.profile-setting.content-wrapper.container-fluid {
+.profile-setting.content-wrapper.container-fluid {
     border: 1px solid #666666;
     width: 90%;
     border-radius: 10px;
-
 }
+
+
+.profile-setting.content-wrapper.container-fluid > div > button {
+    background-color: var(--lime-green);
+    outline: none;
+    margin: 0 auto;
+}
+
+
+/* 2FA security template styles */
+
+.FA-security.content-wrapper.container-fluid > div > div > div {
+    background-color: white;
+    width: 80%;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    width: 613px;
+    height: 558px;
+    padding: 1rem;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div h3 {
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div > div input {
+    width: 90%;
+    height: 57px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    background-color: rgba(196, 196, 196, .5);
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div > div .QR-wrapper {
+    width: 200px;
+    height: 175px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div > div button {
+    background-color: var(--lime-green);
+    outline: none;
+    width: 350px;
+    height: 57px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+
 
 
  
