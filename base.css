@@ -32,6 +32,11 @@ body {
 
 
 /* hero section */
+.index {
+    flex-direction: column;
+}
+
+
 .hero {
     width: 100vw;
     height: 645px;
@@ -5843,6 +5848,44 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
     color: rgba(0, 0, 0, .7);
     font-weight: 500;
 }
+
+
+/* your QR Code template .system-module-setting */
+
+body > div.main.container > div > div.qr-code.content-wrapper .wrapper {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+    padding: 1rem;
+}
+
+
+body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > div .qr-container {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > div .qr-container img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.qr-code.content-wrapper button {
+    background-color: var(--lime-green);
+    border-radius: 10px;
+    outline: none;
+    width: 194px;
+    height: 57px;
+    font-size: 14px;
+}
+
+
+
 
 
 
