@@ -5676,6 +5676,19 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 
 
 
+/* commision log template styling */
+
+.commision-log.content-wrapper.container-fluid {
+    background-color: white;
+}
+
+
+.commision-log .row .commision-content {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0);    
+}
+
 
 
 
