@@ -5772,12 +5772,16 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 
 .FA-security.content-wrapper.container-fluid > div > div > div {
     background-color: white;
-    width: 80%;
+    width: 90%;
     border: 1px solid #666666;
     border-radius: 10px;
-    width: 613px;
+    width: 80%;
     height: 558px;
     padding: 1rem;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
 }
 
 
@@ -5795,14 +5799,27 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
     background-color: rgba(196, 196, 196, .5);
     border-radius: 10px;
     margin: 0 auto;
+    padding-left: 1rem;
 }
 
 
 .FA-security.content-wrapper.container-fluid > div > div > div .QR-wrapper {
     width: 200px;
     height: 175px;
-    border: 1px solid black;
     margin: 0 auto;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div > div .QR-wrapper img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div > div hr {
+    width: 100%;
+    font-size: 2px;  
 }
 
 
@@ -5813,8 +5830,20 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
     height: 57px;
     border-radius: 10px;
     font-size: 14px;
-    margin: 0 auto;
 }
+
+
+.FA-security.content-wrapper.container-fluid > div > div:nth-child(2) > div {
+    height: 312px;
+}
+
+
+.FA-security.content-wrapper.container-fluid > div > div:nth-child(2) > div p {
+    font-size: 12px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 500;
+}
+
 
 
 
