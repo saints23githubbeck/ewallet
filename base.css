@@ -5690,9 +5690,74 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 }
 
 
+/* profile setting profile template styling */
+
+.profile-setting.content-wrapper.container-fluid > div {
+    display: flex;
+    flex-direction: column;
+}
 
 
+.profile-setting.content-wrapper.container-fluid > div  input {
+    min-width: 100%;
+    border: 1px solid #666666;
+    border-radius: 10px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0);
+}
 
+
+.profile-setting.content-wrapper.container-fluid > div > div.address-state-wrapper.mt-3.container-fluid {
+    padding: 0;
+}
+
+
+.profile-setting.content-wrapper.container-fluid > div > div.address-state-wrapper.mt-3.container-fluid > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.profile-setting.content-wrapper.container-fluid > div > div.address-state-wrapper.mt-3.container-fluid > div > div {
+    padding: 0;
+}
+
+
+.profile-setting.content-wrapper.container-fluid > div > div.zip-code-wrapper.container-fluid.mt-4 > div {
+    justify-content: space-between;
+    padding: 0;
+}
+
+
+.profile-image-wrapper #profile-image {
+    display: flex;
+    align-items: center;
+}
+
+
+.profile-setting.content-wrapper.container-fluid > div > div.profile-image-wrapper.container-fluid {
+    padding: 0;
+}
+
+.profile-setting label {
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.profile-setting.content-wrapper.container-fluid > div > div.profile-image-wrapper p {
+    font-size: 11px;
+    color: #f72c10;
+}
+
+
+body > div.main.container > div > div.profile-setting.content-wrapper.container-fluid {
+    border: 1px solid #666666;
+    width: 90%;
+    border-radius: 10px;
+
+}
 
 
  
