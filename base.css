@@ -6001,6 +6001,23 @@ body > div.main.container > div > div.add-money.content-wrapper.container-fluid 
 }
 
 
+/* add-money-history template styling */
+
+.add-money-history.content-wrapper.container-fluid > div > table > tbody > tr > th {
+    font-weight: normal;
+}
+
+
+.add-money-history.content-wrapper.container-fluid > div > table > tbody > tr:nth-child(3) > td:nth-child(4) > span {
+    padding: 0 .5rem;
+    background-color: rgba(236, 118, 10, .3);
+    border-radius: 10px;
+}
+
+
+/* manage section template styling */
+
+
 
 
 
