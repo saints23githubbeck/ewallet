@@ -6015,6 +6015,7 @@ body > div.main.container > div > div.add-money.content-wrapper.container-fluid 
 }
 
 
+
 /* manage section template styling */
 
 
@@ -6048,6 +6049,44 @@ body > div.main.container > div > div.add-money.content-wrapper.container-fluid 
     padding: 0.1rem .2rem;
     background-color: var(--lime-green);
 
+}
+
+
+.manage-section.container.mt-5 > div > div.form-container.mt-5 > table > tbody {
+    background-color: rgba(255, 255, 255, 0)
+}
+
+
+#manage-section-modal > div > div > div.modal-body > div > div input {
+    height: 55px;
+    border: 1px solid rgba(102, 102, 102, .7);
+    width: 100%;
+    padding-left: 1rem;
+    margin: 0 auto;
+}
+
+
+#manage-section-modal > div > div > div.modal-header > button:focus,
+#manage-section-modal > div > div > div.modal-header > button:active {
+    outline: none;
+}
+
+
+#manage-section-modal > div > div > div.modal-footer button {
+    width: 156px;
+    height: 55px;
+    outline: none;
+    color: white;
+}
+
+
+#manage-section-modal > div > div > div.modal-footer .close-btn {
+    background-color: #2e2a53;
+}
+
+
+#manage-section-modal > div > div > div.modal-footer .save-btn {
+    background-color: #6c63ff;
 }
 
 
