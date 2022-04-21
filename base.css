@@ -6018,6 +6018,37 @@ body > div.main.container > div > div.add-money.content-wrapper.container-fluid 
 /* manage section template styling */
 
 
+.manage-section.container.mt-5 > div > div.top-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.manage-section.container.mt-5 > div > div.top-container > button {
+    outline: none;
+    width: 125px;
+    height: 52px;
+    background-color: var(--lime-green);
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, .7);
+}
+
+
+#manage-section-search {
+    width: 320px;
+    height: 52px;
+    border-radius: 0;
+    border: 1px solid rgba(102, 102, 102, .7);
+    padding-left: 1rem;
+}
+
+
+.manage-section.container.mt-5 > div > div.form-container.mt-5 > table > tbody > tr > td > span > svg {
+    padding: 0.1rem .2rem;
+    background-color: var(--lime-green);
+
+}
 
 
 

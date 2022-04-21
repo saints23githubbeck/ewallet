@@ -167,9 +167,8 @@
                 <li class="nav-item dropdown w-100">
                     <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Frontend Manager</a>
                     <ul class="dropdown-menu w-100" aria-labelledby="navbarDropdown">
-                        <li><a href="#" class="dropdown-item">Frontend Manager 01</a></li>
-                        <li><a href="#" class="dropdown-item">Frontend Manager 02</a></li>
-                        <li><a href="#" class="dropdown-item">Frontend Manager 03</a></li>
+                        <li><a href="template.html" class="dropdown-item">Manage Templates</a></li>
+                        <li><a href="manage-section.html" class="dropdown-item">Manage Pages</a></li>
                     </ul>
                 </li>
                 </div>
@@ -219,23 +218,64 @@
             <div class="manage-section container mt-5">
                <div class="content-wrapper">
                    <div class="top-container">
-                       <button>+ Add New</button>
+                       <!-- <button>+ Add New</button> -->
 
-                       <div class="input-group">
+
+                       <!-- Button trigger modal -->
+                            <button   data-toggle="modal" data-target="#exampleModalCenter">
+                                + Add New 
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                    </div>
+                                    <div class="modal-body">
+                                    ...
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                       <div class="input-group mt-3">
                            <input type="text" placeholder="search" id="manage-section-search">
-                       </div>
-
-
-                       <div class="form-container">
-                           <table class="table">
-                               <thead>
-                                   <tr>
-                                       <th scope="col"></th>
-                                   </tr>
-                               </thead>
-                           </table>
-                       </div>
+                       </div>                      
                    </div>
+                   <div class="form-container mt-5">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">name</th>
+                                <th scope="col">Slug</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Home</th>
+                                <td>home</td>
+                                <td>
+                                    <span>
+                                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.1234 0.595539L10.2351 0.483789C10.3192 0.399726 10.4191 0.333054 10.5289 0.287579C10.6388 0.242103 10.7566 0.218715 10.8755 0.21875C10.9944 0.218785 11.1122 0.242242 11.222 0.287782C11.3319 0.333321 11.4317 0.400052 11.5157 0.484164C11.5998 0.568275 11.6665 0.668121 11.7119 0.777999C11.7574 0.887877 11.7808 1.00564 11.7808 1.12455C11.7807 1.24347 11.7573 1.36122 11.7117 1.47107C11.6662 1.58092 11.5995 1.68073 11.5154 1.76479L11.4036 1.87579C11.5948 2.09018 11.6967 2.36958 11.6885 2.65671C11.6802 2.94384 11.5625 3.21694 11.3594 3.42004L3.64036 11.1398C3.59211 11.1878 3.5317 11.2218 3.46561 11.238L0.465612 11.988C0.402831 12.0037 0.337074 12.0028 0.274732 11.9855C0.212389 11.9682 0.155583 11.9351 0.109835 11.8893C0.0640867 11.8436 0.0309526 11.7868 0.0136536 11.7244C-0.0036455 11.6621 -0.00452105 11.5963 0.011112 11.5335L0.761112 8.53354C0.777522 8.46772 0.811477 8.40759 0.859362 8.35954L8.09086 1.12804C8.01854 1.07714 7.93055 1.05343 7.84244 1.06112C7.75434 1.0688 7.67178 1.10738 7.60936 1.17004L5.14036 3.63979C5.1055 3.67465 5.0641 3.70231 5.01855 3.72118C4.97299 3.74005 4.92417 3.74976 4.87486 3.74976C4.82555 3.74976 4.77673 3.74005 4.73117 3.72118C4.68562 3.70231 4.64423 3.67465 4.60936 3.63979C4.5745 3.60492 4.54684 3.56353 4.52797 3.51798C4.5091 3.47242 4.49939 3.4236 4.49939 3.37429C4.49939 3.32498 4.5091 3.27616 4.52797 3.2306C4.54684 3.18505 4.5745 3.14365 4.60936 3.10879L7.07986 0.639789C7.28309 0.43655 7.5564 0.318804 7.84371 0.310715C8.13101 0.302626 8.41052 0.404807 8.62486 0.596289C8.83093 0.412118 9.09759 0.310248 9.37397 0.310109C9.65035 0.309971 9.9171 0.411574 10.1234 0.595539Z" fill="white"/>
+                                        </svg>                                       
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
                </div>
             </div>
         </div>
