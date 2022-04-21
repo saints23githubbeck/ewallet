@@ -5852,7 +5852,7 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 
 /* your QR Code template .system-module-setting */
 
-body > div.main.container > div > div.qr-code.content-wrapper .wrapper {
+.qr-code.content-wrapper .wrapper {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -5861,7 +5861,7 @@ body > div.main.container > div > div.qr-code.content-wrapper .wrapper {
 }
 
 
-body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > div .qr-container {
+.qr-code.content-wrapper.container-fluid > div .qr-container {
     height: auto;
     width: 50%;
     display: flex;
@@ -5869,7 +5869,7 @@ body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > 
 }
 
 
-body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > div .qr-container img{
+.qr-code.content-wrapper.container-fluid > div .qr-container img{
     width: 100%;
     height: 100%;
 }
@@ -5885,8 +5885,43 @@ body > div.main.container > div > div.qr-code.content-wrapper.container-fluid > 
 }
 
 
+/* template styling */
 
 
+
+.template.content-wrapper.container-fluid > div > div {
+    width: 50%;
+    height: 100vh;
+}
+
+
+.template.content-wrapper.container-fluid > div > div .basic-header {
+    background-color: var(--lime-green);
+    height: 110px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+
+.template.content-wrapper.container-fluid > div > div .basic-header h3 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+
+.template.content-wrapper.container-fluid > div > div .basic-body {
+    background-color: white;
+    height: 450px;
+}
+
+
+.template.content-wrapper.container-fluid > div > div button {
+    width: 100%;
+    background-color: var(--lime-green);
+    outline: none;
+
+}
 
 
 
