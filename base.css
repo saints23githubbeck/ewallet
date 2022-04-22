@@ -6093,7 +6093,46 @@ body > div.main.container > div > div.add-money.content-wrapper.container-fluid 
 
 /* manage pages of home template styling */
 
+.manage-pages.container.mt-5 > div > div .wrapper {
+    background-color: white;
+    border: 1px solid black;
+    padding: 1rem;
+}
 
+
+.manage-pages.container.mt-5 > div > div > div > div .btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--lime-green);
+    border-radius: 0;
+    height: 76px;
+}
+
+
+.manage-pages.container.mt-5 > div > div > div > div > div > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.manage-pages.container.mt-5 > div > div > div > div > div > div:nth-child(1) p {
+    margin-left: 1.5rem;
+}
+
+
+.manage-pages.container.mt-5 > div > div > div > div > div > div:nth-child(2) {
+    height: auto;
+    width: 20px;
+}
+
+
+.manage-pages.container.mt-5 > div > div .wrapper button {
+    outline: none;
+    width: 100%;
+    background-color: var(--lime-green);
+}
 
 
 
