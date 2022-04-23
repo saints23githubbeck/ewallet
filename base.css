@@ -3800,6 +3800,7 @@ body > section > div.main.container > div > div.header-controls.container.mt-4 >
 
 .table {
     margin-bottom: 0;
+    overflow: scroll;
 }
 
 
@@ -4193,6 +4194,7 @@ body > div.main.container > div > div .user-pending.container.mt-5 > div > table
     width: 100%;
     padding: 2em;
     background-color: rgba(196, 196, 196, .3);
+    overflow: scroll;
 }
 
 
