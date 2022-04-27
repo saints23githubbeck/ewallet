@@ -40,7 +40,6 @@ body {
 .hero {
     width: 100vw;
     height: 645px;
-    /* background-color: #011A27; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,6 +119,11 @@ button {
     justify-content: flex-end;
     align-items: center;
     color: var(--white);
+}
+
+
+.form-container {
+    overflow: scroll;
 }
 
 
@@ -1846,12 +1850,7 @@ body .row {
 
     #sidebar {
         height: 100%;
-    }
-
-
-    /* .main .container {
-        min-height: 100vh;
-    } */
+    }  
 }
 
 
@@ -1934,7 +1933,6 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 
 
 /* updated agent dashboard */
-
 
 .wallet-logo-text h3 {
     font-family: 'Shrikhand', sans-serif;
@@ -2026,968 +2024,428 @@ body > section > div.main.container > div > nav > div.profile-details > div.drop
 } 
 
 
-.top-bar {
+
+
+
+/* admin-dash styling */
+
+.top-bar .row {
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
-    padding: 0 10px;
+    justify-content: space-around;
 }
 
 
-.info-tile {
-    width: 267px;
+.top-bar .info-tile {
+    width: 260px;
     height: 141px;
     border-radius: 20px;
     display: flex;
     align-items: end;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 15px;
+    padding-right: 16px;
     color: var(--white);
+    flex-direction: column;
+    justify-content: center;
 }
 
 
-.info-tile h3 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-
-.info-tile p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-
-.info-tile a,
-.currency-tile a {
-    padding: .2em .3em;
-    color: black;
+.top-bar .info-tile a {
     background-color: var(--white);
-}
-
-
-.info-tile a:hover {
+    padding: 1px 4px;
     text-decoration: none;
+    color: black;
 }
 
 
-.total-user {
+.top-bar .total-user {
     background-color: #2460a7;
 }
 
 
-.total-agent {
-    background-color:#f72c10 ;
+.top-bar .total-agent {
+    background-color: #f72c10;
 }
 
 
-.total-merchant {
+.top-bar .total-merchant {
     background-color: #ec760a;
 }
 
 
-.pending-ticket {
+.top-bar .pending-ticket {
     background-color: #b7cad8;
 }
 
 
 .transaction-report {
-    margin-top: 45px;
-    width: 100%;
-    margin: 45px 60px 0 60px;
+    width: 96%;
     height: 311px;
-    border-radius: 20px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: 1px solid rgba(102, 102, 102, .7);
+    border-radius: 20px;
 }
 
 
 .income-tray {
-    display: flex;
-    margin-top: 38px;
-    width: 100%;
     padding: 0;
-    height: auto;
-
 }
 
 
-.income-graph {
-    width: 474px;
+.income-tray .income-graph .graph {
     height: 299px;
-    border: 1px solid rgba(102, 102, 102, .7);
+    width: auto;
+    border: 1px solid rgba(0, 0, 0, .7);
+    box-shadow: 0px 4px 4px rgba(0,  0, 0, .25);
     border-radius: 20px;
 }
 
 
-.income-tiles {
+.income-tiles .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 0;
-}
-
-
-.income-tile {
-    height: 141px;
-    width: 260px;
-    border-radius: 20px;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding-top: 10px;
 }
 
 
-.income-tile h2 {
-    font-size: 25px;
-    font-weight: 400;
-}
-
-.income-tile p {
-    font-size: 14px;
-    font-weight: 400;
+.income-tiles .row .upper-deck,
+.income-tiles .row .lower-deck {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
-.total-money {
-    background-color: #f72c10;   
+.income-tiles .row .upper-deck .income-tile h2 {
+    font-size: 20px;
 }
 
 
-.total-withdrawals {
+.income-tile  {
+    width: 260px;
+    height: 141px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upper-deck {
+    color: var(--white);
+}
+
+
+.upper-deck .income-tile.total-money {
+    background-color: #f72c10;
+}
+
+
+.upper-deck .income-tile.total-withdrawals {
     background-color: #ec760a;
 }
 
 
-.pending-withdrawals,
-.pending-money {
-    margin-top: 17px;
+.lower-deck .income-tile {
+    color: black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.currency .container .row {
+    justify-content: space-around;
+}
+
+
+.currency.container.w-100.d-flex .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.currency.container.w-100.d-flex > div > div.currency-tile {
+    border-radius: 20px;
+    width: 340px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding:0 16px 5px 0;
+    color: var(--white);
+    position: relative;
+}
+
+
+.currency.container.w-100.d-flex > div > div.currency-tile a {
+    padding: 3px 5px;
     background-color: var(--white);
     color: black;
-    box-shadow: 0px 4px 4px rgba(0,0, 0, .25);
 }
 
 
-.currency {
-    width: 100%;
-    margin-top: 45px;
-    margin-bottom: 40px;
-    justify-content: space-between;
-    padding: 0;
-}
-
-
-.currency-tile {
-    width: 349px;
-    height: 141px;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    flex-direction: column;
-    color: var(--white);
-    padding-right: 36px;
-}
-
-
-.currency-tile h2 {
-    font-size: 25px;
-    font-weight: 500;
-}
-
-
-.currency-tile p {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.currency-tile svg {
+.currency.container.w-100.d-flex > div > div.currency-tile svg {
     position: absolute;
-    bottom: 10px;
-    left: 10px;
-    z-index: 1;
-    color: white;
+    bottom: 0;
+    left: 0;
     mix-blend-mode: soft-light;
 }
 
 
-.left {
+.currency.container.w-100.d-flex > div > div.currency-tile.left {
+    background-color: #2E2A53;
+}
+
+
+.currency.container.w-100.d-flex > div > div.currency-tile.middle {
+    background-color: #1E9F9F;
+}
+
+
+.currency.container.w-100.d-flex > div > div.currency-tile.right {
     background-color: #2e2a53;
 }
 
 
-.middle {
-    background-color: #1e9f9f;
+
+@media (max-width: 1430px) {
+
+    .top-bar .info-tile {
+        width: 220px;
+        height: 141px;
+    }
+
+
+    .income-tile  {
+        width: 220px;
+        height: 141px;
+    }
+
+
+    .currency.container.w-100.d-flex > div > div.currency-tile {
+        width: 300px;
+    }
+
 }
 
 
-.right {
-    background-color: #2e2a53;
-}
+@media (max-width: 992px) {
 
-
-/* admin-dashboard media queries */
-
-
-/* mobile media query */
-@media screen and (max-width: 480px) {
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .wallet-logo-text {
-        font-size: .8rem;
-        margin-left: 5px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 10px;
-    }
-
-
-    .tray-links h3 {
-        font-size: .8rem;
-    }
-
-
-    .dashboard-links li a {
-        font-size: .7rem;
-    }
-
-
-    .dropdown-menu {
-        border: none;
-    }
-    
-
-    .main .row nav {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 10px;
-        height: 60px;
-    }
-
-
-    .admin-pic img {
-        width: 35px;
-        height: auto;
-    }
-
-
-    .name-tray {
-        margin-right: 30px;
-    }
-
-
-    .name-tray a {
-        font-size: small;
-    }
-
-
-    .top-bar {
-        padding: 0 20px;
-        margin-top: 15px;
-    }
-
-
-    .info-tile {
-        width: 100%;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-
-
-    .info-tile h3 {
-        font-size: 14px;
-    }
-
-
-    .info-tile p {
-        font-size: 12px;
-        margin-bottom: .3rem;
-    }
-
-
-    .info-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
-    }
-
-
-    .transaction-report {
-        margin: 20px;
-        height: 250px;
-    }
-
-
-    .income-graph {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-
-    .income-tiles {
-        margin-top: 20px;
-    }
-
-
-    .income-tile {
-        margin-bottom: 10px;
-    }
-
-
-    .income-tile h2 {
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-
-    .currency {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 20px;
-        margin-top: 20px;
-    }
-
-
-    .currency-tile {
-        height: 100px;
-        margin-bottom: 10px;
-    }
-
-
-    .currency-tile svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .currency-tile h2 {
-        font-size: 20px;
-    }
-
-    .currency-tile p {
-        font-size: 13px;
-        margin-bottom: .3rem;
-    }
-
-
-    .currency-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
-    }
-}
-
-
-
-/* ipads and tablets */
-
-@media screen and (max-width: 768px) {
-    .admin-dash {
-        min-width: 100vw;
-    }
-
-    
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .wallet-logo-text h3 {
-        font-size: .9rem;
-        margin-left: 5px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 10px;
-    }
-
-
-    .tray-links h3 {
-        font-size: .8rem;
-    }
-
-
-    .dashboard-links li a {
-        font-size: .7rem;
-    }
-
-
-    .main {
-        margin: 0;
-        min-width: calc(100vw - 180px);
-
-    }
-    
-
-    .main .row nav {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 10px;
-        height: 60px;
-    }
-
-
-    .admin-pic img {
-        width: 35px;
-        height: auto;
-    }
-
-
-    .name-tray {
-        margin-right: 30px;
-    }
-
-
-    .name-tray a {
-        font-size: small;
-    }
-
-
-    .top-bar {
-        padding: 0 20px;
-        margin-top: 10px;
-        justify-content: space-around;
-    }
-
-
-    .info-tile {
+    .top-bar .info-tile {
         width: 200px;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-
-
-    .info-tile h3 {
-        font-size: 14px;
-    }
-
-
-    .info-tile p {
-        font-size: 12px;
-        margin-bottom: .3rem;
-    }
-
-
-    .info-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
+        height: 141px;
     }
 
 
     .transaction-report {
-        margin: 10px auto;
-        width: 80%;
-        height: 250px;
+        min-width: 95%;        
     }
 
 
     .income-tray {
-        margin-top: 1rem;
-        width: 90%;
+        min-width: 96%;
     }
 
 
-    .income-graph {
-        width: 90%;
-        margin: 0 auto;
-    }
-
-
-    .income-tiles {
-        margin-top: 20px;
-        padding: 0 30px;
-    }
-
-
-    .income-tile {
-        margin-bottom: 10px;
+    .income-tile  {
         width: 200px;
+        height: 141px;
     }
 
 
-    .income-tile h2 {
-        font-size: 16px;
-        font-weight: 500;
+    .currency.container.w-100.d-flex {
+        min-width: 96%;
     }
 
-
-    .income-tile p {
-        font-size: 12px;
+    
+    .currency.container.w-100.d-flex > div > div.currency-tile {
+        width: 270px;
     }
 
-
-    .currency {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 20px;
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-
-    .currency-tile {
-        height: 100px;
-        margin-bottom: 10px;
-        width: 90%;
-    }
-
-
-    .currency-tile svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .currency-tile h2 {
-        font-size: 20px;
-    }
-
-
-    .currency-tile p {
-        font-size: 13px;
-        margin-bottom: .3rem;
-    }
-
-
-    .currency-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
-    }
 }
 
 
-/* small screens and laptops */
+@media (max-width: 896px) {
 
-@media screen and (max-width: 1028px) {
-    .admin-dash {
-        min-width: 100vw;
-    }
-
-
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .wallet-logo-text h3 {
-        font-size: .9rem;
-        margin-left: 5px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 10px;
-    }
-
-
-    .tray-links h3 {
-        font-size: .8rem;
-    }
-
-
-    .dashboard-links li a {
-        font-size: .7rem;
-    }
-
-
-    .main {
-        margin: 0;
-        min-width: calc(100vw - 250px);
-
-    }
-    
-
-    .main .row nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        height: 60px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 20px;
-    }
-
-
-    .admin-pic img {
-        width: 40px;
-        height: auto;
-    }
-
-
-    .name-tray {
-        margin-right: 30px;
-    }
-
-
-    .name-tray a {
-        font-size: small;
-    }
-
-
-    .top-bar {
-        padding: 0 50px;
-        margin-top: 10px;
-        justify-content: space-around;
-    }
-
-
-    .info-tile {
-        width: 280px;
-        height: 100px;
-        margin-bottom: 10px;
-    }
-
-
-    .info-tile h3 {
-        font-size: 14px;
-    }
-
-
-    .info-tile p {
-        font-size: 12px;
-        margin-bottom: .3rem;
-    }
-
-
-    .info-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
+    .top-bar .info-tile {
+        width: 190px;
+        height: 141px;
     }
 
 
     .transaction-report {
-        margin: 10px auto;
-        width: 80%;
-        height: 250px;
+        min-width: 95%;        
     }
 
 
     .income-tray {
-        margin-top: 1rem;
-        width: 80%;
-        flex-wrap: wrap;
-        flex-direction: column;
+        min-width: 96%;
+    }
+
+
+    .income-tile  {
+        width: 175px;
+        height: 141px;
+    }
+
+
+    .currency.container.w-100.d-flex {
+        min-width: 96%;
+    }
+
+    
+    .currency.container.w-100.d-flex > div > div.currency-tile {
+        width: 240px;
+    }
+
+}
+
+
+
+
+@media (max-width: 793px) {
+
+    .top-bar .info-tile {
+        width: 270px;
+        height: 141px;
+    }
+
+
+    .top-bar .info-tile .total-merchant,
+    .top-bar .info-tile .pending-ticket {
+        margin-top: 10px;
+    }
+
+
+    .info-tile.total-merchant,
+    .info-tile.pending-ticket {
+        margin-top: 10px;
+    }
+
+
+    .transaction-report {
+        min-width: 95%;        
     }
 
 
     .income-tray .row {
-        flex-direction: column;
-        height: auto;
+        flex-direction: column;   
+        justify-content: space-around;    
     }
 
 
-    .income-graph {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
+    .income-tray .income-graph,
+    .income-tray .income-tiles  {
+        min-width: 98%;
     }
 
 
-    .income-tiles {
-        margin-top: 10px;
-        padding: 0 5px;
+    .income-tray .income-tiles {
+        margin-top: 15px;
     }
 
 
-    .income-tile {
-        margin-bottom: 10px;
-        width: 150px;
+    .income-tile  {
+        width: 275px;
+        height: 141px;
     }
 
 
-    .income-tile h2 {
-        font-size: 16px;
-        font-weight: 500;
+    .currency.container.w-100.d-flex {
+        min-width: 96%;
     }
 
-
-    .income-tile p {
-        font-size: 12px;
-    }
-
-
-    .currency {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 40px;
-        margin-top: 20px;
-        justify-content: space-between;
-    }
-
-
-    .currency-tile {
-        height: 100px;
-        margin-bottom: 10px;
+    
+    .currency.container.w-100.d-flex > div > div.currency-tile {
         width: 200px;
-    }
-
-
-    .currency-tile svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .currency-tile h2 {
-        font-size: 20px;
-    }
-
-
-    .currency-tile p {
-        font-size: 13px;
-        margin-bottom: .3rem;
-    }
-
-
-    .currency-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
     }
 }
 
 
+@media (max-width: 658px) {
 
-
-/* desktops and large screens */
-
-@media screen and (max-width: 1200px) {
-    .admin-dash {
-        min-width: 100vw;
-    }
-  
-
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .top-bar.row {
+       flex-direction: column;
     }
 
 
-    body > section > div.sidebar > div.e-wallet-logo > div:nth-child(1) > svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .wallet-logo-text h3 {
-        font-size: .9rem;
-        margin-left: 5px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 10px;
-    }
-
-
-    .tray-links h3 {
-        font-size: .8rem;
-    }
-
-
-    .dashboard-links li a {
-        font-size: .9rem;
-    }
-
-
-    #sidebar {
-        height: auto;
-    }
-
-
-    .main {
-        margin: 0;
-        min-width: calc(100vw - 320px);
-    }
-    
-
-    .main .row nav {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 10px;
-        height: 60px;
-    }
-
-
-    body > section > div.main.container > div > nav > div.page-name > h2 {
-        font-size: 20px;
-    }
-
-
-    .admin-pic img {
-        width: 40px;
-        height: auto;
-    }
-
-
-    .name-tray {
-        margin-right: 30px;
-    }
-
-
-    .name-tray a {
-        font-size: small;
-    }
-
-
-    .top-bar {
-        padding: 0 50px;
-        margin-top: 10px;
-        justify-content: space-around;
-    }
-
-
-    .info-tile {
-        width: 280px;
-        height: 100px;
-        margin-top: 15px;
-    }
-    
-
-    .info-tile h3 {
-        font-size: 14px;
-    }
-
-
-    .info-tile p {
-        font-size: 12px;
-        margin-bottom: .3rem;
-    }
-
-
-    .info-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
+    .top-bar.row .info-tile {
+        min-width: 96%;
     }
 
 
     .transaction-report {
-        margin: 10px auto;
-        width: 80%;
-        height: 250px;
+        min-width: 95%;        
     }
 
 
     .income-tray {
-        margin-top: 1rem;
-        width: 80%;
-        flex-wrap: wrap;
-        flex-direction: column;
+        min-width: 96%;
     }
 
 
-    .income-tray .row {
-        flex-direction: column;
-        height: auto;
+    .income-tile  {
+        width: 240px;
+        height: 141px;
     }
 
 
-    .income-graph {
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-    }
-
-
-    .income-tiles {
-        margin-top: 10px;
-        padding: 0 5px;
-    }
-
-
-    .income-tile {
-        margin-bottom: 10px;
-        width: 150px;
-    }
-
-
-    .income-tile h2 {
-        font-size: 16px;
-        font-weight: 500;
-    }
-
-
-    .income-tile p {
-        font-size: 12px;
-    }
-
-
-    .currency {
+    .currency.container.w-100.d-flex.my-4 > div {
         display: flex;
-        flex-wrap: wrap;
-        padding: 0 40px;
-        margin-top: 20px;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
     }
 
-
-    .currency-tile {
-        height: 100px;
-        margin-bottom: 10px;
-        width: 280px;
+    
+    .currency.container.w-100.d-flex > div > div.currency-tile {
+        width: 96%;
+        margin-bottom: 5px;
     }
 
-
-    .currency-tile svg {
-        width: 30px;
-        height: auto;
-    }
-
-
-    .currency-tile h2 {
-        font-size: 20px;
-    }
-
-
-    .currency-tile p {
-        font-size: 13px;
-        margin-bottom: .3rem;
-    }
-
-
-    .currency-tile a {
-        padding: .1em .2em;
-        font-size: 12px;
-    }
 }
+
+
+
+@media (max-width: 511px) {
+
+    .top-bar.row {
+       flex-direction: column;
+    }
+
+
+    .top-bar.mt-5.container-fluid > div > div.info-tile {
+        width: 96%;
+    }
+
+
+    .top-bar.mt-5.container-fluid > div > div.info-tile:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
+
+    .income-tray .row .income-tiles .upper-deck {
+        flex-direction: column;
+    }
+
+
+    .income-tile  {
+        width: 100%;
+        margin-bottom: 10px;
+     
+    }
+
+
+    .currency.container.w-100.d-flex.my-4 > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+    .currency.container.w-100.d-flex > div > div.currency-tile {
+        width: 96%;
+        margin-bottom: 5px;
+    }
+
+}
+
 
 
 
@@ -3801,6 +3259,7 @@ body > section > div.main.container > div > div.header-controls.container.mt-4 >
 .table {
     margin-bottom: 0;
     overflow: scroll;
+    border-collapse: collapse;
 }
 
 
