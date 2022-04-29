@@ -1873,7 +1873,8 @@ body .row {
 
 
     #sidebar {
-        height: 100%;
+        height: auto;
+        min-height: 100%;
     }  
 }
 
@@ -5253,6 +5254,7 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
     border: 1px solid #666666;
     width: 90%;
     border-radius: 10px;
+    margin-bottom: 2rem;
 }
 
 
@@ -5353,6 +5355,11 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 
     .FA-security.content-wrapper.container-fluid > div > div:nth-child(2) > div {
         margin-top: 1rem;
+    }
+
+    .FA-security.content-wrapper.container-fluid > div > div {
+        display: flex;
+        justify-content: center;
     }
 
 }
