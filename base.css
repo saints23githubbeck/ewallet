@@ -5340,6 +5340,27 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 }
 
 
+
+@media (max-width: 1110px) {
+    .FA-security.content-wrapper.container-fluid > div > div > div button {
+        width: 94%;
+    }
+
+}
+
+
+@media (max-width: 768px) {   
+
+    .FA-security.content-wrapper.container-fluid > div > div:nth-child(2) > div {
+        margin-top: 1rem;
+    }
+
+}
+
+
+
+
+
 /* your QR Code template .system-module-setting */
 
 .qr-code.content-wrapper .wrapper {
