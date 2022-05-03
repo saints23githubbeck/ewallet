@@ -1408,12 +1408,17 @@ button {
 }
 
 
-body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > h3 {
+body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > a h3 {
     font-family: 'Shrikhand', sans-serif;
     font-size: 30.8368px;
     font-weight: 400;
     font-style: italic;
     color: var(--purple);
+}
+
+
+body > section > div.header > nav > div.navbar-brand > div > div.wallet-logo-text > a {
+    text-decoration: none;
 }
 
 
@@ -1920,6 +1925,13 @@ body .row {
 
 .profile-details {
     display: flex;
+}
+
+
+.profile-details .dropdown-case .dropdown-menu li:hover,
+.profile-details .dropdown-case .dropdown-menu li:focus {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 
