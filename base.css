@@ -4651,12 +4651,12 @@ body > div.main.container > div > div.login-history.container.mt-5 > div > table
 
 
 .system-module-setting .right-wrapper .wrapper-header {
-    background-color: #666666;
+    background-color: #000000;
 }
 
 
 .system-module-setting .right-wrapper.mt-5 .wrapper-header {
-    background-color: green;
+    background-color: #666666;
 }
 
 
@@ -4679,12 +4679,25 @@ body > div.main.container > div > div.login-history.container.mt-5 > div > table
     height: 80px;
     padding: 0 1rem;
     color: rgba(0,0,0, .8);
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.system-module-setting .control-body .control .control-container input:checked + .slider {
+    background-color: #3d2ecc;
 }
 
 
 .system-module-setting .control-body .control .control-container .form-check {
-display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.control-body .control .control-container {
+    display: flex;
+    align-items: flex-end;
 }
 
 
