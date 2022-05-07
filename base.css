@@ -1822,7 +1822,8 @@ body .row {
         left: 0;
         top: 0;
         z-index: 100;
-        height: 100%;        
+        height: 100%;     
+        font-size: 1rem;   
     }
   
 
@@ -1834,6 +1835,11 @@ body .row {
 
     .main-content {
         min-width: 100vw;
+    }
+
+
+    .wallet-logo-text h3 {
+        font-size: 1.4rem;
     }
 
 
@@ -1880,6 +1886,7 @@ body .row {
     #sidebar {
         height: auto;
         min-height: 100%;
+        padding: 25px 4rem;
     }  
 }
 
@@ -2981,7 +2988,6 @@ body > section > div.main.container > div > div.invoice-section.container.mt-3 >
 
 @media screen and (max-width: 480px ) {
     .sidebar {
-        /* width: 160px; */
         padding: 10px;
     }
 
@@ -3214,7 +3220,8 @@ body > section > div.main.container > div > div.header-controls.container.mt-4 >
 }
 
 
-.currency-api .modal-footer .update {
+
+.currency-api .modal-footer a .submit{
     background-color: #2F2E41;
 }
 
@@ -3274,8 +3281,15 @@ body > section > div.main.container > div > div.header-controls.container.mt-4 >
 }
 
 
-#add-currency > div > div > div.modal-footer > button.submit {
+#add-currency > div > div > div.modal-footer > a.submit {
     background-color: #E6DF44;
+    outline: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    color: black;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 
@@ -5276,6 +5290,7 @@ body > div.main.container > div > div.sms-settings.container-fluid.mt-5 > div > 
 .profile-image-wrapper #profile-image {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
