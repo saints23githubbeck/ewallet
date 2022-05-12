@@ -1759,12 +1759,13 @@ body {
 .sidebar {
     display: flex;
     width: 330px;
-    height: 100%;
+    min-height: 1208px;
     transform: translateX(0);
     transition: all ease;
     flex-direction: column;
     transition: all ease .3s;
     height: 100%;
+    padding-bottom: 4rem;
 }
 
 
